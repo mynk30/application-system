@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // First insert the application to get the application ID
         $stmt = $conn->prepare("INSERT INTO applications (user_id, name, email, phone, address, service_type, status) VALUES (?, ?, ?, ?, ?, ?, 'pending')");
-        
+
         if ($stmt === false) {
             $logger->error('Database error: Failed to prepare application statement');
             throw new Exception('Database error: Statement preparation failed');
@@ -78,14 +78,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $filenameWithoutExt = pathinfo($originalName, PATHINFO_FILENAME);
             $uniqueName = $filenameWithoutExt . '_' . $timestamp . '.' . $fileExtension;
             $targetFilePath = $targetDir . $uniqueName;
-            
+
             if (move_uploaded_file($_FILES["document"]["tmp_name"][$key], $targetFilePath)) {
                 // Get file size in bytes
                 $fileSize = filesize($targetFilePath);
-                
+
                 // Insert into files table
                 $stmt = $conn->prepare("INSERT INTO files (original_name, file_name, file_path, file_size, model_type, model_id) VALUES (?, ?, ?, ?, ?, ?)");
-                
+
                 if ($stmt === false) {
                     $logger->error('Database error: Failed to prepare files statement');
                     throw new Exception('Database error: Files table preparation failed');
@@ -101,19 +101,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $logger->error('Database error: Failed to execute files statement');
                     throw new Exception('Database error: Files insertion failed');
                 }
-                
+
                 // Log file upload
                 $logger->info("File uploaded: " . $originalName . " -> " . $uniqueName);
                 $browserLogger->log("File uploaded: " . $originalName . " -> " . $uniqueName);
-                
+
                 $uploadedFiles[] = $uniqueName;
-                $logger->info('File uploaded and recorded: ' . $documentName);
-                $browserLogger->log('File uploaded and recorded: ' . $documentName);
+                $logger->info('File uploaded and recorded: ' . $originalName);
+                $browserLogger->log('File uploaded and recorded: ' . $originalName);
             } else {
                 $error = error_get_last();
-                $logger->error('File upload failed: ' . $documentName);
+                $logger->error('File upload failed: ' . $originalName);
                 $logger->error('Error details: ' . print_r($error, true));
-                $browserLogger->error('File upload failed: ' . $documentName);
+                $browserLogger->error('File upload failed: ' . $originalName);
                 $browserLogger->error('Error details: ' . print_r($error, true));
                 throw new Exception('File upload failed');
             }
@@ -134,7 +134,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Redirect with success message
         header("Location: /application-system/admin/dashboard.php?success=1&application_id=" . $applicationId);
         exit();
-
     } catch (Exception $e) {
         // Rollback transaction on error
         if ($conn->in_transaction) {
@@ -150,4 +149,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 }
-?>

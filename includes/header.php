@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 require_once __DIR__ . '/../php/auth.php';
 requireLogin();
 ob_start();
@@ -10,13 +10,13 @@ ob_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Application System</title>
+    <title>Application System - <?php echo ucfirst($_SESSION['user_role']); ?></title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
-    <link href="/application-system/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/application-system/assets/css/style.css">
     <style>
         :root {
             --sidebar-width: 250px;
@@ -243,30 +243,32 @@ ob_start();
                 </li>
             <?php endif; ?>
 
+            <?php if ($_SESSION['user_role'] === 'admin' || $_SESSION['user_role'] === 'staff'): ?>
+                <li class="<?php echo (strpos($_SERVER['PHP_SELF'], 'enquiry_contact') !== false || strpos($_SERVER['PHP_SELF'], 'enquiry_service') !== false) ? 'active' : ''; ?>">
+                    <a href="#enquirySubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-envelope"></i> Enquiry Form
+                    </a>
+                    <ul class="collapse list-unstyled ms-3" id="enquirySubmenu">
+                        <li>
+                            <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/enquiry_contact.php">
+                                <i class="fas fa-phone"></i> Contact Item
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/enquiry_service.php">
+                                <i class="fas fa-tools"></i> Service Item
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            <?php endif; ?>
+
             <?php if ($_SESSION['user_role'] === 'admin'): ?>
                 <li class="<?php echo strpos($_SERVER['PHP_SELF'], 'users') !== false ? 'active' : ''; ?>">
                     <a href="/application-system/admin/users.php">
                         <i class="fas fa-users"></i> Users
                     </a>
                 </li>
-                <li class="<?php echo strpos($_SERVER['PHP_SELF'], 'settings') !== false ? 'active' : ''; ?>">
-                    <a href="#enquirySubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-envelope"></i> Enquiry Form
-                    </a>
-                    <ul class="collapse list-unstyled ms-3" id="enquirySubmenu">
-                        <li>
-                            <a href="/application-system/admin/enquiry_contact.php">
-                                <i class="fas fa-phone"></i> Contact Item
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/application-system/admin/enquiry_service.php">
-                                <i class="fas fa-tools"></i> Service Item
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
             <?php endif; ?>
 
             <?php if ($_SESSION['user_role'] === 'user'): ?>

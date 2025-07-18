@@ -53,7 +53,7 @@ if ($row = $result->fetch_assoc()) {
 }
 
 // Get user and staff counts
-$stmt = $conn->prepare("SELECT COUNT(*) as total_users FROM admin WHERE role = 'user'");
+$stmt = $conn->prepare("SELECT COUNT(*) as total_users FROM users WHERE role = 'user'");
 if ($stmt && $stmt->execute()) {
     $result = $stmt->get_result();
     if ($row = $result->fetch_assoc()) {
@@ -88,16 +88,6 @@ if ($stmt === false) {
 
 $stmt->execute();
 $recentApplications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-
-// Get notifications
-$stmt = $conn->prepare("
-    SELECT n.*, u.name as submitted_by
-    FROM notifications n
-    LEFT JOIN admin u ON n.user_id = u.id
-    WHERE n.is_read = FALSE
-    ORDER BY n.created_at DESC
-    LIMIT 5
-");
 
 if ($stmt === false) {
     $logger->error("Failed to prepare notifications query: " . $conn->error);
@@ -312,55 +302,7 @@ if ($stmt === false) {
     </div>
 </div>
 
-<style>
-    .stat-card {
-        border: none;
-        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-        transition: all 0.3s ease;
-    }
 
-    .stat-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    }
-
-    .stat-icon {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
-        color: #6c757d;
-    }
-
-    .stat-count {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #495057;
-    }
-
-    .stat-title {
-        font-size: 0.875rem;
-        color: #6c757d;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-
-    .files-list {
-        max-width: 200px;
-    }
-
-    .files-list .badge {
-        font-size: 0.75rem;
-    }
-
-    .table th {
-        border-top: none;
-        font-weight: 600;
-        color: #495057;
-    }
-
-    .table td {
-        vertical-align: middle;
-    }
-</style>
 
 <!-- New Application Modal -->
 <div class="modal fade" id="newApplicationModal" tabindex="-1" aria-labelledby="newApplicationModalLabel" aria-hidden="true">

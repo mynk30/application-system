@@ -40,7 +40,7 @@ INSERT INTO admin (name, email, password, role, status) VALUES
 INSERT INTO admin (name, email, password, role, status) VALUES 
 ('John Doe', 'johndoe@gmail.com', 'Abcd@12345', 'staff', 'active');
 
--- files table
+-- files table 
 CREATE TABLE files (
     id INT AUTO_INCREMENT PRIMARY KEY,
     original_name VARCHAR(255) NOT NULL,
@@ -76,5 +76,5 @@ CREATE TABLE applications (
 
 -- Insert sample applications
 INSERT INTO applications (user_id, name, email, phone, address, service_type, status) VALUES
-(1, 'Mayank Soni', 'mayanksoni920@gmail.com', '1234567890', '123 Main St, City', 'Passport', 'pending'),
+(1, 'Anjali Kushwaha', 'analikushwaha@gmail.com', '1234567890', '123 Main St, City', 'Passport', 'pending'),
 (2, 'John Doe', 'johndoe@gmail.com', '0987654321', '456 Other St, City', 'Visa', 'pending');
