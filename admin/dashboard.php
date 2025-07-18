@@ -1,66 +1,112 @@
 <?php
+require_once '../php/config.php';
+global $logger, $browserLogger;
+
 require_once '../includes/header.php';
 requireRole(['admin']);
+
+// Log dashboard access
+$logger->info('Admin dashboard accessed');
+$browserLogger->log('Admin dashboard accessed');
 
 // Get counts for dashboard stats
 $stats = [
     'total_applications' => 0,
     'pending_applications' => 0,
     'approved_applications' => 0,
-    //complete
+    'missing_document_applications' => 0,
     'rejected_applications' => 0,
-    //missing_document
     'total_users' => 0,
     'total_staff' => 0
 ];
 
-// Get application counts
-$result = $conn->query("
-  SELECT 
-    COUNT(*) as total,
-    SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as pending,
-    SUM(CASE WHEN status = 'approved' THEN 1 ELSE 0 END) as approved,
-    SUM(CASE WHEN status = 'missing_docs' THEN 1 ELSE 0 END) as missing_docs,
-    SUM(CASE WHEN status = 'rejected' THEN 1 ELSE 0 END) as rejected
-FROM applications
-
+// Fetch application statistics
+$stmt = $conn->prepare("
+    SELECT 
+        COUNT(*) as total,
+        SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as pending,
+        SUM(CASE WHEN status = 'approved' THEN 1 ELSE 0 END) as approved,
+        SUM(CASE WHEN status = 'missing_document' THEN 1 ELSE 0 END) as missing_docs,
+        SUM(CASE WHEN status = 'rejected' THEN 1 ELSE 0 END) as rejected
+    FROM applications
 ");
 
-if ($result && $row = $result->fetch_assoc()) {
+if ($stmt === false) {
+    $logger->error("Failed to prepare statistics query: " . $conn->error);
+    $browserLogger->log("Failed to prepare statistics query: " . $conn->error);
+    die("Database error: " . $conn->error);
+}
+
+if (!$stmt->execute()) {
+    $logger->error("Failed to execute statistics query: " . $stmt->error);
+    $browserLogger->log("Failed to execute statistics query: " . $stmt->error);
+    die("Database error: " . $stmt->error);
+}
+
+$result = $stmt->get_result();
+if ($row = $result->fetch_assoc()) {
     $stats['total_applications'] = $row['total'];
     $stats['pending_applications'] = $row['pending'];
     $stats['approved_applications'] = $row['approved'];
-    $stats['missing_docs_applications'] = $row['missing_docs'];
+    $stats['missing_document_applications'] = $row['missing_docs'];
     $stats['rejected_applications'] = $row['rejected'];
 }
 
-
-// Get user counts
-$result = $conn->query("
-    SELECT 
-        COUNT(*) as total_users,
-        SUM(CASE WHEN role = 'staff' THEN 1 ELSE 0 END) as total_staff
-    FROM users
-    WHERE status = 'active'
-");
-
-if ($result && $row = $result->fetch_assoc()) {
-    $stats['total_users'] = $row['total_users'];
-    $stats['total_staff'] = $row['total_staff'];
+// Get user and staff counts
+$stmt = $conn->prepare("SELECT COUNT(*) as total_users FROM admin WHERE role = 'user'");
+if ($stmt && $stmt->execute()) {
+    $result = $stmt->get_result();
+    if ($row = $result->fetch_assoc()) {
+        $stats['total_users'] = $row['total_users'];
+    }
 }
 
-// Get recent applications
-$recent_applications = [];
-$result = $conn->query("
- SELECT * FROM applications
-    ORDER BY created_at DESC
+$stmt = $conn->prepare("SELECT COUNT(*) as total_staff FROM admin WHERE role = 'staff'");
+if ($stmt && $stmt->execute()) {
+    $result = $stmt->get_result();
+    if ($row = $result->fetch_assoc()) {
+        $stats['total_staff'] = $row['total_staff'];
+    }
+}
+
+// Get recent applications with their files
+$stmt = $conn->prepare("
+    SELECT 
+        a.*, 
+        u.name as submitted_by
+    FROM applications a
+    LEFT JOIN admin u ON a.user_id = u.id
+    ORDER BY a.created_at DESC
+    LIMIT 10
+");
+
+if ($stmt === false) {
+    $logger->error("Failed to prepare recent applications query: " . $conn->error);
+    $browserLogger->log("Failed to prepare recent applications query: " . $conn->error);
+    die("Database error: " . $conn->error);
+}
+
+$stmt->execute();
+$recentApplications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+
+// Get notifications
+$stmt = $conn->prepare("
+    SELECT n.*, u.name as submitted_by
+    FROM notifications n
+    LEFT JOIN admin u ON n.user_id = u.id
+    WHERE n.is_read = FALSE
+    ORDER BY n.created_at DESC
     LIMIT 5
 ");
 
-if ($result) {
-    while ($row = $result->fetch_assoc()) {
-        $recent_applications[] = $row;
-    }
+if ($stmt === false) {
+    $logger->error("Failed to prepare notifications query: " . $conn->error);
+    $browserLogger->log("Failed to prepare notifications query: " . $conn->error);
+    // Don't die here, just set empty notifications
+    $notifications = [];
+} else {
+    $stmt->execute();
+    $notifications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 }
 ?>
 
@@ -71,7 +117,12 @@ if ($result) {
     </div>
 <?php endif; ?>
 
-
+<?php if (isset($_GET['error'])): ?>
+    <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+        <strong>Error!</strong> There was an error processing your application. Please try again.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+<?php endif; ?>
 
 <div class="row mb-4">
     <div class="col-12">
@@ -124,7 +175,7 @@ if ($result) {
                 <div class="stat-icon text-info">
                     <i class="fas fa-exclamation-triangle"></i>
                 </div>
-                <div class="stat-count"><?php echo $stats['missing_docs_applications']; ?></div>
+                <div class="stat-count"><?php echo $stats['missing_document_applications']; ?></div>
                 <div class="stat-title">Missing Document</div>
             </div>
         </div>
@@ -151,88 +202,70 @@ if ($result) {
                 <h5 class="mb-0">Recent Applications</h5>
                 <a href="applications.php" class="btn btn-sm btn-outline-primary">View All</a>
             </div>
-
-
             <div class="card-body p-0">
-                <?php if (count($recent_applications) > 0): ?>
-                    <div class="table-responsive">
-                        <table class="table table-hover mb-0">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Applicant</th>
-                                    <th>Status</th>
-                                    <th>Date</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php $no = 1; ?>
-                                <?php foreach ($recent_applications as $app): ?>
-                                    <tr>
-                                        <td><?php echo $no++; ?></td>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar avatar-sm me-2">
-                                                    <?php
-                                                    $nameParts = explode(' ', $app['name']);
-                                                    $initials = '';
-                                                    foreach ($nameParts as $part) {
-                                                        $initials .= strtoupper(substr($part, 0, 1));
-                                                    }
-                                                    echo $initials;
-                                                    ?>
-                                                </div>
-                                                <div>
-                                                    <div class="fw-bold"><?php echo htmlspecialchars($app['name']); ?></div>
-                                                    <div class="text-muted small"><?php echo htmlspecialchars($app['email']); ?></div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <?php
-                                            $statusClass = '';
-                                            switch ($app['status']) {
-                                                case 'approved':
-                                                    $statusClass = 'badge-approved';
-                                                    break;
-                                                case 'rejected':
-                                                    $statusClass = 'badge-rejected';
-                                                    break;
-                                                case 'missing_docs':
-                                                    $statusClass = 'badge-missing';
-                                                    break;
-                                                default:
-                                                    $statusClass = 'badge-pending';
-                                            }
-                                            ?>
-                                            <span class="badge <?= $statusClass ?>">
-                                                <?= ucfirst(str_replace('_', ' ', $app['status'])) ?>
-                                            </span>
-                                        </td>
-                                        <td><?php echo date('M d, Y', strtotime($app['created_at'])); ?></td>
-                                        <td>
-                                            <a href="view_application.php?id=<?php echo $app['id']; ?>" class="btn btn-sm btn-outline-primary">
-                                                View
-                                            </a>
-                                        </td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-
-                        </table>
-                    </div>
-                <?php else: ?>
-                    <div class="text-center p-4">
-                        <div class="mb-3">
-                            <i class="fas fa-inbox fa-3x text-muted"></i>
-                        </div>
-                        <h5>No applications found</h5>
-                        <p class="text-muted">There are no applications to display at the moment.</p>
-                    </div>
-                <?php endif; ?>
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Sr. No.</th>
+                                <th>Submitted By</th>
+                                <th>Service Type</th>
+                                <th>Status</th>
+                                <th>Created At</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if (empty($recentApplications)): ?>
+                            <tr>
+                                <td colspan="6" class="text-center text-muted py-4">No applications found</td>
+                            </tr>
+                            <?php else: ?>
+                            <?php $srNo = 1; ?>
+                            <?php foreach ($recentApplications as $app): ?>
+                            <tr>
+                                <td><?php echo $srNo++; ?></td>
+                                <td><?php echo htmlspecialchars($app['submitted_by'] ?? 'Unknown'); ?></td>
+                                <td><?php echo htmlspecialchars($app['service_type']); ?></td>
+                                <td>
+                                    <?php
+                                    $statusClass = 'bg-secondary';
+                                    switch ($app['status']) {
+                                        case 'pending':
+                                            $statusClass = 'bg-warning';
+                                            break;
+                                        case 'approved':
+                                            $statusClass = 'bg-success';
+                                            break;
+                                        case 'missing_document':
+                                            $statusClass = 'bg-info';
+                                            break;
+                                        case 'rejected':
+                                            $statusClass = 'bg-danger';
+                                            break;
+                                    }
+                                    ?>
+                                    <span class="badge <?php echo $statusClass; ?>">
+                                        <?php 
+                                        if ($app['status'] === 'missing_document') {
+                                            echo 'Missing Document';
+                                        } else {
+                                            echo ucfirst(str_replace('_', ' ', $app['status']));
+                                        }
+                                        ?>
+                                    </span>
+                                </td>
+                                <td><?php echo date('M d, Y', strtotime($app['created_at'])); ?></td>
+                                <td>
+                                    <a href="view_application.php?id=<?php echo $app['id']; ?>" class="btn btn-sm btn-outline-primary">View</a>
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
         </div>
     </div>
 
@@ -269,11 +302,9 @@ if ($result) {
                         <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newApplicationModal">
                             <i class="fas fa-plus me-1"></i> New Application
                         </button>
-
                         <a href="users.php" class="btn btn-outline-secondary btn-sm">
                             <i class="fas fa-user-plus me-1"></i> Add User
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -281,67 +312,55 @@ if ($result) {
     </div>
 </div>
 
-
 <style>
-    /* Timeline Styles */
-    .timeline {
-        position: relative;
-        padding-left: 2rem;
-    }
-
-    .timeline::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 1.5rem;
-        width: 2px;
-        background-color: #e9ecef;
-    }
-
-    .timeline-item {
-        position: relative;
-        padding-bottom: 1.5rem;
-        padding-left: 2rem;
-    }
-
-    .timeline-item:last-child {
-        padding-bottom: 0;
-    }
-
-    .timeline-icon {
-        position: absolute;
-        left: -1.5rem;
-        top: 0;
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 1;
-    }
-
-    .timeline-content {
-        background: #fff;
-        padding: 1rem;
-        border-radius: 0.5rem;
+    .stat-card {
+        border: none;
         box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        transition: all 0.3s ease;
     }
 
-    .avatar {
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 50%;
-        background-color: #e9ecef;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 600;
+    .stat-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    .stat-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
         color: #6c757d;
     }
-</style>
 
+    .stat-count {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #495057;
+    }
+
+    .stat-title {
+        font-size: 0.875rem;
+        color: #6c757d;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .files-list {
+        max-width: 200px;
+    }
+
+    .files-list .badge {
+        font-size: 0.75rem;
+    }
+
+    .table th {
+        border-top: none;
+        font-weight: 600;
+        color: #495057;
+    }
+
+    .table td {
+        vertical-align: middle;
+    }
+</style>
 
 <!-- New Application Modal -->
 <div class="modal fade" id="newApplicationModal" tabindex="-1" aria-labelledby="newApplicationModalLabel" aria-hidden="true">
@@ -386,6 +405,7 @@ if ($result) {
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                     <button type="submit" class="btn btn-primary">Submit Application</button>
                 </div>
             </form>

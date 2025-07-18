@@ -2,75 +2,28 @@
 require_once '../includes/header.php';
 requireRole(['admin']);
 
-// Simulated user data - in a real application, this would come from a database
-$users = [
-    [
-        'id' => 1,
-        'name' => 'Anjali Kushwah',
-        'email' => 'anjali@email.com',
-        'role' => 'user',
-        'created_at' => '2025-01-15'
-    ],
-    [
-        'id' => 2,
-        'name' => 'Raj Sharma',
-        'email' => 'raj@email.com',
-        'role' => 'staff',
-        'created_at' => '2025-02-20'
-    ],
-    [
-        'id' => 3,
-        'name' => 'Priya Patel',
-        'email' => 'priya@email.com',
-        'role' => 'user',
-        'created_at' => '2025-03-10'
-    ],
-    [
-        'id' => 4,
-        'name' => 'Vikram Singh',
-        'email' => 'vikram@email.com',
-        'role' => 'user',
-        'created_at' => '2025-04-05'
-    ],
-    [
-        'id' => 5,
-        'name' => 'Sneha Gupta',
-        'email' => 'sneha@email.com',
-        'role' => 'staff',
-        'created_at' => '2025-05-18'
-    ],
-    [
-        'id' => 6,
-        'name' => 'Amit Verma',
-        'email' => 'amit@email.com',
-        'role' => 'user',
-        'created_at' => '2025-06-22'
-    ],
-    [
-        'id' => 7,
-        'name' => 'Neha Reddy',
-        'email' => 'neha@email.com',
-        'role' => 'user',
-        'created_at' => '2025-07-01'
-    ],
-    [
-        'id' => 8,
-        'name' => 'Rahul Mehta',
-        'email' => 'rahul@email.com',
-        'role' => 'user',
-        'created_at' => '2025-07-05'
-    ],
-];
+// Get all users from admin table
+$stmt = $conn->prepare("SELECT * FROM admin WHERE role != 'admin'");
+$stmt->execute();
+$users = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+
+// Get all users from users table
+$stmt = $conn->prepare("SELECT * FROM users");
+$stmt->execute();
+$regularUsers = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+
+// Combine users from both tables
+$allUsers = array_merge($users, $regularUsers);
 
 // Handle search
 $searchTerm = isset($_GET['search']) ? strtolower($_GET['search']) : '';
 if ($searchTerm) {
-    $filteredUsers = array_filter($users, function($user) use ($searchTerm) {
+    $filteredUsers = array_filter($allUsers, function($user) use ($searchTerm) {
         return strpos(strtolower($user['name']), $searchTerm) !== false || 
                strpos(strtolower($user['email']), $searchTerm) !== false;
     });
 } else {
-    $filteredUsers = $users;
+    $filteredUsers = $allUsers;
 }
 
 // Handle role filter
@@ -96,6 +49,15 @@ if ($roleFilter && $roleFilter !== 'all') {
             </button>
         </div>
     </div>
+</div>
+
+<div class="container-fluid">
+    <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            User created successfully
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif; ?>
 </div>
 
 <div class="card mb-4">
@@ -160,9 +122,8 @@ if ($roleFilter && $roleFilter !== 'all') {
                                 <td><?= htmlspecialchars($user['email']) ?></td>
                                 <td>
                                     <span class="badge 
-                                        <?= $user['role'] === 'admin' ? 'bg-danger' : 
-                                          ($user['role'] === 'staff' ? 'bg-info' : 'bg-secondary') ?>">
-                                        <?= ucfirst($user['role']) ?>
+                                        <?= isset($user['role']) && $user['role'] === 'staff' ? 'bg-info' : 'bg-secondary' ?>">
+                                        <?= isset($user['role']) ? ucfirst($user['role']) : 'User' ?>
                                     </span>
                                 </td>
                                 <td><?= date('M d, Y', strtotime($user['created_at'])) ?></td>
@@ -201,7 +162,7 @@ if ($roleFilter && $roleFilter !== 'all') {
         
         <div class="d-flex justify-content-between align-items-center mt-4">
             <div class="text-muted">
-                Showing <?= count($filteredUsers) ?> of <?= count($users) ?> users
+                Showing <?= count($filteredUsers) ?> of <?= count($allUsers) ?> users
             </div>
             <nav>
                 <ul class="pagination mb-0">
@@ -224,19 +185,19 @@ if ($roleFilter && $roleFilter !== 'all') {
                 <h5 class="modal-title">Add New User</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form>
+            <form method="POST" action="process_user.php">
                 <div class="modal-body">
                     <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" placeholder="Enter full name" required>
+                        <input type="text" class="form-control" name="name" placeholder="Enter full name" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email Address</label>
-                        <input type="email" class="form-control" placeholder="Enter email address" required>
+                        <input type="email" class="form-control" name="email" placeholder="Enter email address" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Role</label>
-                        <select class="form-select" required>
+                        <select class="form-select" name="role" required>
                             <option value="">Select role</option>
                             <option value="staff">Staff</option>
                             <option value="user">User</option>
@@ -245,7 +206,7 @@ if ($roleFilter && $roleFilter !== 'all') {
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Password</label>
-                            <input type="password" class="form-control" placeholder="Create password" required>
+                            <input type="password" class="form-control" name="password" placeholder="Create password" required>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Confirm Password</label>
@@ -263,7 +224,7 @@ if ($roleFilter && $roleFilter !== 'all') {
 </div>
 
 <!-- Edit User Modal -->
-<div class="modal fade" id="editUserModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -321,25 +282,129 @@ if ($roleFilter && $roleFilter !== 'all') {
     </div>
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <script>
+    // Configure Toastr after it's loaded
+    $(document).ready(function() {
+        toastr.options = {
+            closeButton: true,
+            progressBar: true,
+            positionClass: 'toast-top-right',
+            timeOut: 3000,
+            extendedTimeOut: 1000,
+            showMethod: 'slideDown',
+            hideMethod: 'slideUp'
+        };
+    });
+</script>
+
+<script>
+    // Toast notification function using Toastr
+    function showToast(message, type = 'success') {
+        if (type === 'success') {
+            toastr.success(message);
+        } else {
+            toastr.error(message);
+        }
+    }
+
+    // Add User Form Submission
+    document.querySelector('#addUserModal form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        try {
+            const response = await fetch('../php/process_user.php', {
+                method: 'POST',
+                body: formData
+            });
+            
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                showToast(`User created successfully`);
+                // Close modal
+                const modal = bootstrap.Modal.getInstance(document.getElementById('addUserModal'));
+                modal.hide();
+                // Reload page after a short delay to ensure toast is visible
+                setTimeout(() => {
+                    location.reload();
+                }, 2000); // 2 seconds delay
+            } else {
+                showToast(result.message || 'An error occurred', 'error');
+            }
+        } catch (error) {
+            showToast('Error creating user. Please try again.', 'error');
+        }
+    });
+
     // Edit User Modal Handler
-    document.getElementById('editUserModal').addEventListener('show.bs.modal', function(event) {
+    document.getElementById('editUserModal').addEventListener('show.bs.modal', async function(event) {
         const button = event.relatedTarget;
         const userId = button.getAttribute('data-user-id');
         
-        const user = {
-            id: userId,
-            name: "Anjali Kushwah",
-            email: "anjali@email.com",
-            role: "admin",
-            status: "active"
-        };
+        try {
+            // Fetch user data from server
+            const response = await fetch(`../php/get_user.php?user_id=${encodeURIComponent(userId)}`);
+            const userData = await response.json();
+            
+            if (userData.success) {
+                const user = userData.user;
+                document.getElementById('editUserId').value = user.id;
+                document.getElementById('editUserName').value = user.name;
+                document.getElementById('editUserEmail').value = user.email;
+                document.getElementById('editUserRole').value = user.role || '';
+                document.getElementById('editUserStatus').value = user.status;
+            } else {
+                showToast('Error loading user data', 'error');
+            }
+        } catch (error) {
+            showToast('Error loading user data. Please try again.', 'error');
+        }
+    });
+
+    // Edit User Form Submission
+    document.querySelector('#editUserModal form').addEventListener('submit', async function(e) {
+        e.preventDefault();
         
-        document.getElementById('editUserId').value = user.id;
-        document.getElementById('editUserName').value = user.name;
-        document.getElementById('editUserEmail').value = user.email;
-        document.getElementById('editUserRole').value = user.role;
-        document.getElementById('editUserStatus').value = user.status;
+        const formData = new FormData(this);
+        const userId = formData.get('user_id');
+        
+        try {
+            // Show loading state
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Updating...';
+            
+            const response = await fetch('../php/process_edit_user.php', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                showToast(result.message, 'success');
+                // Navigate to users page after successful update
+                window.location.href = 'users.php';
+            } else {
+                showToast(result.message, 'error');
+            }
+        } catch (error) {
+            showToast('Error updating user. Please try again.', 'error');
+        } finally {
+            // Restore button state
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalText;
+        }
     });
     
     // Delete User Modal Handler
@@ -350,11 +415,45 @@ if ($roleFilter && $roleFilter !== 'all') {
     });
     
     // Handle delete confirmation
-    document.querySelector('#deleteUserModal .btn-danger').addEventListener('click', function() {
+    document.querySelector('#deleteUserModal .btn-danger').addEventListener('click', async function() {
         const userId = this.dataset.userId;
-        alert(`User with ID ${userId} would be deleted in a real application`);
-        const modal = bootstrap.Modal.getInstance(document.getElementById('deleteUserModal'));
-        modal.hide();
+        
+        try {
+            // Show loading state
+            const modal = bootstrap.Modal.getInstance(document.getElementById('deleteUserModal'));
+            modal.hide();
+            
+            // Disable the delete button temporarily
+            const deleteButton = this;
+            deleteButton.disabled = true;
+            deleteButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Deleting...';
+            
+            const response = await fetch('../php/process_delete_user.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'user_id=' + encodeURIComponent(userId)
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                showToast(result.message, 'success');
+                // Reload page immediately after successful deletion
+                window.location.href = 'users.php';
+            } else {
+                showToast(result.message, 'error');
+                // Re-enable button and restore text if there's an error
+                deleteButton.disabled = false;
+                deleteButton.innerHTML = 'Delete';
+            }
+        } catch (error) {
+            showToast('Error deleting user. Please try again.', 'error');
+            // Re-enable button and restore text on error
+            deleteButton.disabled = false;
+            deleteButton.innerHTML = 'Delete';
+        }
     });
 </script>
 
@@ -385,6 +484,17 @@ if ($roleFilter && $roleFilter !== 'all') {
     .pagination .page-item.active .page-link {
         background-color: #0d6efd;
         border-color: #0d6efd;
+    }
+    
+    .toast {
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+    }
+    
+    .toast-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #dee2e6;
     }
 </style>
 

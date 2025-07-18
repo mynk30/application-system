@@ -278,7 +278,7 @@ ob_start();
             <?php endif; ?>
 
             <li>
-                <a href="/application-system/user/profile.php">
+                <a href="/application-system/admin/profile.php">
                     <i class="fas fa-user"></i> My Profile
                 </a>
             </li>

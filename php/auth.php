@@ -6,29 +6,39 @@ require_once __DIR__ . '/db.php';
 
 function authenticateUser($email, $password) {
     global $conn;
+    // Initialize logger
+    require_once 'Logger.php';
+    $logger = Logger::getInstance();
     
-    $email = $conn->real_escape_string($email);
-    $sql = "SELECT id, name, email, phone, address, password, role, status FROM users WHERE email = ?";
+    if (empty($email) || empty($password)) {
+        $logger->warning("Authentication attempt with empty credentials");
+        return ["error" => "Email and password are required."];
+    }
 
-    
-    if ($stmt = $conn->prepare($sql)) {
+    try {
+        // Prepare and execute the statement for the 'admin' table
+        $stmt = $conn->prepare("SELECT * FROM admin WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $result = $stmt->get_result();
-        
+
         if ($result->num_rows === 1) {
             $user = $result->fetch_assoc();
-            
-            // Verify password
-            if (password_verify($password, $user['password'])) {
+            $logger->info("User found: " . $user['name']);
+
+            // Verify hashed password
+            if ($password === $user['password']) {
+                $logger->info("Password verified successfully");
+                // Check user status
                 if ($user['status'] === 'active') {
+                    // Regenerate session ID
+                    session_regenerate_id(true);
+
                     // Set session variables
                     $_SESSION['user_id'] = $user['id'];
+                    $_SESSION['user_name'] = $user['name'];
                     $_SESSION['user_email'] = $user['email'];
                     $_SESSION['user_role'] = $user['role'];
-                    $_SESSION['user_name'] = $user['name'];
-                    $_SESSION['user_phone'] = $user['phone'];
-                    $_SESSION['user_address'] = $user['address'];
 
                     // Redirect based on role
                     switch ($user['role']) {
@@ -44,16 +54,17 @@ function authenticateUser($email, $password) {
                     }
                     exit();
                 } else {
-                    return "Your account is inactive. Please contact support.";
+                    return ["error" => "Your account is inactive. Please contact support."];
                 }
             }
         }
         
         // If we get here, login failed
-        return "Invalid email or password.";
+        return ["error" => "Invalid email or password."];
+    } catch (Exception $e) {
+        $logger->error("Authentication error: " . $e->getMessage());
+        return ["error" => "An error occurred during authentication. Please try again."];
     }
-    
-    return "Something went wrong. Please try again later.";
 }
 
 function isLoggedIn() {
