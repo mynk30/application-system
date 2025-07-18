@@ -1,8 +1,10 @@
 <?php
 require_once 'db.php';
+require_once 'Logger.php';
 
 function registerUser($name, $email, $password, $confirm_password) {
     global $conn;
+    $logger = Logger::getInstance();
     
     // Validate input
     $errors = [];
@@ -24,11 +26,24 @@ function registerUser($name, $email, $password, $confirm_password) {
     }
     
     // Check if email already exists
-    $email = $conn->real_escape_string($email);
-    $result = $conn->query("SELECT id FROM users WHERE email = '$email'");
-    
-    if ($result->num_rows > 0) {
-        $errors[] = "Email already registered.";
+    try {
+        // Use SQL command directly instead of fetching
+        $sql = "SELECT COUNT(*) as count FROM admin WHERE email = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+        
+        if ($row['count'] > 0) {
+            $errors[] = "Email already registered.";
+        }
+    } catch (Exception $e) {
+        $logger->error("Database error checking email: " . $e->getMessage());
+        return [
+            'success' => false,
+            'errors' => ['Database error occurred. Please try again.']
+        ];
     }
     
     if (!empty($errors)) {
@@ -38,45 +53,51 @@ function registerUser($name, $email, $password, $confirm_password) {
         ];
     }
     
-    // Hash password
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-    
-    // Determine role based on email domain (example: admin@example.com, staff@example.com)
-    $role = 'user'; // Default role
-    $email_parts = explode('@', $email);
-    $domain = strtolower(end($email_parts));
-    
-    if (strpos($domain, 'admin.') === 0) {
-        $role = 'admin';
-    } elseif (strpos($domain, 'staff.') === 0) {
-        $role = 'staff';
-    }
-    
-    // Insert user into database
-    $name = $conn->real_escape_string($name);
-    $sql = "INSERT INTO users (name, email, password, role, status, created_at) 
-            VALUES (?, ?, ?, ?, 'active', NOW())";
-    
-    if ($stmt = $conn->prepare($sql)) {
-        $stmt->bind_param("ssss", $name, $email, $hashed_password, $role);
+    try {
+        // Start transaction
+        $conn->begin_transaction();
         
-        if ($stmt->execute()) {
-            return [
-                'success' => true,
-                'message' => 'Registration successful! You can now login.'
-            ];
+        // Hash password
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        
+        // Insert admin into database
+        $sql = "INSERT INTO admin (name, email, password, role, status, created_at) 
+                VALUES (?, ?, ?, ?, 'active', NOW())";
+        
+        if ($stmt = $conn->prepare($sql)) {
+            $stmt->bind_param("ssss", $name, $email, $hashed_password, 'admin');
+            
+            if ($stmt->execute()) {
+                $conn->commit();
+                $logger->info("Admin registered successfully: " . $email);
+                return [
+                    'success' => true,
+                    'message' => 'Registration successful! You can now login.'
+                ];
+            } else {
+                $conn->rollback();
+                $logger->error("Registration failed: " . $conn->error);
+                return [
+                    'success' => false,
+                    'errors' => ['Registration failed. Please try again.']
+                ];
+            }
         } else {
+            $conn->rollback();
+            $logger->error("Failed to prepare statement: " . $conn->error);
             return [
                 'success' => false,
-                'errors' => ['Registration failed. Please try again.']
+                'errors' => ['Failed to prepare database statement. Please try again.']
             ];
         }
+    } catch (Exception $e) {
+        $conn->rollback();
+        $logger->error("Registration error: " . $e->getMessage());
+        return [
+            'success' => false,
+            'errors' => ['An error occurred during registration. Please try again.']
+        ];
     }
-    
-    return [
-        'success' => false,
-        'errors' => ['Something went wrong. Please try again.']
-    ];
 }
 
 // Handle form submission

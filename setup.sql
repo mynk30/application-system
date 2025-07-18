@@ -8,8 +8,7 @@ CREATE TABLE IF NOT EXISTS users (
     name VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    role ENUM('admin', 'staff', 'user') NOT NULL DEFAULT 'user',
-    status ENUM('active', 'inactive', 'suspended') NOT NULL DEFAULT 'active',
+    status ENUM('active', 'inactive') NOT NULL DEFAULT 'active',
     reset_token VARCHAR(255) DEFAULT NULL,
     reset_token_expires DATETIME DEFAULT NULL,
     last_login DATETIME DEFAULT NULL,
@@ -18,45 +17,64 @@ CREATE TABLE IF NOT EXISTS users (
     INDEX idx_email (email)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Applications table
-CREATE TABLE IF NOT EXISTS applications (
+create table admin(
+    id int primary key auto_increment,
+    name varchar(100) not null,
+    email varchar(100) not null unique,
+    password varchar(255) not null,
+    role enum('admin','staff','user') not null default 'user',
+    status enum('active','inactive') not null default 'active',
+    reset_token varchar(255) default null,
+    reset_token_expires datetime default null,
+    last_login datetime default null,
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp on update current_timestamp,
+    index idx_email (email)
+)engine=innodb default charset=utf8mb4 collate=utf8mb4_unicode_ci;
+
+-- insert into admin with email "mayanksoni920@gmail.com" and password "Abcd@12345", name "Mayank Soni", role "admin", status "active"  
+INSERT INTO admin (name, email, password, role, status) VALUES 
+('Mayank Soni', 'mayanksoni920@gmail.com', 'Abcd@12345', 'admin', 'active');
+
+-- insert another user with another email and password and name "John Doe", role "user", status "active"  
+INSERT INTO admin (name, email, password, role, status) VALUES 
+('John Doe', 'johndoe@gmail.com', 'Abcd@12345', 'staff', 'active');
+
+-- files table
+CREATE TABLE files (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    original_name VARCHAR(255) NOT NULL,
+    file_name VARCHAR(255) NOT NULL,
+    file_path VARCHAR(500) NOT NULL,
+    file_size INT NOT NULL,
+    model_type VARCHAR(50) NOT NULL,
+    model_id INT NOT NULL,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_model (model_type, model_id)
+);
+
+-- applications table
+CREATE TABLE applications (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
-    application_number VARCHAR(50) UNIQUE NOT NULL,
-    status ENUM('pending', 'in_review', 'approved', 'rejected', 'missing_docs') NOT NULL DEFAULT 'pending',
-    document_paths TEXT DEFAULT NULL,
-    notes TEXT DEFAULT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    address TEXT NOT NULL,
+    service_type VARCHAR(50) NOT NULL,
+    status ENUM('pending', 'approved', 'missing_document', 'rejected') NOT NULL DEFAULT 'pending',
     reviewed_by INT DEFAULT NULL,
-    reviewed_at DATETIME DEFAULT NULL,
+    reviewed_at TIMESTAMP NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    FOREIGN KEY (reviewed_by) REFERENCES users(id) ON DELETE SET NULL,
+    FOREIGN KEY (user_id) REFERENCES admin(id) ON DELETE CASCADE,
+    FOREIGN KEY (reviewed_by) REFERENCES admin(id) ON DELETE SET NULL,
+    INDEX idx_status (status),
     INDEX idx_user_id (user_id),
-    INDEX idx_status (status)
+    INDEX idx_reviewed_by (reviewed_by)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Notifications table
-CREATE TABLE IF NOT EXISTS notifications (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    title VARCHAR(255) NOT NULL,
-    message TEXT NOT NULL,
-    is_read BOOLEAN DEFAULT FALSE,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    INDEX idx_user_id (user_id, is_read)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- Create admin user (password: admin123)
-INSERT INTO users (name, email, password, role) VALUES 
-('Admin User', 'admin@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');
-
--- Create staff user (password: staff123)
-INSERT INTO users (name, email, password, role) VALUES 
-('Staff Member', 'staff@example.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'staff');
-
--- Create sample application
-INSERT INTO applications (user_id, application_number, status) VALUES 
-(1, 'APP20230001', 'approved'),
-(2, 'APP20230002', 'pending');
+-- Insert sample applications
+INSERT INTO applications (user_id, name, email, phone, address, service_type, status) VALUES
+(1, 'Mayank Soni', 'mayanksoni920@gmail.com', '1234567890', '123 Main St, City', 'Passport', 'pending'),
+(2, 'John Doe', 'johndoe@gmail.com', '0987654321', '456 Other St, City', 'Visa', 'pending');

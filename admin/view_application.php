@@ -19,8 +19,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['status'])) {
     exit;
 }
 
-// Get application details from `applications` table directly
-$stmt = $conn->prepare("SELECT * FROM applications WHERE id = ?");
+// Get application details and associated files
+$stmt = $conn->prepare("
+    SELECT a.*, 
+           GROUP_CONCAT(f.original_name ORDER BY f.uploaded_at DESC SEPARATOR ', ') as uploaded_files
+    FROM applications a
+    LEFT JOIN files f ON f.model_type = 'application' AND f.model_id = a.id
+    WHERE a.id = ?
+    GROUP BY a.id
+");
 $stmt->bind_param("i", $appId);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -94,7 +101,7 @@ if (!$application) {
                             case 'rejected':
                                 $statusClass = 'badge bg-danger';
                                 break;
-                            case 'missing_docs':
+                            case 'missing_document':
                                 $statusClass = 'badge bg-warning text-dark';
                                 break;
                             default:
@@ -118,14 +125,12 @@ if (!$application) {
                 <h5 class="mb-0">Documents Uploaded</h5>
             </div>
             <div class="card-body">
-                <?php
-                $uploadedDocuments = explode(',', $application['documents']);
-                if (!empty($uploadedDocuments[0])): ?>
+                <?php if (!empty($application['uploaded_files'])): ?>
                     <ul class="list-group">
-                        <?php foreach ($uploadedDocuments as $docName): ?>
+                        <?php foreach (explode(', ', $application['uploaded_files']) as $docName): ?>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                 <?= htmlspecialchars($docName) ?>
-                                <a href="../uploads/<?= urlencode($docName) ?>" target="_blank" class="btn btn-sm btn-outline-primary">
+                                <a href="download_file.php?id=<?= $appId ?>&file=<?= urlencode($docName) ?>" class="btn btn-sm btn-outline-primary">
                                     <i class="fas fa-download"></i> Download
                                 </a>
                             </li>
@@ -154,7 +159,7 @@ if (!$application) {
                             <option value="pending" <?= $application['status'] == 'pending' ? 'selected' : '' ?>>Pending</option>
                             <option value="approved" <?= $application['status'] == 'approved' ? 'selected' : '' ?>>Approved</option>
                             <option value="rejected" <?= $application['status'] == 'rejected' ? 'selected' : '' ?>>Rejected</option>
-                            <option value="missing_docs" <?= $application['status'] == 'missing_docs' ? 'selected' : '' ?>>Missing Documents</option>
+                            <option value="missing_document" <?= $application['status'] == 'missing_document' ? 'selected' : '' ?>>Missing Documents</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Update Status</button>
