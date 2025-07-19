@@ -3,30 +3,72 @@ require_once '../php/config.php';
 require_once '../includes/header.php';
 requireRole(['admin']);
 
+// Ensure uploads directory exists and has proper permissions
+$base_upload_dir = dirname(dirname(__FILE__)) . '/uploads';
+$applications_upload_dir = $base_upload_dir . '/applications';
+
+// Create directories if they don't exist
+if (!file_exists($base_upload_dir)) {
+    mkdir($base_upload_dir, 0755, true);
+}
+if (!file_exists($applications_upload_dir)) {
+    mkdir($applications_upload_dir, 0755, true);
+}
+
+// Set permissions (only if on Linux/Unix)
+if (strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN') {
+    chmod($base_upload_dir, 0755);
+    chmod($applications_upload_dir, 0755);
+}
+
 // Function to delete a file
 function deleteFile($file_id, $conn) {
-    // Get file info before deleting
-    $stmt = $conn->prepare("SELECT * FROM files WHERE id = ?");
-    $stmt->bind_param("i", $file_id);
-    $stmt->execute();
-    $file = $stmt->get_result()->fetch_assoc();
-    $stmt->close();
+    // Start transaction
+    $conn->begin_transaction();
     
-    if ($file) {
+    try {
+        // Get file info before deleting
+        $stmt = $conn->prepare("SELECT * FROM files WHERE id = ?");
+        $stmt->bind_param("i", $file_id);
+        $stmt->execute();
+        $file = $stmt->get_result()->fetch_assoc();
+        $stmt->close();
+        
+        if (!$file) {
+            throw new Exception('File not found');
+        }
+        
         // Delete file from server
         if (file_exists($file['file_path'])) {
-            unlink($file['file_path']);
+            if (!unlink($file['file_path'])) {
+                throw new Exception('Failed to delete file from server');
+            }
+            
+            // Try to remove the directory if it's empty
+            $file_dir = dirname($file['file_path']);
+            if (is_dir($file_dir) && count(glob($file_dir . '/*')) === 0) {
+                rmdir($file_dir);
+            }
         }
         
         // Delete record from database
         $stmt = $conn->prepare("DELETE FROM files WHERE id = ?");
         $stmt->bind_param("i", $file_id);
-        $stmt->execute();
+        if (!$stmt->execute()) {
+            throw new Exception('Failed to delete file record from database');
+        }
         $stmt->close();
         
+        // Commit transaction
+        $conn->commit();
         return true;
+        
+    } catch (Exception $e) {
+        // Rollback transaction on error
+        $conn->rollback();
+        error_log('Error deleting file: ' . $e->getMessage());
+        return false;
     }
-    return false;
 }
 
 // Check if ID is provided
@@ -112,9 +154,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
         if ($stmt->execute()) {
             // Handle file uploads
             if (!empty($_FILES['documents']['name'][0])) {
-                $upload_dir = '../uploads/applications/' . $application_id . '/';
+                $upload_dir = $applications_upload_dir . '/' . $application_id . '/';
                 if (!file_exists($upload_dir)) {
-                    mkdir($upload_dir, 0777, true);
+                    if (!mkdir($upload_dir, 0755, true)) {
+                        throw new Exception('Failed to create upload directory. Please check permissions.');
+                    }
+                    // Set directory permissions (for Linux/Unix)
+                    if (strtoupper(substr(PHP_OS, 0, 3)) !== 'WIN') {
+                        chmod($upload_dir, 0755);
+                    }
                 }
                 
                 foreach ($_FILES['documents']['tmp_name'] as $key => $tmp_name) {

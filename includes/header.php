@@ -244,18 +244,18 @@ ob_start();
             <?php endif; ?>
 
             <?php if ($_SESSION['user_role'] === 'admin' || $_SESSION['user_role'] === 'staff'): ?>
-                <li class="<?php echo (strpos($_SERVER['PHP_SELF'], 'enquiry_contact') !== false || strpos($_SERVER['PHP_SELF'], 'enquiry_service') !== false) ? 'active' : ''; ?>">
+                <li class="<?php echo (strpos($_SERVER['PHP_SELF'], 'inquiry_contact') !== false || strpos($_SERVER['PHP_SELF'], 'inquiry_service') !== false) ? 'active' : ''; ?>">
                     <a href="#enquirySubmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-envelope"></i> Enquiry Form
+                        <i class="fas fa-envelope"></i> Inquiry Form
                     </a>
                     <ul class="collapse list-unstyled ms-3" id="enquirySubmenu">
                         <li>
-                            <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/enquiry_contact.php">
+                            <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/inquiry_contact.php">
                                 <i class="fas fa-phone"></i> Contact Item
                             </a>
                         </li>
                         <li>
-                            <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/enquiry_service.php">
+                            <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/inquiry_service.php">
                                 <i class="fas fa-tools"></i> Service Item
                             </a>
                         </li>

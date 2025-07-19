@@ -3,6 +3,9 @@ session_start();
 require_once '../php/config.php';
 global $logger, $browserLogger, $conn;
 
+$logger->info('Staff dashboard accessed');
+$browserLogger->log('Staff dashboard accessed' . $_SESSION['user_name']);
+
 // Initialize session if not already started
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
@@ -28,6 +31,10 @@ $stats = [
 // Get staff ID from session
 $staff_id = $_SESSION['user_id'] ?? 0;
 
+// Debug logging
+$logger->info("Staff ID from session: " . $staff_id);
+$logger->info("Session data: " . print_r($_SESSION, true));
+
 // Get applications assigned to this staff member
 $assigned_to_me_stmt = $conn->prepare("
     SELECT 
@@ -36,8 +43,7 @@ $assigned_to_me_stmt = $conn->prepare("
         SUM(CASE WHEN status = 'approved' THEN 1 ELSE 0 END) as approved,
         SUM(CASE WHEN status = 'missing_document' THEN 1 ELSE 0 END) as missing_docs,
         SUM(CASE WHEN status = 'rejected' THEN 1 ELSE 0 END) as rejected
-    FROM applications
-    WHERE reviewed_by = ?
+    FROM applications bhi 
 ");
 
 if ($assigned_to_me_stmt === false) {
@@ -46,7 +52,7 @@ if ($assigned_to_me_stmt === false) {
     die("Database error: " . $conn->error);
 }
 
-$assigned_to_me_stmt->bind_param("i", $staff_id);
+// $assigned_to_me_stmt->bind_param("i", $staff_id);
 
 if (!$assigned_to_me_stmt->execute()) {
     $logger->error("Failed to execute statistics query: " . $assigned_to_me_stmt->error);
@@ -55,7 +61,9 @@ if (!$assigned_to_me_stmt->execute()) {
 }
 
 $result = $assigned_to_me_stmt->get_result();
+$logger->info("Number of applications found: " . $result->num_rows);
 if ($row = $result->fetch_assoc()) {
+    $logger->info("Application stats: " . print_r($row, true));
     $stats['total_applications'] = $row['total'];
     $stats['pending_applications'] = $row['pending'];
     $stats['approved_applications'] = $row['approved'];
@@ -68,13 +76,8 @@ $assigned_to_me_stmt->close();
 // Get recent applications
 $recentApplications = [];
 $stmt = $conn->prepare("
-    SELECT 
-        a.*, 
-        u.name as submitted_by
-    FROM applications a
-    LEFT JOIN users u ON a.user_id = u.id
-    WHERE a.reviewed_by = ?
-    ORDER BY a.created_at DESC
+    SELECT * FROM applications
+    ORDER BY created_at DESC
     LIMIT 10
 ");
 
@@ -84,9 +87,10 @@ if ($stmt === false) {
     die("Database error: " . $conn->error);
 }
 
-$stmt->bind_param("i", $staff_id);
+// $stmt->bind_param("i", $staff_id);
 $stmt->execute();
 $recentApplications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+$logger->info("Recent applications: " . print_r($recentApplications, true));
 
 // Calculate approval rate
 $total_processed = $stats['approved_applications'] + $stats['rejected_applications'];
@@ -218,7 +222,7 @@ $total_apps = $assigned_to_me; // For staff, total apps are just the ones assign
                             <?php foreach ($recentApplications as $app): ?>
                             <tr>
                                 <td><?php echo $srNo++; ?></td>
-                                <td><?php echo htmlspecialchars($app['submitted_by'] ?? 'Unknown'); ?></td>
+                                <td><?php echo htmlspecialchars($app['name'] ?? 'Unknown'); ?></td>
                                 <td><?php echo htmlspecialchars($app['service_type']); ?></td>
                                 <td>
                                     <?php

@@ -1,6 +1,9 @@
 <?php
 require_once '../includes/header.php';
 requireRole(['staff']);
+require_once '../php/config.php';
+global $logger, $browserLogger, $conn;
+$logger->info('Accessed contact enquiries page');
 
 $pageTitle = 'Contact Enquiries';
 ?>

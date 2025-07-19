@@ -78,3 +78,14 @@ CREATE TABLE applications (
 INSERT INTO applications (user_id, name, email, phone, address, service_type, status) VALUES
 (1, 'Anjali Kushwaha', 'analikushwaha@gmail.com', '1234567890', '123 Main St, City', 'Passport', 'pending'),
 (2, 'John Doe', 'johndoe@gmail.com', '0987654321', '456 Other St, City', 'Visa', 'pending');
+
+    //sql query to create tabel service_form
+        // CREATE TABLE service_form (      
+        //     id INT(11) AUTO_INCREMENT PRIMARY KEY,
+        //     name VARCHAR(100) NOT NULL,      
+        //     email VARCHAR(100) NOT NULL,
+        //     mobile VARCHAR(15) NOT NULL,
+        //     bname VARCHAR(100) NOT NULL,
+        //     service VARCHAR(100) NOT NULL,
+        //     message TEXT NOT NULL
+        // );
