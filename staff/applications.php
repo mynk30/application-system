@@ -4,15 +4,12 @@ requireRole(['staff']);
 
 // Get applications assigned to the current staff member
 $sql = "
-    SELECT a.id, a.name, a.email, a.status, a.created_at, a.service_type
-    FROM applications a
-    WHERE a.reviewed_by = ?
-    ORDER BY a.created_at DESC
+    SELECT id, name, email, service_type, status, created_at 
+    FROM applications 
+    ORDER BY created_at DESC
 ";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $_SESSION['user_id']);
-$stmt->execute();
-$result = $stmt->get_result();
+$result = $conn->query($sql); 
+
 ?>
 
 <div class="row mb-4">
@@ -48,8 +45,8 @@ $result = $stmt->get_result();
                                 <td><?= $no++; ?></td>
                                 <td><?= htmlspecialchars($row['name']) ?></td>
                                 <td>
-                                    <span class="badge bg-info text-dark">
-                                        <?= htmlspecialchars($row['service_type']) ?>
+                                    <span class="text-dark">
+                                        <?= htmlspecialchars($row['service_type']) ?? "Unknown" ?>
                                     </span>
                                 </td>
                                 <td>
@@ -75,10 +72,24 @@ $result = $stmt->get_result();
                                 </td>
                                 <td><?= date('M d, Y', strtotime($row['created_at'])) ?></td>
                                 <td>
-                                    <a href="view_application.php?id=<?= $row['id'] ?>" 
-                                       class="btn btn-sm btn-outline-primary">
-                                        View
-                                    </a>
+                                    <div class="btn-group" role="group">
+                                        <a href="view_application.php?id=<?= $row['id'] ?>" 
+                                           class="btn btn-sm btn-outline-primary" 
+                                           title="View">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="edit_application.php?id=<?= $row['id'] ?>" 
+                                           class="btn btn-sm btn-outline-warning"
+                                           title="Edit">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <button type="button" 
+                                                class="btn btn-sm btn-outline-danger" 
+                                                onclick="confirmDelete(<?= $row['id'] ?>, '<?= addslashes(htmlspecialchars($row['name'])) ?>')"
+                                                title="Delete">
+                                            <i class="fas fa-trash"></i>
+                                        </button>
+                                    </div>
                                 </td>
                             </tr>
                         <?php endwhile; ?>
@@ -98,5 +109,66 @@ $result = $stmt->get_result();
         </div>
     </div>
 </div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete the application for <span id="deleteAppName" class="fw-bold"></span>?
+                This action cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let applicationToDelete = null;
+let applicationNameToDelete = '';
+
+function confirmDelete(id, name) {
+    applicationToDelete = id;
+    applicationNameToDelete = name;
+    document.getElementById('deleteAppName').textContent = name;
+    const modal = new bootstrap.Modal(document.getElementById('deleteModal'));
+    modal.show();
+}
+
+document.getElementById('confirmDeleteBtn').addEventListener('click', function() {
+    if (!applicationToDelete) return;
+    
+    fetch(`delete_application.php?id=${applicationToDelete}`, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Close the modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('deleteModal'));
+            modal.hide();
+            
+            // Show success message and reload
+            window.location.href = 'applications.php?success=' + encodeURIComponent('Application deleted successfully');
+        } else {
+            alert('Error deleting application: ' + (data.message || 'Unknown error'));
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error deleting application. Please try again.');
+    });
+});
+</script>
 
 <?php require_once '../includes/footer.php'; ?>

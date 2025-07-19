@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Common functionality for all pages
     initializeTooltips();
     handleSidebarToggle();
+    initializeDropdowns();
     
     // Page-specific initialization
     const currentPage = window.location.pathname.split('/').pop();
@@ -33,6 +34,15 @@ document.addEventListener('DOMContentLoaded', function() {
  * COMMON FUNCTIONS (Used across multiple pages)
  * ===========================================
  */
+
+// Initialize dropdown menus
+function initializeDropdowns() {
+    // Initialize all dropdown toggles
+    const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+    const dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl);
+    });
+}
 
 // Initialize Bootstrap tooltips
 function initializeTooltips() {

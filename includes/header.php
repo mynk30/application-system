@@ -279,11 +279,21 @@ ob_start();
                 </li>
             <?php endif; ?>
 
-            <li>
+
+                <?php if (in_array($_SESSION['user_role'], ['admin', 'staff'])): ?>
+                <li>
+                    <a href="/application-system/<?php echo ($_SESSION['user_role'] === 'admin') ? 'admin' : 'staff'; ?>/profile.php">
+                        <i class="fas fa-user"></i> My Profile
+                    </a>
+                </li>
+            <?php endif; ?>
+
+
+            <!-- <li>
                 <a href="/application-system/admin/profile.php">
                     <i class="fas fa-user"></i> My Profile
                 </a>
-            </li>
+            </li> -->
 
             <li>
                 <a href="/application-system/php/logout.php">
@@ -354,11 +364,9 @@ ob_start();
         </nav>
 
         <!-- Page Content -->
-        <div class="container-fluid py-4">
+        <div class="container-fluid py-4"></div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

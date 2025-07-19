@@ -1,6 +1,6 @@
 <?php
 // Start session at the very beginning
-session_start();
+// session_start();
 
 // Autoload all required classes
 spl_autoload_register(function ($class) {

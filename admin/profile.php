@@ -1,6 +1,6 @@
 <?php
 require_once '../php/auth.php';
-requireRole('admin');
+requireRole(['admin']);
 
 require_once '../php/db.php';
 

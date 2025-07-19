@@ -43,7 +43,7 @@ $assigned_to_me_stmt = $conn->prepare("
         SUM(CASE WHEN status = 'approved' THEN 1 ELSE 0 END) as approved,
         SUM(CASE WHEN status = 'missing_document' THEN 1 ELSE 0 END) as missing_docs,
         SUM(CASE WHEN status = 'rejected' THEN 1 ELSE 0 END) as rejected
-    FROM applications bhi 
+    FROM applications 
 ");
 
 if ($assigned_to_me_stmt === false) {
