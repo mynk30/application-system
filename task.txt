@@ -1,0 +1,12 @@
+ADMIN 
+admin profile update and preview
+staff profile update and preview
+header drop down
+-password update
+
+
+FRONTEND
+user application and update application and add new application
+upload document
+header drop down
+-password update
