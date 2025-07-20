@@ -8,6 +8,7 @@ $logger = Logger::getInstance();
 error_log('Session contents: ' . print_r($_SESSION, true));
 $logger->info('Session contents: ' . print_r($_SESSION, true));
 
+
 // For development: Display session contents on screen (comment out in production)
 // echo '<pre>' . print_r($_SESSION, true) . '</pre>';
 
@@ -20,8 +21,8 @@ if (isset($_SESSION['user_id'])) {
         case 'staff':
             header("Location: /application-system/staff/dashboard.php");
             break;
-        case 'user':
-            header("Location: /application-system/user/dashboard.php");
+        default:
+            $logger->error('Unknown user role: ' . $_SESSION['user_role']);
             break;
     }
     exit();
@@ -128,15 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <button type="submit" class="btn btn-primary btn-login">Sign In</button>
                 </div>
             </form>
-            
-            <!-- <div class="form-footer">
-                <p class="mb-1">
-                    <a href="forgot_password.php" class="text-decoration-none">Forgot password?</a>
-                </p>
-                <p class="mb-0">
-                    Don't have an account? <a href="register.php" class="text-decoration-none">Sign up</a>
-                </p>
-            </div> -->
+          
         </div>
     </div>
 

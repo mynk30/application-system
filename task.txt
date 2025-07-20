@@ -1,6 +1,6 @@
 ADMIN 
-admin profile update and preview
-staff profile update and preview
+admin profile update and preview - DONE
+staff profile update and preview - DONE
 header drop down
 -password update
 
@@ -10,3 +10,15 @@ user application and update application and add new application
 upload document
 header drop down
 -password update
+
+======================================
+
+PROFILE 
+remove profile photo / upload profile photo
+
+
+=====================================
+
+STUDY:
+JSON
+SESSION

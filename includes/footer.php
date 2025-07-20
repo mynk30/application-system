@@ -47,6 +47,8 @@
                     alert.style.display = 'none';
                 }
             }, 50);
+        });
+    })
         document.addEventListener('click', function(event) {
             const sidebar = document.querySelector('.sidebar');
             const sidebarToggle = document.getElementById('sidebarToggle');
@@ -58,6 +60,7 @@
                 sidebar.classList.remove('active');
             }
         });
+
         
         // Auto-hide alerts after 5 seconds
         setTimeout(function() {

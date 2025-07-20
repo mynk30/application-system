@@ -1,1 +1,2611 @@
-[2025-07-20 07:19:42] [INFO] [::1] Database connection established successfully
+[2025-07-20 09:30:26] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 09:30:26] [INFO] [::1] User ID: 
+[2025-07-20 09:30:42] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 09:36:38] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 09:36:38] [INFO] [::1] Database connection established successfully
+[2025-07-20 13:06:38] [INFO] [::1] User found: Anjali Kushwaha test
+[2025-07-20 13:06:38] [INFO] [::1] Password verified successfully
+[2025-07-20 09:36:38] [INFO] [::1] Application initialized
+[2025-07-20 13:06:38] [INFO] [::1] Database connection established successfully
+[2025-07-20 13:06:38] [INFO] [::1] Admin dashboard accessed
+[2025-07-20 09:36:41] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:38:24] [INFO] [::1] Application initialized
+[2025-07-20 14:08:24] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:08:24] [INFO] [::1] Admin dashboard accessed
+[2025-07-20 10:38:30] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:38:41] [INFO] [::1] Application initialized
+[2025-07-20 14:08:41] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:38:41] [INFO] [::1] Application initialized
+[2025-07-20 14:08:41] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:38:41] [INFO] [::1] Application initialized
+[2025-07-20 14:08:41] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:39:13] [INFO] [::1] Application initialized
+[2025-07-20 14:09:13] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:39:13] [INFO] [::1] Application initialized
+[2025-07-20 14:09:13] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:39:13] [INFO] [::1] Application initialized
+[2025-07-20 14:09:13] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:39:25] [INFO] [::1] Application initialized
+[2025-07-20 14:09:25] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:39:25] [INFO] [::1] Application initialized
+[2025-07-20 14:09:25] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:39:25] [INFO] [::1] Application initialized
+[2025-07-20 14:09:25] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:44:33] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:44:44] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 1
+    [user_name] => Anjali Kushwaha test
+    [user_email] => anjalikushwaha@gmail.com
+    [user_role] => admin
+)
+
+[2025-07-20 10:44:44] [INFO] [::1] Application initialized
+[2025-07-20 14:14:44] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:14:44] [INFO] [::1] Admin dashboard accessed
+[2025-07-20 10:44:55] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 1
+    [user_name] => Anjali Kushwaha test
+    [user_email] => anjalikushwaha@gmail.com
+    [user_role] => admin
+)
+
+[2025-07-20 10:44:55] [INFO] [::1] Application initialized
+[2025-07-20 14:14:55] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:14:55] [INFO] [::1] Admin dashboard accessed
+[2025-07-20 10:44:58] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 10:45:08] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 10:45:08] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:15:08] [INFO] [::1] User found: Anjali Kushwaha Staff
+[2025-07-20 14:15:08] [INFO] [::1] Password verified successfully
+[2025-07-20 10:45:08] [INFO] [::1] Application initialized
+[2025-07-20 14:15:08] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:15:08] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:15:08] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:15:08] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 14:15:08] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha Staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 14:15:08] [INFO] [::1] Number of applications found: 1
+[2025-07-20 14:15:08] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 14:15:08] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 10:45:13] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:45:17] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:25] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:16:25] [INFO] [::1] Updating staff profile for user ID: 2. Name: Anjali Kushwaha Staff, Email: anjali@gmail.com
+[2025-07-20 14:16:25] [INFO] [::1] Staff profile update success: Yes
+[2025-07-20 10:46:25] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:30] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:34] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:34] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:34] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:35] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:46] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:16:46] [INFO] [::1] Updating staff profile for user ID: 2. Name: Anjali Kushwaha , Email: anjali@gmail.com
+[2025-07-20 14:16:46] [INFO] [::1] Staff profile update success: Yes
+[2025-07-20 10:46:46] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:46:52] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:53:58] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:54:06] [INFO] [::1] Database connection established successfully
+[2025-07-20 10:54:14] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:00:19] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:00:32] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:00:34] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:00:38] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 11:00:38] [INFO] [::1] Application initialized
+[2025-07-20 14:30:38] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:30:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:30:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:30:38] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 14:30:38] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 14:30:38] [INFO] [::1] Number of applications found: 1
+[2025-07-20 14:30:38] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 14:30:38] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:00:42] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:00:51] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:00:51] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:30:51] [INFO] [::1] User found: Anjali Kushwaha test
+[2025-07-20 14:30:51] [INFO] [::1] Password verified successfully
+[2025-07-20 11:00:51] [INFO] [::1] Application initialized
+[2025-07-20 14:30:51] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:30:51] [INFO] [::1] Admin dashboard accessed
+[2025-07-20 11:00:53] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:03:24] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:03:28] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:03:31] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:03:40] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:05:53] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:35:53] [INFO] [::1] Updating profile for user ID: 1. Name: Anjali Kushwaha 
+[2025-07-20 14:35:53] [INFO] [::1] Profile update success: Yes
+[2025-07-20 11:05:53] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:05:58] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:35:58] [INFO] [::1] Updating profile for user ID: 1. Name: Anjali Kushwah
+[2025-07-20 14:35:58] [INFO] [::1] Profile update success: Yes
+[2025-07-20 11:05:58] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:06:05] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:06:06] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:06:07] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:06:12] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:06:18] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:06:18] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:36:18] [INFO] [::1] User found: Anjali Kushwaha 
+[2025-07-20 14:36:18] [INFO] [::1] Password verified successfully
+[2025-07-20 11:06:18] [INFO] [::1] Application initialized
+[2025-07-20 14:36:18] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:36:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:36:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:36:18] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 14:36:18] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 14:36:18] [INFO] [::1] Number of applications found: 1
+[2025-07-20 14:36:18] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 14:36:18] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:06:22] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:06:28] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:36:28] [INFO] [::1] Updating staff profile for user ID: 2. Name: Anjali Kushwaha staff
+[2025-07-20 14:36:28] [INFO] [::1] Staff profile update success: Yes
+[2025-07-20 11:06:28] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:06:32] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:06:35] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:15:18] [INFO] [::1] Application initialized
+[2025-07-20 14:45:18] [INFO] [::1] Database connection established successfully
+[2025-07-20 14:45:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:45:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 14:45:18] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 14:45:18] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 14:45:18] [INFO] [::1] Number of applications found: 1
+[2025-07-20 14:45:18] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 14:45:18] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:15:20] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:16:41] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:19:46] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:26:11] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:26:37] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:29:46] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:35:01] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:37:40] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:38:10] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:39:22] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:39:38] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:40:04] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:42:04] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:42:29] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:42:29] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:42:30] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:42:30] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:42:36] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:43:29] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:43:47] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:44:04] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:44:12] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:44:12] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:14:12] [INFO] [::1] User found: Anjali Kushwaha staff
+[2025-07-20 15:14:12] [INFO] [::1] Password verified successfully
+[2025-07-20 11:44:12] [INFO] [::1] Application initialized
+[2025-07-20 15:14:12] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:14:12] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:14:12] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:14:12] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:14:12] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:14:12] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:14:12] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:14:12] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:44:17] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:44:42] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:44:47] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:44:54] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-20 11:44:54] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:14:54] [INFO] [::1] User found: Anjali Kushwaha staff
+[2025-07-20 15:14:54] [INFO] [::1] Password verified successfully
+[2025-07-20 11:44:54] [INFO] [::1] Application initialized
+[2025-07-20 15:14:54] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:14:54] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:14:54] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:14:54] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:14:54] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:14:54] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:14:54] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:14:54] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:46:18] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 11:46:18] [INFO] [::1] Application initialized
+[2025-07-20 15:16:18] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:16:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:16:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:16:18] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:16:18] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:16:18] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:16:18] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:16:18] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:46:23] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:56:58] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:58:06] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:58:06] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 11:58:06] [INFO] [::1] Application initialized
+[2025-07-20 15:28:06] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:28:06] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:28:06] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:28:06] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:28:06] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:28:06] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:28:06] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:28:06] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:59:06] [INFO] [::1] Application initialized
+[2025-07-20 15:29:06] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:29:06] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:06] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:06] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:29:06] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:29:06] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:29:06] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:29:06] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:59:09] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:59:09] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 11:59:09] [INFO] [::1] Application initialized
+[2025-07-20 15:29:09] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:29:09] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:09] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:09] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:29:09] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:29:09] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:29:09] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:29:09] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:59:13] [INFO] [::1] Database connection established successfully
+[2025-07-20 11:59:13] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 11:59:13] [INFO] [::1] Application initialized
+[2025-07-20 15:29:13] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:29:13] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:13] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:13] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:29:13] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:29:13] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:29:13] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:29:13] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 11:59:54] [INFO] [::1] Application initialized
+[2025-07-20 15:29:54] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:29:54] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:54] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:29:54] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:29:54] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:29:54] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:29:54] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:29:54] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:00:23] [INFO] [::1] Application initialized
+[2025-07-20 15:30:23] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:30:23] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:30:23] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:30:23] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:30:23] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:30:23] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:30:23] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:30:23] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:00:26] [INFO] [::1] Database connection established successfully
+[2025-07-20 12:00:26] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 12:00:26] [INFO] [::1] Application initialized
+[2025-07-20 15:30:26] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:30:26] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:30:26] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:30:26] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:30:26] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:30:26] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:30:26] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:30:26] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:00:39] [INFO] [::1] Application initialized
+[2025-07-20 15:30:39] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:30:39] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:30:39] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:30:39] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:30:39] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:30:39] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:30:39] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:30:39] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:00:42] [INFO] [::1] Database connection established successfully
+[2025-07-20 12:02:53] [INFO] [::1] Application initialized
+[2025-07-20 15:32:53] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:32:53] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:32:53] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:32:53] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:32:53] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:32:53] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:32:53] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:32:53] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:02:55] [INFO] [::1] Database connection established successfully
+[2025-07-20 12:03:15] [INFO] [::1] Application initialized
+[2025-07-20 15:33:15] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:33:15] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:33:15] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:33:15] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:33:15] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:33:15] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:33:15] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:33:15] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:03:18] [INFO] [::1] Database connection established successfully
+[2025-07-20 12:03:18] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 12:03:18] [INFO] [::1] Application initialized
+[2025-07-20 15:33:18] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:33:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:33:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:33:18] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:33:18] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:33:18] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:33:18] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:33:18] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:03:21] [INFO] [::1] Database connection established successfully
+[2025-07-20 12:03:21] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 12:03:21] [INFO] [::1] Application initialized
+[2025-07-20 15:33:21] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:33:21] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:33:21] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:33:21] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:33:21] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:33:21] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:33:21] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:33:21] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+
+[2025-07-20 12:04:06] [INFO] [::1] Application initialized
+[2025-07-20 15:34:06] [INFO] [::1] Database connection established successfully
+[2025-07-20 15:34:06] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:34:06] [INFO] [::1] Staff dashboard accessed
+[2025-07-20 15:34:06] [INFO] [::1] Staff ID from session: 2
+[2025-07-20 15:34:06] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-20 15:34:06] [INFO] [::1] Number of applications found: 1
+[2025-07-20 15:34:06] [INFO] [::1] Application stats: Array
+(
+    [total] => 5
+    [pending] => 1
+    [approved] => 1
+    [missing_docs] => 0
+    [rejected] => 3
+)
+
+[2025-07-20 15:34:06] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => manju
+            [email] => manju@123gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwaha Staff
+            [reviewed_at] => 2025-07-19 08:41:36
+            [created_at] => 2025-07-19 00:17:39
+            [updated_at] => 2025-07-19 21:29:46
+        )
+
+    [1] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 2
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => MSME Registration
+            [status] => rejected
+            [reviewed_by] => 2
+            [reviewed_at] => 2025-07-19 08:32:42
+            [created_at] => 2025-07-18 17:51:37
+            [updated_at] => 2025-07-19 08:32:42
+        )
+
+    [2] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => ankush verma
+            [email] => ankush@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => Trademark Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:05:26
+            [updated_at] => 2025-07-18 17:47:39
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:16:00
+            [updated_at] => 2025-07-18 15:16:45
+        )
+
+    [4] => Array
+        (
+            [id] => 2
+            [application_number] => 
+            [user_id] => 1
+            [assigned_to] => 
+            [name] => Anjali Kushwah
+            [email] => kushwahanjali89@gmail.com
+            [phone] => 07770958768
+            [address] => Rewati Renge Sawer Road Indore
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 15:12:54
+            [updated_at] => 2025-07-18 15:12:54
+        )
+
+)
+

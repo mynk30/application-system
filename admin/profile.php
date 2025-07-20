@@ -18,7 +18,8 @@ unset($_SESSION['error']);
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     $name = $_POST['name'];
-    $email = $_POST['email'];
+    // Get email from session since it's not in the form anymore
+    $email = $_SESSION['user_email'];
     $hasError = false;
 
     // Validate required fields
@@ -51,14 +52,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     
     // If no errors, proceed with database operations
     if (!$hasError) {
-        // Start transaction
-        $conn->begin_transaction();
-        
         try {
+            // Start transaction
+            $conn->begin_transaction();
+            
             // Update user profile
-            $stmt = $conn->prepare("UPDATE admin SET name = ?, email = ? WHERE id = ?");
-            $stmt->bind_param("ssi", $name, $email, $user_id);
+            $stmt = $conn->prepare("UPDATE admin SET name = ? WHERE id = ?");
+            $stmt->bind_param("si", $name, $user_id);
+            $logger->info("Updating profile for user ID: $user_id. Name: " . $name);
             $updateSuccess = $stmt->execute();
+            
+            $logger->info("Profile update success: " . ($updateSuccess ? 'Yes' : 'No'));
             
             if (!$updateSuccess) {
                 throw new Exception('Failed to update profile information.');
@@ -81,9 +85,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
                 
                 // Move the uploaded file
                 if (move_uploaded_file($file['tmp_name'], $file_path)) {
-                    // Start a transaction for atomic operations
-                    $conn->begin_transaction();
-                    
                     try {
                         // Delete old profile picture if exists
                         $deleteStmt = $conn->prepare("SELECT file_path FROM files WHERE model_type = 'admin' AND model_id = ?");
@@ -94,11 +95,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
                         $deleteStmt = $conn->prepare("DELETE FROM files WHERE model_type = 'admin' AND model_id = ?");
                         $deleteStmt->bind_param("i", $user_id);
                         $deleteStmt->execute();
-                        
-                        // Delete the old file from server
-                        if ($oldFile && file_exists($oldFile['file_path'])) {
-                            unlink($oldFile['file_path']);
-                        }
                         
                         // Insert new file record
                         $original_name = $file['name'];
@@ -112,43 +108,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
                             throw new Exception('Failed to save profile picture information.');
                         }
                         
-                        // Commit the transaction
-                        $conn->commit();
+                        // Delete the old file from server after successful database operations
+                        if ($oldFile && file_exists($oldFile['file_path'])) {
+                            unlink($oldFile['file_path']);
+                        }
+                        
                         
                     } catch (Exception $e) {
-                        // Rollback the transaction on error
-                        $conn->rollback();
-                        
                         // Clean up the uploaded file if it exists
                         if (file_exists($file_path)) {
                             unlink($file_path);
                         }
-                        
                         throw $e;
                     }
                 } else {
                     throw new Exception('Failed to upload profile picture.');
                 }
             }
+        
             
+            // If we got here, everything was successful
+            $conn->commit();
             $_SESSION['message'] = 'Profile updated successfully' . ($file_uploaded ? ' with new profile picture' : '') . '.';
             
         } catch (Exception $e) {
             // Rollback transaction on error
-            $conn->rollback();
+            if ($conn->in_transaction) {
+                $conn->rollback();
+            }
             $_SESSION['error'] = $e->getMessage();
+            $logger->error("Profile update failed: " . $e->getMessage());
             
             // Clean up uploaded file if it exists
             if (isset($file_path) && file_exists($file_path)) {
                 unlink($file_path);
             }
         }
+        
+        // Redirect to prevent form resubmission
+        header('Location: ' . $_SERVER['PHP_SELF']);
+        exit();
     }
-    
-    // Redirect to prevent form resubmission
-    header('Location: ' . $_SERVER['PHP_SELF']);
-    exit();
-}
+    }
 
 // Fetch user data
 $stmt = $conn->prepare("SELECT * FROM admin WHERE id = ?");
@@ -221,7 +222,7 @@ $profile_picture = $result->fetch_assoc();
                                     
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email Address</label>
-                                        <input type="email" class="form-control" id="email" name="email" 
+                                        <input disabled type="email" class="form-control" id="email" name="email" 
                                                value="<?php echo htmlspecialchars($user['email']); ?>" required>
                                     </div>
                                     

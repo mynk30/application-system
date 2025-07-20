@@ -10,13 +10,18 @@ ob_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application System - <?php echo ucfirst($_SESSION['user_role']); ?></title>
+    <title>Application System </title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/application-system/assets/css/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
     <style>
         :root {
             --sidebar-width: 250px;
@@ -346,14 +351,14 @@ ob_start();
 
             <div class="user-dropdown">
                 <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="https://ui-avatars.com/api/?name=<?php echo urlencode($_SESSION['user_name']); ?>" alt="User Avatar">
                         <span><?php echo htmlspecialchars($_SESSION['user_name']); ?></span>
                         <i class="fas fa-chevron-down ms-2"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="/application-system/user/profile.php"><i class="fas fa-user me-2"></i> Profile</a></li>
-                        <li><a class="dropdown-item" href="/application-system/user/change_password.php"><i class="fas fa-key me-2"></i> Change Password</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="/application-system/<?php echo $_SESSION['user_role'] === 'admin' ? 'admin' : 'staff'; ?>/profile.php"><i class="fas fa-user me-2"></i> Profile</a></li>
+                        <li><a class="dropdown-item" href="/application-system/includes/change_password.php"><i class="fas fa-key me-2"></i> Change Password</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
