@@ -18,14 +18,14 @@ $error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
-    
+    $logger->info("this is logger and uploading file");
     $logger->info('Update profile attempt', [
         'user_id' => $user_id,
         'name' => $name,
         'email' => $email,
         'session' => $_SESSION
     ]);
-
+    return;
     if (empty($name) || empty($email)) {
         $error = 'Name and email are required.';
         $logger->warning('Profile update validation failed', ['error' => $error]);
@@ -120,6 +120,7 @@ $stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
 $profile_picture = $result->fetch_assoc();
+$logger->info('Profile picture: ' . print_r($profile_picture, true));
 
 ?>
 <!DOCTYPE html>

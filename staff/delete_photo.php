@@ -2,8 +2,11 @@
 require_once '../php/auth.php';
 requireRole(['staff']);
 require_once '../php/db.php';
+require_once '../php/config.php';
+global $logger, $browserLogger;
 
 header('Content-Type: application/json');
+
 
 $user_id = $_SESSION['user_id'];
 $response = ['success' => false, 'message' => ''];
@@ -43,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     'success' => true, 
                     'message' => 'Profile picture removed successfully',
                     'default_avatar' => 'https://ui-avatars.com/api/?name=' . urlencode($_SESSION['user_name'] ?? 'User') . '&size=150&background=random'
-                ];
+                ];  
             } else {
                 throw new Exception('Failed to delete file record');
             }
