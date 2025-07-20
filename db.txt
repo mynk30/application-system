@@ -1,0 +1,16 @@
+database = application_system
+
+// tables frontend
+1. users login-forntend
+rigitreation-form
+-------------------
+name email password profile_photo address phone
+
+2. service-form - mca and gst inquiry
+3. inquiry-forms - contact karna ho to
+
+
+
+2. admin (admin and staff) login-Admin
+---------------------------
+name  email password role 

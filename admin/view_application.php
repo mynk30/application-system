@@ -12,8 +12,8 @@ $appId = (int)$_GET['id'];
 // Update logic
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['status'])) {
     $newStatus = $_POST['status'];
-    $stmt = $conn->prepare("UPDATE applications SET status = ? WHERE id = ?");
-    $stmt->bind_param("si", $newStatus, $appId);
+    $stmt = $conn->prepare("UPDATE applications SET status = ? , reviewed_by = ?, reviewed_at = NOW() WHERE id = ?");
+    $stmt->bind_param("ssi", $newStatus, $_SESSION['user_name'], $appId);
     $stmt->execute();
     header("Location: view_application.php?id=" . $appId);
     exit;

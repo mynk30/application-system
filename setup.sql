@@ -40,8 +40,22 @@ INSERT INTO admin (name, email, password, role, status) VALUES
 INSERT INTO admin (name, email, password, role, status) VALUES 
 ('John Doe', 'johndoe@gmail.com', 'Abcd@12345', 'staff', 'active');
 
--- files table
-CREATE TABLE files (
+-- Staff table
+CREATE TABLE IF NOT EXISTS staff (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    phone VARCHAR(20),
+    address TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES admin(id) ON DELETE CASCADE,
+    INDEX idx_email (email)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- files table 
+CREATE TABLE IF NOT EXISTS files (
     id INT AUTO_INCREMENT PRIMARY KEY,
     original_name VARCHAR(255) NOT NULL,
     file_name VARCHAR(255) NOT NULL,
@@ -76,5 +90,16 @@ CREATE TABLE applications (
 
 -- Insert sample applications
 INSERT INTO applications (user_id, name, email, phone, address, service_type, status) VALUES
-(1, 'Mayank Soni', 'mayanksoni920@gmail.com', '1234567890', '123 Main St, City', 'Passport', 'pending'),
+(1, 'Anjali Kushwaha', 'analikushwaha@gmail.com', '1234567890', '123 Main St, City', 'Passport', 'pending'),
 (2, 'John Doe', 'johndoe@gmail.com', '0987654321', '456 Other St, City', 'Visa', 'pending');
+
+    //sql query to create tabel service_form
+        // CREATE TABLE service_form (      
+        //     id INT(11) AUTO_INCREMENT PRIMARY KEY,
+        //     name VARCHAR(100) NOT NULL,      
+        //     email VARCHAR(100) NOT NULL,
+        //     mobile VARCHAR(15) NOT NULL,
+        //     bname VARCHAR(100) NOT NULL,
+        //     service VARCHAR(100) NOT NULL,
+        //     message TEXT NOT NULL
+        // );
