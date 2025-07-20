@@ -30,6 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Check if email already exists
     $stmt = $conn->prepare("SELECT id FROM admin WHERE email = ?");
     $stmt->bind_param("s", $email);
+    $logger->info("Email: " . $email);
+    $browserLogger->log("Email: " . $email);
     $stmt->execute();
     if ($stmt->get_result()->num_rows > 0) {
         echo json_encode(['success' => false, 'message' => 'Email already exists']);

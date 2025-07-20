@@ -3,6 +3,8 @@ session_start();
 require_once '../php/auth.php';
 requireLogin();
 requireRole('admin');
+require_once '../config.php';
+
 
 $error = '';
 $success = '';
