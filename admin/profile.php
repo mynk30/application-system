@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['profile_picture'])) 
     $file = $_FILES['profile_picture'];
 
     if ($file['error'] === UPLOAD_ERR_OK) {
-        $upload_dir = '../uploads/';
+        $upload_dir = '../uploads/profile/';
         $file_name = uniqid() . '-' . basename($file['name']);
         $file_path = $upload_dir . $file_name;
 
@@ -98,7 +98,7 @@ $profile_picture = $result->fetch_assoc();
         <div class="row">
             <div class="col-md-4">
                 <h4>Profile Picture</h4>
-                <img id="preview" src="<?php echo $profile_picture ? '../uploads/' . $profile_picture['file_name'] : 'https://via.placeholder.com/150'; ?>" alt="Profile Picture" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
+                <img id="preview" src="<?php echo $profile_picture ? '../uploads/profile/' . $profile_picture['file_name'] : 'https://via.placeholder.com/150'; ?>" alt="Profile Picture" class="img-fluid rounded-circle mb-3" style="width: 150px; height: 150px;">
                 <form action="" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="profile_picture" class="form-label">Upload New Picture</label>
