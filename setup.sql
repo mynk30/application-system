@@ -2,6 +2,20 @@
 CREATE DATABASE IF NOT EXISTS application_system;
 USE application_system;
 
+
+-- files table 
+CREATE TABLE IF NOT EXISTS files (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    original_name VARCHAR(255) NOT NULL,
+    file_name VARCHAR(255) NOT NULL,
+    file_path VARCHAR(500) NOT NULL,
+    file_size INT NOT NULL,
+    model_type VARCHAR(50) NOT NULL,
+    model_id INT NOT NULL,
+    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    INDEX idx_model (model_type, model_id)
+);
+
 -- Users table
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,6 +25,7 @@ CREATE TABLE IF NOT EXISTS users (
     status ENUM('active', 'inactive') NOT NULL DEFAULT 'active',
     reset_token VARCHAR(255) DEFAULT NULL,
     reset_token_expires DATETIME DEFAULT NULL,
+    featured_image VARCHAR(255) DEFAULT NULL,
     last_login DATETIME DEFAULT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -54,19 +69,6 @@ CREATE TABLE IF NOT EXISTS staff (
     INDEX idx_email (email)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- files table 
-CREATE TABLE IF NOT EXISTS files (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    original_name VARCHAR(255) NOT NULL,
-    file_name VARCHAR(255) NOT NULL,
-    file_path VARCHAR(500) NOT NULL,
-    file_size INT NOT NULL,
-    model_type VARCHAR(50) NOT NULL,
-    model_id INT NOT NULL,
-    uploaded_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    INDEX idx_model (model_type, model_id)
-);
-
 -- applications table
 CREATE TABLE applications (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -103,3 +105,5 @@ INSERT INTO applications (user_id, name, email, phone, address, service_type, st
         //     service VARCHAR(100) NOT NULL,
         //     message TEXT NOT NULL
         // );
+
+        

@@ -1,6 +1,9 @@
 <?php
 require_once '../includes/header.php';
 requireRole(['admin', 'staff']);
+require_once '../php/config.php';
+
+global $logger;
 
 // Get all applications from applications table directly
 $sql = "
@@ -9,6 +12,21 @@ $sql = "
     ORDER BY created_at DESC
 ";
 $result = $conn->query($sql);
+
+$sql2 = 'SELECT * FROM users';
+$result2 = $conn->query($sql2);
+
+$users = [];
+if ($result2 && $result2->num_rows > 0) {
+    while ($row = $result2->fetch_assoc()) {
+        $users[] = $row;
+    }
+}
+
+$logger->info('Applications fetched successfully====================');
+$logger->info('This is result: ' . json_encode($users));
+
+
 ?>
 
 <div class="row mb-4">

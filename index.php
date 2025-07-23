@@ -14,7 +14,7 @@ $logger->info('Session contents: ' . print_r($_SESSION, true));
 
 // Redirect if already logged in
 if (isset($_SESSION['user_id'])) {
-    switch ($_SESSION['user_role']) {
+    switch ($_SESSION['role']) {
         case 'admin':
             header("Location: /application-system/admin/dashboard.php");
             break;
@@ -22,7 +22,7 @@ if (isset($_SESSION['user_id'])) {
             header("Location: /application-system/staff/dashboard.php");
             break;
         default:
-            $logger->error('Unknown user role: ' . $_SESSION['user_role']);
+            $logger->error('Unknown user role: ' . $_SESSION['role']);
             break;
     }
     exit();

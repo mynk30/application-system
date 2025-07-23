@@ -12,8 +12,22 @@ $appId = (int)$_GET['id'];
 // Update logic
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['status'])) {
     $newStatus = $_POST['status'];
-    $stmt = $conn->prepare("UPDATE applications SET status = ? , reviewed_by = ?, reviewed_at = NOW() WHERE id = ?");
-    $stmt->bind_param("ssi", $newStatus, $_SESSION['user_name'], $appId);
+
+    // Process required_documents if status is missing_document
+    $missingDocs = null;
+    if ($newStatus === 'missing_document' && !empty($_POST['missing_documents'])) {
+        $docsArray = array_map('trim', explode(',', $_POST['missing_documents']));
+        $missingDocs = json_encode(array_filter($docsArray));
+    }
+
+    if ($missingDocs !== null) {
+        $stmt = $conn->prepare("UPDATE applications SET status = ?, required_documents = ?, reviewed_by = ?, reviewed_at = NOW() WHERE id = ?");
+        $stmt->bind_param("sssi", $newStatus, $missingDocs, $_SESSION['user_name'], $appId);
+    } else {
+        $stmt = $conn->prepare("UPDATE applications SET status = ?, reviewed_by = ?, reviewed_at = NOW() WHERE id = ?");
+        $stmt->bind_param("ssi", $newStatus, $_SESSION['user_name'], $appId);
+    }
+
     $stmt->execute();
     header("Location: view_application.php?id=" . $appId);
     exit;
@@ -118,6 +132,8 @@ if (!$application) {
     </div>
 </div>
 
+
+
 <div class="row">
     <div class="col-12">
         <div class="card">
@@ -162,6 +178,13 @@ if (!$application) {
                             <option value="missing_document" <?= $application['status'] == 'missing_document' ? 'selected' : '' ?>>Missing Documents</option>
                         </select>
                     </div>
+                    
+                    <!-- Add this below your Select in the Update Status Form -->
+                    <div class="mb-3 d-none" id="missing-documents-group">
+                        <label for="missing_documents" class="form-label">Missing Documents (comma separated)</label>
+                        <input type="text" class="form-control" id="missing_documents" name="missing_documents" placeholder="Example: ID Proof, Address Proof, Signature">
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Update Status</button>
                 </form>
             </div>
@@ -169,4 +192,20 @@ if (!$application) {
     </div>
 </div>
 
+<script>
+document.getElementById('status').addEventListener('change', function() {
+    const missingDocsGroup = document.getElementById('missing-documents-group');
+    if (this.value === 'missing_document') {
+        missingDocsGroup.classList.remove('d-none');
+    } else {
+        missingDocsGroup.classList.add('d-none');
+        document.getElementById('missing_documents').value = '';
+    }
+});
+
+// Show on page load if 'missing_document' is pre-selected
+if (document.getElementById('status').value === 'missing_document') {
+    document.getElementById('missing-documents-group').classList.remove('d-none');
+}
+</script>
 <?php require_once '../includes/footer.php'; ?>

@@ -70,34 +70,30 @@ if ($stmt && $stmt->execute()) {
 }
 
 // Get recent applications with their files
-$stmt = $conn->prepare("
+$sql = "
     SELECT 
-        a.*, 
-        u.name as submitted_by
+        a.*,
+        COALESCE(u.name, ad.name, a.name) AS submitted_by
     FROM applications a
-    LEFT JOIN admin u ON a.user_id = u.id
+    LEFT JOIN users u ON a.user_id = u.id
+    LEFT JOIN admin ad ON a.user_id = ad.id
     ORDER BY a.created_at DESC
     LIMIT 10
-");
+";
 
-if ($stmt === false) {
-    $logger->error("Failed to prepare recent applications query: " . $conn->error);
-    $browserLogger->log("Failed to prepare recent applications query: " . $conn->error);
-    die("Database error: " . $conn->error);
-}
-
-$stmt->execute();
-$recentApplications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-
-if ($stmt === false) {
-    $logger->error("Failed to prepare notifications query: " . $conn->error);
-    $browserLogger->log("Failed to prepare notifications query: " . $conn->error);
-    // Don't die here, just set empty notifications
-    $notifications = [];
+$result = $conn->query($sql);
+if ($result === false) {
+    $error = $conn->error;
+    $logger->error("Failed to fetch recent applications: " . $error);
+    $browserLogger->log("Failed to fetch recent applications: " . $error);
+    $recentApplications = [];
 } else {
-    $stmt->execute();
-    $notifications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+    $recentApplications = $result->fetch_all(MYSQLI_ASSOC);
 }
+
+// Notifications feature is currently disabled
+$notifications = [];
+
 ?>
 
 <?php if (isset($_GET['success'])): ?>
@@ -216,7 +212,7 @@ if ($stmt === false) {
                             <tr>
                                 <td><?php echo $srNo++; ?></td>
                                 <td><?php echo htmlspecialchars($app['submitted_by'] ?? 'Unknown'); ?></td>
-                                <td><?php echo htmlspecialchars($app['service_type']); ?></td>
+                                <td><?php echo htmlspecialchars($app['service_type'] ?? 'N/A'); ?></td>
                                 <td>
                                     <?php
                                     $statusClass = 'bg-secondary';
@@ -237,15 +233,16 @@ if ($stmt === false) {
                                     ?>
                                     <span class="badge <?php echo $statusClass; ?>">
                                         <?php 
-                                        if ($app['status'] === 'missing_document') {
+                                        $status = $app['status'] ?? 'pending';
+                                        if ($status === 'missing_document') {
                                             echo 'Missing Document';
                                         } else {
-                                            echo ucfirst(str_replace('_', ' ', $app['status']));
+                                            echo ucfirst(str_replace('_', ' ', $status));
                                         }
                                         ?>
                                     </span>
                                 </td>
-                                <td><?php echo date('M d, Y', strtotime($app['created_at'])); ?></td>
+                                <td><?php echo !empty($app['created_at']) ? date('M d, Y', strtotime($app['created_at'])) : 'N/A'; ?></td>
                                 <td>
                                     <a href="view_application.php?id=<?php echo $app['id']; ?>" class="btn btn-sm btn-outline-primary">View</a>
                                 </td>

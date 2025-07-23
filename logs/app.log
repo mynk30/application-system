@@ -1,2611 +1,746 @@
-[2025-07-20 09:30:26] [INFO] [::1] Session contents: Array
+[2025-07-22 03:34:44] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 13
+    [name] => one this 
+    [email] => one@gmail.com
+    [featured_image] => uploads/profiles/687e771e3427a.png
+    [role] => user
+)
+
+[2025-07-22 03:34:44] [ERROR] [::1] Unknown user role: user
+[2025-07-22 03:35:02] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 13
+    [name] => one this 
+    [email] => one@gmail.com
+    [featured_image] => uploads/profiles/687e771e3427a.png
+    [role] => user
+)
+
+[2025-07-22 03:35:02] [ERROR] [::1] Unknown user role: user
+[2025-07-22 03:37:56] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 13
+    [name] => one this 
+    [email] => one@gmail.com
+    [featured_image] => uploads/profiles/687e771e3427a.png
+    [role] => user
+)
+
+[2025-07-22 03:37:56] [ERROR] [::1] Unknown user role: user
+[2025-07-22 03:38:21] [INFO] [::1] Application initialized
+[2025-07-22 07:08:21] [INFO] [::1] Database connection established successfully
+[2025-07-22 03:38:22] [INFO] [::1] Application initialized
+[2025-07-22 07:08:22] [INFO] [::1] Database connection established successfully
+[2025-07-22 03:38:25] [INFO] [::1] Session contents: Array
 (
 )
 
-[2025-07-20 09:30:26] [INFO] [::1] User ID: 
-[2025-07-20 09:30:42] [INFO] [::1] Session contents: Array
+[2025-07-22 03:38:39] [INFO] [::1] Session contents: Array
 (
 )
 
-[2025-07-20 09:36:38] [INFO] [::1] Session contents: Array
+[2025-07-22 03:38:39] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:08:39] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 07:08:39] [INFO] [::1] Password verified successfully
+[2025-07-22 03:38:39] [INFO] [::1] Application initialized
+[2025-07-22 07:08:39] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:08:39] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 03:38:49] [INFO] [::1] Database connection established successfully
+[2025-07-22 03:54:31] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:24:31] [INFO] [::1] Application initialized
+[2025-07-22 07:24:31] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 07:24:31] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"}]
+[2025-07-22 04:46:09] [INFO] [::1] Database connection established successfully
+[2025-07-22 04:46:12] [INFO] [::1] Session contents: Array
 (
 )
 
-[2025-07-20 09:36:38] [INFO] [::1] Database connection established successfully
-[2025-07-20 13:06:38] [INFO] [::1] User found: Anjali Kushwaha test
-[2025-07-20 13:06:38] [INFO] [::1] Password verified successfully
-[2025-07-20 09:36:38] [INFO] [::1] Application initialized
-[2025-07-20 13:06:38] [INFO] [::1] Database connection established successfully
-[2025-07-20 13:06:38] [INFO] [::1] Admin dashboard accessed
-[2025-07-20 09:36:41] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:38:24] [INFO] [::1] Application initialized
-[2025-07-20 14:08:24] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:08:24] [INFO] [::1] Admin dashboard accessed
-[2025-07-20 10:38:30] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:38:41] [INFO] [::1] Application initialized
-[2025-07-20 14:08:41] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:38:41] [INFO] [::1] Application initialized
-[2025-07-20 14:08:41] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:38:41] [INFO] [::1] Application initialized
-[2025-07-20 14:08:41] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:39:13] [INFO] [::1] Application initialized
-[2025-07-20 14:09:13] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:39:13] [INFO] [::1] Application initialized
-[2025-07-20 14:09:13] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:39:13] [INFO] [::1] Application initialized
-[2025-07-20 14:09:13] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:39:25] [INFO] [::1] Application initialized
-[2025-07-20 14:09:25] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:39:25] [INFO] [::1] Application initialized
-[2025-07-20 14:09:25] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:39:25] [INFO] [::1] Application initialized
-[2025-07-20 14:09:25] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:44:33] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:44:44] [INFO] [::1] Session contents: Array
+[2025-07-22 04:46:24] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 04:46:24] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:16:24] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 08:16:24] [INFO] [::1] Password verified successfully
+[2025-07-22 04:46:24] [INFO] [::1] Application initialized
+[2025-07-22 08:16:24] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:16:24] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 04:46:38] [INFO] [::1] Database connection established successfully
+[2025-07-22 04:47:03] [INFO] [::1] Database connection established successfully
+[2025-07-22 04:47:03] [INFO] [::1] Database connection established successfully
+[2025-07-22 04:48:07] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:18:07] [INFO] [::1] Application initialized
+[2025-07-22 08:18:07] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 08:18:07] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"}]
+[2025-07-22 04:48:11] [INFO] [::1] Application initialized
+[2025-07-22 08:18:11] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:18:11] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-22 08:18:11] [INFO] [::1] Fetched all inquiries successfully
+[2025-07-22 04:48:18] [INFO] [::1] Application initialized
+[2025-07-22 08:18:18] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:18:18] [INFO] [::1] Fetching all service inquiries: SELECT * FROM service_form ORDER BY created_at DESC
+[2025-07-22 08:18:18] [INFO] [::1] Fetched all service inquiries successfully
+[2025-07-22 04:48:20] [INFO] [::1] Database connection established successfully
+[2025-07-22 04:48:30] [INFO] [::1] Database connection established successfully
+[2025-07-22 04:48:35] [INFO] [::1] Application initialized
+[2025-07-22 08:18:35] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:18:35] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 04:48:40] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:00:15] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:00:18] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 05:00:31] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 05:00:31] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:30:31] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 08:30:31] [INFO] [::1] Password verified successfully
+[2025-07-22 05:00:31] [INFO] [::1] Application initialized
+[2025-07-22 08:30:31] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:30:31] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 05:02:05] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:32:05] [INFO] [::1] Application initialized
+[2025-07-22 08:32:05] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 08:32:05] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"}]
+[2025-07-22 05:02:08] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:02:19] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:02:22] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:02:24] [INFO] [::1] Application initialized
+[2025-07-22 08:32:24] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:32:24] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 05:03:40] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 05:03:56] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 05:03:56] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:33:56] [INFO] [::1] User found: Anjali Kushwaha staff
+[2025-07-22 08:33:56] [INFO] [::1] Password verified successfully
+[2025-07-22 05:03:56] [INFO] [::1] Application initialized
+[2025-07-22 08:33:56] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:33:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-22 08:33:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-22 08:33:56] [INFO] [::1] Staff ID from session: 2
+[2025-07-22 08:33:56] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-22 08:33:56] [INFO] [::1] Number of applications found: 1
+[2025-07-22 08:33:56] [INFO] [::1] Application stats: Array
+(
+    [total] => 6
+    [pending] => 3
+    [approved] => 1
+    [missing_docs] => 2
+    [rejected] => 0
+)
+
+[2025-07-22 08:33:56] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 18
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => voter_id
+            [status] => missing_document
+            [reviewed_by] => Anjali Kushwah
+            [reviewed_at] => 2025-07-22 08:17:03
+            [created_at] => 2025-07-22 09:00:00
+            [updated_at] => 2025-07-22 08:17:03
+            [required_documents] => ["aadhar"]
+        )
+
+    [1] => Array
+        (
+            [id] => 19
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 0
+            [name] => one this 
+            [email] => one@gmail.com
+            [phone] => 07770958768
+            [address] => 
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-22 08:08:11
+            [updated_at] => 2025-07-22 08:08:11
+            [required_documents] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 14
+            [application_number] => APP20250721XYZ
+            [user_id] => 10
+            [assigned_to] => 0
+            [name] => Riya Gupta
+            [email] => riya@gmail.com
+            [phone] => 07770958768
+            [address] => Indore, MP
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-22 07:07:41
+            [updated_at] => 2025-07-22 07:07:41
+            [required_documents] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 15
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => passport
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-20 10:30:00
+            [updated_at] => 2025-07-20 10:30:00
+            [required_documents] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 17
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => driving_license
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:45:00
+            [updated_at] => 2025-07-22 08:30:00
+            [required_documents] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 16
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => birth_certificate
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-15 14:20:00
+            [updated_at] => 2025-07-21 09:15:00
+            [required_documents] => 
+        )
+
+)
+
+[2025-07-22 05:04:01] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:05] [INFO] [::1] Application initialized
+[2025-07-22 08:34:05] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:34:05] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-22 08:34:05] [INFO] [::1] Fetched all inquiries successfully
+[2025-07-22 05:04:06] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:09] [INFO] [::1] Application initialized
+[2025-07-22 08:34:09] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:34:09] [INFO] [::1] Staff dashboard accessed
+[2025-07-22 08:34:09] [INFO] [::1] Staff dashboard accessed
+[2025-07-22 08:34:09] [INFO] [::1] Staff ID from session: 2
+[2025-07-22 08:34:09] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha staff
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-22 08:34:09] [INFO] [::1] Number of applications found: 1
+[2025-07-22 08:34:09] [INFO] [::1] Application stats: Array
+(
+    [total] => 6
+    [pending] => 3
+    [approved] => 1
+    [missing_docs] => 2
+    [rejected] => 0
+)
+
+[2025-07-22 08:34:09] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 18
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => voter_id
+            [status] => missing_document
+            [reviewed_by] => Anjali Kushwah
+            [reviewed_at] => 2025-07-22 08:17:03
+            [created_at] => 2025-07-22 09:00:00
+            [updated_at] => 2025-07-22 08:17:03
+            [required_documents] => ["aadhar"]
+        )
+
+    [1] => Array
+        (
+            [id] => 19
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 0
+            [name] => one this 
+            [email] => one@gmail.com
+            [phone] => 07770958768
+            [address] => 
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-22 08:08:11
+            [updated_at] => 2025-07-22 08:08:11
+            [required_documents] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 14
+            [application_number] => APP20250721XYZ
+            [user_id] => 10
+            [assigned_to] => 0
+            [name] => Riya Gupta
+            [email] => riya@gmail.com
+            [phone] => 07770958768
+            [address] => Indore, MP
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-22 07:07:41
+            [updated_at] => 2025-07-22 07:07:41
+            [required_documents] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 15
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => passport
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-20 10:30:00
+            [updated_at] => 2025-07-20 10:30:00
+            [required_documents] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 17
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => driving_license
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 16:45:00
+            [updated_at] => 2025-07-22 08:30:00
+            [required_documents] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 16
+            [application_number] => 
+            [user_id] => 13
+            [assigned_to] => 
+            [name] => John Doe
+            [email] => 13one@gmail.com
+            [phone] => +91-9876543210
+            [address] => 123 Main Street, Sector 15, Jaipur, Rajasthan 302001
+            [service_type] => birth_certificate
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-15 14:20:00
+            [updated_at] => 2025-07-21 09:15:00
+            [required_documents] => 
+        )
+
+)
+
+[2025-07-22 05:04:12] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:15] [INFO] [::1] Application initialized
+[2025-07-22 08:34:15] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:15] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:17] [INFO] [::1] Application initialized
+[2025-07-22 08:34:17] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:17] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:18] [INFO] [::1] Application initialized
+[2025-07-22 08:34:18] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:18] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:04:22] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:08:08] [INFO] [::1] Application initialized
+[2025-07-22 08:38:08] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:38:08] [INFO] [::1] Staff dashboard accessed
+[2025-07-22 05:08:11] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 05:08:29] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 05:08:29] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:38:29] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 08:38:29] [INFO] [::1] Password verified successfully
+[2025-07-22 05:08:29] [INFO] [::1] Application initialized
+[2025-07-22 08:38:29] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:38:29] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 05:08:57] [INFO] [::1] Database connection established successfully
+[2025-07-22 05:09:08] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:39:08] [INFO] [::1] Application initialized
+[2025-07-22 08:39:08] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 08:39:08] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"}]
+[2025-07-22 05:09:09] [INFO] [::1] Application initialized
+[2025-07-22 08:39:09] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:39:09] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 07:48:59] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:49:02] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 07:49:17] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 07:49:17] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:19:17] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 11:19:17] [INFO] [::1] Password verified successfully
+[2025-07-22 07:49:17] [INFO] [::1] Application initialized
+[2025-07-22 11:19:17] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:19:17] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 07:49:20] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:50:22] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:50:26] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 07:50:38] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 07:50:38] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:20:38] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 11:20:38] [INFO] [::1] Password verified successfully
+[2025-07-22 07:50:38] [INFO] [::1] Application initialized
+[2025-07-22 11:20:38] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:20:38] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 07:50:57] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:20:57] [INFO] [::1] Application initialized
+[2025-07-22 11:20:57] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 11:20:57] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"}]
+[2025-07-22 07:51:01] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:21:01] [INFO] [::1] Application initialized
+[2025-07-22 11:21:01] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 11:21:01] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"}]
+[2025-07-22 07:51:02] [INFO] [::1] Application initialized
+[2025-07-22 11:21:02] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:21:02] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 07:58:06] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:58:10] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:58:10] [INFO] [::1] Session contents: Array
 (
     [user_id] => 1
-    [user_name] => Anjali Kushwaha test
+    [user_name] => Anjali Kushwah
     [user_email] => anjalikushwaha@gmail.com
     [user_role] => admin
 )
 
-[2025-07-20 10:44:44] [INFO] [::1] Application initialized
-[2025-07-20 14:14:44] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:14:44] [INFO] [::1] Admin dashboard accessed
-[2025-07-20 10:44:55] [INFO] [::1] Session contents: Array
+[2025-07-22 07:58:10] [ERROR] [::1] Unknown user role: 
+[2025-07-22 07:58:14] [INFO] [::1] Application initialized
+[2025-07-22 11:28:14] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:28:14] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 07:58:24] [INFO] [::1] Database connection established successfully
+[2025-07-22 07:58:30] [INFO] [::1] Application initialized
+[2025-07-22 11:28:30] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:28:30] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 08:02:35] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:02:39] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 08:02:51] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 08:02:51] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:32:51] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 11:32:51] [INFO] [::1] Password verified successfully
+[2025-07-22 08:02:51] [INFO] [::1] Application initialized
+[2025-07-22 11:32:51] [INFO] [::1] Database connection established successfully
+[2025-07-22 11:32:51] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 08:02:54] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:02:54] [INFO] [::1] Session contents: Array
 (
     [user_id] => 1
-    [user_name] => Anjali Kushwaha test
+    [user_name] => Anjali Kushwah
     [user_email] => anjalikushwaha@gmail.com
     [user_role] => admin
 )
 
-[2025-07-20 10:44:55] [INFO] [::1] Application initialized
-[2025-07-20 14:14:55] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:14:55] [INFO] [::1] Admin dashboard accessed
-[2025-07-20 10:44:58] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 10:45:08] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 10:45:08] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:15:08] [INFO] [::1] User found: Anjali Kushwaha Staff
-[2025-07-20 14:15:08] [INFO] [::1] Password verified successfully
-[2025-07-20 10:45:08] [INFO] [::1] Application initialized
-[2025-07-20 14:15:08] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:15:08] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:15:08] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:15:08] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 14:15:08] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha Staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 14:15:08] [INFO] [::1] Number of applications found: 1
-[2025-07-20 14:15:08] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 14:15:08] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 10:45:13] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:45:17] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:25] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:16:25] [INFO] [::1] Updating staff profile for user ID: 2. Name: Anjali Kushwaha Staff, Email: anjali@gmail.com
-[2025-07-20 14:16:25] [INFO] [::1] Staff profile update success: Yes
-[2025-07-20 10:46:25] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:30] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:34] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:34] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:34] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:35] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:46] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:16:46] [INFO] [::1] Updating staff profile for user ID: 2. Name: Anjali Kushwaha , Email: anjali@gmail.com
-[2025-07-20 14:16:46] [INFO] [::1] Staff profile update success: Yes
-[2025-07-20 10:46:46] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:51] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:46:52] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:53:58] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:54:06] [INFO] [::1] Database connection established successfully
-[2025-07-20 10:54:14] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:00:19] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:00:32] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:00:34] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:00:38] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha 
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 11:00:38] [INFO] [::1] Application initialized
-[2025-07-20 14:30:38] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:30:38] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:30:38] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:30:38] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 14:30:38] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha 
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 14:30:38] [INFO] [::1] Number of applications found: 1
-[2025-07-20 14:30:38] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 14:30:38] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:00:42] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:00:51] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:00:51] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:30:51] [INFO] [::1] User found: Anjali Kushwaha test
-[2025-07-20 14:30:51] [INFO] [::1] Password verified successfully
-[2025-07-20 11:00:51] [INFO] [::1] Application initialized
-[2025-07-20 14:30:51] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:30:51] [INFO] [::1] Admin dashboard accessed
-[2025-07-20 11:00:53] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:03:24] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:03:28] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:03:31] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:03:40] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:05:53] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:35:53] [INFO] [::1] Updating profile for user ID: 1. Name: Anjali Kushwaha 
-[2025-07-20 14:35:53] [INFO] [::1] Profile update success: Yes
-[2025-07-20 11:05:53] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:05:58] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:35:58] [INFO] [::1] Updating profile for user ID: 1. Name: Anjali Kushwah
-[2025-07-20 14:35:58] [INFO] [::1] Profile update success: Yes
-[2025-07-20 11:05:58] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:06:05] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:06:06] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:06:07] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:06:12] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:06:18] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:06:18] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:36:18] [INFO] [::1] User found: Anjali Kushwaha 
-[2025-07-20 14:36:18] [INFO] [::1] Password verified successfully
-[2025-07-20 11:06:18] [INFO] [::1] Application initialized
-[2025-07-20 14:36:18] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:36:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:36:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:36:18] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 14:36:18] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha 
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 14:36:18] [INFO] [::1] Number of applications found: 1
-[2025-07-20 14:36:18] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 14:36:18] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:06:22] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:06:28] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:36:28] [INFO] [::1] Updating staff profile for user ID: 2. Name: Anjali Kushwaha staff
-[2025-07-20 14:36:28] [INFO] [::1] Staff profile update success: Yes
-[2025-07-20 11:06:28] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:06:32] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:06:35] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:15:18] [INFO] [::1] Application initialized
-[2025-07-20 14:45:18] [INFO] [::1] Database connection established successfully
-[2025-07-20 14:45:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:45:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 14:45:18] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 14:45:18] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 14:45:18] [INFO] [::1] Number of applications found: 1
-[2025-07-20 14:45:18] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 14:45:18] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:15:20] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:16:41] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:19:46] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:26:11] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:26:37] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:29:46] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:35:01] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:37:40] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:38:10] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:39:22] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:39:38] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:40:04] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:42:04] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:42:29] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:42:29] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:42:30] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:42:30] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:42:36] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:43:29] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:43:47] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:44:04] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:44:12] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:44:12] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:14:12] [INFO] [::1] User found: Anjali Kushwaha staff
-[2025-07-20 15:14:12] [INFO] [::1] Password verified successfully
-[2025-07-20 11:44:12] [INFO] [::1] Application initialized
-[2025-07-20 15:14:12] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:14:12] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:14:12] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:14:12] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:14:12] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:14:12] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:14:12] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:14:12] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:44:17] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:44:42] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:44:47] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:44:54] [INFO] [::1] Session contents: Array
-(
-)
-
-[2025-07-20 11:44:54] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:14:54] [INFO] [::1] User found: Anjali Kushwaha staff
-[2025-07-20 15:14:54] [INFO] [::1] Password verified successfully
-[2025-07-20 11:44:54] [INFO] [::1] Application initialized
-[2025-07-20 15:14:54] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:14:54] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:14:54] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:14:54] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:14:54] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:14:54] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:14:54] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:14:54] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:46:18] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 11:46:18] [INFO] [::1] Application initialized
-[2025-07-20 15:16:18] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:16:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:16:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:16:18] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:16:18] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:16:18] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:16:18] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:16:18] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:46:23] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:56:58] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:58:06] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:58:06] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 11:58:06] [INFO] [::1] Application initialized
-[2025-07-20 15:28:06] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:28:06] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:28:06] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:28:06] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:28:06] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:28:06] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:28:06] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:28:06] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:59:06] [INFO] [::1] Application initialized
-[2025-07-20 15:29:06] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:29:06] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:06] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:06] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:29:06] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:29:06] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:29:06] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:29:06] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:59:09] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:59:09] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 11:59:09] [INFO] [::1] Application initialized
-[2025-07-20 15:29:09] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:29:09] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:09] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:09] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:29:09] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:29:09] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:29:09] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:29:09] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:59:13] [INFO] [::1] Database connection established successfully
-[2025-07-20 11:59:13] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 11:59:13] [INFO] [::1] Application initialized
-[2025-07-20 15:29:13] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:29:13] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:13] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:13] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:29:13] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:29:13] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:29:13] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:29:13] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 11:59:54] [INFO] [::1] Application initialized
-[2025-07-20 15:29:54] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:29:54] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:54] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:29:54] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:29:54] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:29:54] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:29:54] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:29:54] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:00:23] [INFO] [::1] Application initialized
-[2025-07-20 15:30:23] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:30:23] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:30:23] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:30:23] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:30:23] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:30:23] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:30:23] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:30:23] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:00:26] [INFO] [::1] Database connection established successfully
-[2025-07-20 12:00:26] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 12:00:26] [INFO] [::1] Application initialized
-[2025-07-20 15:30:26] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:30:26] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:30:26] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:30:26] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:30:26] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:30:26] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:30:26] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:30:26] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:00:39] [INFO] [::1] Application initialized
-[2025-07-20 15:30:39] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:30:39] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:30:39] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:30:39] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:30:39] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:30:39] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:30:39] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:30:39] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:00:42] [INFO] [::1] Database connection established successfully
-[2025-07-20 12:02:53] [INFO] [::1] Application initialized
-[2025-07-20 15:32:53] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:32:53] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:32:53] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:32:53] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:32:53] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:32:53] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:32:53] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:32:53] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:02:55] [INFO] [::1] Database connection established successfully
-[2025-07-20 12:03:15] [INFO] [::1] Application initialized
-[2025-07-20 15:33:15] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:33:15] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:33:15] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:33:15] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:33:15] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:33:15] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:33:15] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:33:15] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:03:18] [INFO] [::1] Database connection established successfully
-[2025-07-20 12:03:18] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 12:03:18] [INFO] [::1] Application initialized
-[2025-07-20 15:33:18] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:33:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:33:18] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:33:18] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:33:18] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:33:18] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:33:18] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:33:18] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:03:21] [INFO] [::1] Database connection established successfully
-[2025-07-20 12:03:21] [INFO] [::1] Session contents: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 12:03:21] [INFO] [::1] Application initialized
-[2025-07-20 15:33:21] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:33:21] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:33:21] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:33:21] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:33:21] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:33:21] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:33:21] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:33:21] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
-[2025-07-20 12:04:06] [INFO] [::1] Application initialized
-[2025-07-20 15:34:06] [INFO] [::1] Database connection established successfully
-[2025-07-20 15:34:06] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:34:06] [INFO] [::1] Staff dashboard accessed
-[2025-07-20 15:34:06] [INFO] [::1] Staff ID from session: 2
-[2025-07-20 15:34:06] [INFO] [::1] Session data: Array
-(
-    [user_id] => 2
-    [user_name] => Anjali Kushwaha staff
-    [user_email] => anjali@gmail.com
-    [user_role] => staff
-)
-
-[2025-07-20 15:34:06] [INFO] [::1] Number of applications found: 1
-[2025-07-20 15:34:06] [INFO] [::1] Application stats: Array
-(
-    [total] => 5
-    [pending] => 1
-    [approved] => 1
-    [missing_docs] => 0
-    [rejected] => 3
-)
-
-[2025-07-20 15:34:06] [INFO] [::1] Recent applications: Array
-(
-    [0] => Array
-        (
-            [id] => 7
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => manju
-            [email] => manju@123gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => approved
-            [reviewed_by] => Anjali Kushwaha Staff
-            [reviewed_at] => 2025-07-19 08:41:36
-            [created_at] => 2025-07-19 00:17:39
-            [updated_at] => 2025-07-19 21:29:46
-        )
-
-    [1] => Array
-        (
-            [id] => 6
-            [application_number] => 
-            [user_id] => 2
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => MSME Registration
-            [status] => rejected
-            [reviewed_by] => 2
-            [reviewed_at] => 2025-07-19 08:32:42
-            [created_at] => 2025-07-18 17:51:37
-            [updated_at] => 2025-07-19 08:32:42
-        )
-
-    [2] => Array
-        (
-            [id] => 4
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => ankush verma
-            [email] => ankush@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => Trademark Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 16:05:26
-            [updated_at] => 2025-07-18 17:47:39
-        )
-
-    [3] => Array
-        (
-            [id] => 3
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => rejected
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:16:00
-            [updated_at] => 2025-07-18 15:16:45
-        )
-
-    [4] => Array
-        (
-            [id] => 2
-            [application_number] => 
-            [user_id] => 1
-            [assigned_to] => 
-            [name] => Anjali Kushwah
-            [email] => kushwahanjali89@gmail.com
-            [phone] => 07770958768
-            [address] => Rewati Renge Sawer Road Indore
-            [service_type] => GST Registration
-            [status] => pending
-            [reviewed_by] => 
-            [reviewed_at] => 
-            [created_at] => 2025-07-18 15:12:54
-            [updated_at] => 2025-07-18 15:12:54
-        )
-
-)
-
+[2025-07-22 08:02:54] [ERROR] [::1] Unknown user role: 
+[2025-07-22 08:02:57] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:07:36] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:08:08] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 08:08:19] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 08:33:24] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 24
+    [name] => priti 
+    [email] => priti@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-22 08:33:24] [ERROR] [::1] Unknown user role: user
+[2025-07-22 08:33:31] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 24
+    [name] => priti 
+    [email] => priti@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-22 08:33:31] [ERROR] [::1] Unknown user role: user
+[2025-07-22 08:33:33] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 24
+    [name] => priti 
+    [email] => priti@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-22 08:33:33] [ERROR] [::1] Unknown user role: user
+[2025-07-22 08:33:41] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:33:41] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 08:34:48] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-22 08:34:48] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:04:48] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-22 12:04:48] [INFO] [::1] Password verified successfully
+[2025-07-22 08:34:48] [INFO] [::1] Application initialized
+[2025-07-22 12:04:48] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:04:48] [INFO] [::1] Admin dashboard accessed
+[2025-07-22 08:35:30] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:05:30] [INFO] [::1] Application initialized
+[2025-07-22 12:05:30] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 12:05:30] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"}]
+[2025-07-22 08:35:34] [INFO] [::1] Application initialized
+[2025-07-22 12:05:34] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:36:25] [INFO] [::1] Application initialized
+[2025-07-22 12:06:25] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:36:25] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:06:25] [INFO] [::1] Application initialized
+[2025-07-22 12:06:25] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 12:06:25] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"}]
+[2025-07-22 08:36:34] [INFO] [::1] Application initialized
+[2025-07-22 12:06:34] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:36:45] [INFO] [::1] Application initialized
+[2025-07-22 12:06:45] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:36:45] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:06:45] [INFO] [::1] Application initialized
+[2025-07-22 12:06:45] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 12:06:45] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"}]
+[2025-07-22 08:36:48] [INFO] [::1] Application initialized
+[2025-07-22 12:06:48] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:37:17] [INFO] [::1] Application initialized
+[2025-07-22 12:07:17] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:37:17] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:07:17] [INFO] [::1] Application initialized
+[2025-07-22 12:07:17] [INFO] [::1] Applications fetched successfully====================
+[2025-07-22 12:07:17] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"}]
+[2025-07-22 08:37:25] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:38:18] [INFO] [::1] Application initialized
+[2025-07-22 12:08:18] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:08:18] [INFO] [::1] Fetching all service inquiries: SELECT * FROM service_form ORDER BY created_at DESC
+[2025-07-22 12:08:18] [INFO] [::1] Fetched all service inquiries successfully
+[2025-07-22 08:38:20] [INFO] [::1] Application initialized
+[2025-07-22 12:08:20] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:08:20] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-22 12:08:20] [INFO] [::1] Fetched all inquiries successfully
+[2025-07-22 08:38:22] [INFO] [::1] Database connection established successfully
+[2025-07-22 08:38:25] [INFO] [::1] Application initialized
+[2025-07-22 12:08:25] [INFO] [::1] Database connection established successfully
+[2025-07-22 12:08:25] [INFO] [::1] Admin dashboard accessed
+[2025-07-23 11:00:09] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 25
+    [name] => arjun 
+    [email] => arjun@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-23 11:00:09] [ERROR] [::1] Unknown user role: user
+[2025-07-23 11:00:14] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 25
+    [name] => arjun 
+    [email] => arjun@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-23 11:00:14] [ERROR] [::1] Unknown user role: user
+[2025-07-23 11:00:22] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 25
+    [name] => arjun 
+    [email] => arjun@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-23 11:00:22] [ERROR] [::1] Unknown user role: user
+[2025-07-23 11:00:24] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 25
+    [name] => arjun 
+    [email] => arjun@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-23 11:00:24] [ERROR] [::1] Unknown user role: user
+[2025-07-23 11:00:36] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 25
+    [name] => arjun 
+    [email] => arjun@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-23 11:00:36] [ERROR] [::1] Unknown user role: user
+[2025-07-23 11:00:38] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 25
+    [name] => arjun 
+    [email] => arjun@gmail.com
+    [featured_image] => 
+    [role] => user
+)
+
+[2025-07-23 11:00:38] [ERROR] [::1] Unknown user role: user
+[2025-07-23 11:00:42] [INFO] [::1] Application initialized
+[2025-07-23 14:30:42] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:00:42] [INFO] [::1] Application initialized
+[2025-07-23 14:30:42] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:00:46] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-23 11:01:04] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-23 11:01:04] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:31:04] [INFO] [::1] User found: Anjali Kushwah
+[2025-07-23 14:31:04] [INFO] [::1] Password verified successfully
+[2025-07-23 11:01:04] [INFO] [::1] Application initialized
+[2025-07-23 14:31:04] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:31:04] [INFO] [::1] Admin dashboard accessed
+[2025-07-23 11:01:08] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:01:19] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:01:19] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:01:31] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:31:31] [INFO] [::1] Application initialized
+[2025-07-23 14:31:31] [INFO] [::1] Applications fetched successfully====================
+[2025-07-23 14:31:31] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"},{"id":"25","name":"arjun ","email":"arjun@gmail.com","password":"$2y$10$mqVALwPIWfpLyRKHtwA0V.LmlOE.wjAhtoiecYs1JyM3csgm4Z4y2","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-23 14:28:47","updated_at":"2025-07-23 14:28:47"}]
+[2025-07-23 11:01:39] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:01:53] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:02:01] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:02:04] [INFO] [::1] Application initialized
+[2025-07-23 14:32:04] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:32:04] [INFO] [::1] Admin dashboard accessed
+[2025-07-23 11:02:18] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:02:31] [INFO] [::1] Application initialized
+[2025-07-23 14:32:31] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:32:31] [INFO] [::1] Admin dashboard accessed
+[2025-07-23 11:02:58] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:32:58] [INFO] [::1] Application initialized
+[2025-07-23 14:32:58] [INFO] [::1] Applications fetched successfully====================
+[2025-07-23 14:32:58] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"},{"id":"25","name":"arjun ","email":"arjun@gmail.com","password":"$2y$10$mqVALwPIWfpLyRKHtwA0V.LmlOE.wjAhtoiecYs1JyM3csgm4Z4y2","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-23 14:28:47","updated_at":"2025-07-23 14:28:47"}]
+[2025-07-23 11:03:02] [INFO] [::1] Application initialized
+[2025-07-23 14:33:02] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:03:28] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:33:28] [INFO] [::1] Application initialized
+[2025-07-23 14:33:28] [INFO] [::1] Applications fetched successfully====================
+[2025-07-23 14:33:28] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"},{"id":"25","name":"arjun ","email":"arjun@gmail.com","password":"$2y$10$mqVALwPIWfpLyRKHtwA0V.LmlOE.wjAhtoiecYs1JyM3csgm4Z4y2","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-23 14:28:47","updated_at":"2025-07-23 14:28:47"}]
+[2025-07-23 11:03:32] [INFO] [::1] Application initialized
+[2025-07-23 14:33:32] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:03:52] [INFO] [::1] Application initialized
+[2025-07-23 14:33:52] [INFO] [::1] Database connection established successfully
+[2025-07-23 11:03:52] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:33:52] [INFO] [::1] Application initialized
+[2025-07-23 14:33:52] [INFO] [::1] Applications fetched successfully====================
+[2025-07-23 14:33:52] [INFO] [::1] This is result: [{"id":"13","name":"one this ","email":"one@gmail.com","password":"$2y$10$A1ThjZLr8QGLnxmgv2.AyeYBLZBK3\/I1w.GL2AkrxtUX74rMk5JJe","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-21 22:12:53","updated_at":"2025-07-21 23:17:57"},{"id":"14","name":"Rajesh Kumar Sharma","email":"rajesh.sharma@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-15 10:30:00","created_at":"2024-12-01 09:00:00","updated_at":"2025-07-22 07:36:42"},{"id":"15","name":"Priya Agarwal","email":"priya.agarwal@yahoo.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-18 14:20:00","created_at":"2024-12-03 11:15:00","updated_at":"2025-07-22 07:36:42"},{"id":"16","name":"Amit Singh Chauhan","email":"amit.chauhan@outlook.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-20 16:45:00","created_at":"2024-12-05 13:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"17","name":"Sneha Patel","email":"sneha.patel@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-19 12:10:00","created_at":"2024-12-07 15:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"18","name":"Vikram Reddy","email":"vikram.reddy@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-21 09:30:00","created_at":"2024-12-10 08:20:00","updated_at":"2025-07-22 07:36:42"},{"id":"19","name":"Anita Gupta","email":"anita.gupta@rediffmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-17 11:55:00","created_at":"2024-12-12 10:10:00","updated_at":"2025-07-22 07:36:42"},{"id":"20","name":"Rohit Joshi","email":"rohit.joshi@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-22 13:25:00","created_at":"2024-12-15 14:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"21","name":"Deepika Nair","email":"deepika.nair@hotmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-16 15:40:00","created_at":"2024-12-18 16:50:00","updated_at":"2025-07-22 07:36:42"},{"id":"22","name":"Suresh Yadav","email":"suresh.yadav@gmail.com","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-14 08:15:00","created_at":"2024-12-20 12:30:00","updated_at":"2025-07-22 07:36:42"},{"id":"23","name":"Kavitha Menon","email":"kavitha.menon@yahoo.in","password":"$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC\/.og\/at2.uheWG\/igi","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":"2025-01-13 17:20:00","created_at":"2024-12-22 14:45:00","updated_at":"2025-07-22 07:36:42"},{"id":"24","name":"priti ","email":"priti@gmail.com","password":"$2y$10$f.mk4.Hg7RFwE.MAcyWn8u3YuRMC7VrHZqJEEU4YNPsOQylDjDsBu","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-22 11:57:20","updated_at":"2025-07-22 11:57:20"},{"id":"25","name":"arjun ","email":"arjun@gmail.com","password":"$2y$10$mqVALwPIWfpLyRKHtwA0V.LmlOE.wjAhtoiecYs1JyM3csgm4Z4y2","role":"user","status":"active","featured_image":null,"reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-23 14:28:47","updated_at":"2025-07-23 14:28:47"}]
+[2025-07-23 11:03:58] [INFO] [::1] Application initialized
+[2025-07-23 14:33:58] [INFO] [::1] Database connection established successfully
+[2025-07-23 14:33:58] [INFO] [::1] Admin dashboard accessed
