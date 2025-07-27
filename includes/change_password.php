@@ -15,14 +15,19 @@ $userRole = $_SESSION['user_role'];
 $message = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $currentPassword = $_POST['current_password'];
-    $newPassword = $_POST['new_password'];
-    $confirmPassword = $_POST['confirm_password'];
+    $currentPassword = $_POST['current_password'] ?? '';
+    $newPassword = $_POST['new_password'] ?? '';
+    $confirmPassword = $_POST['confirm_password'] ?? '';
+
+    // Clear any previous message
+    $message = '';
 
     if (empty($currentPassword) || empty($newPassword) || empty($confirmPassword)) {
         $message = "All fields are required.";
     } elseif ($newPassword !== $confirmPassword) {
         $message = "New password and confirm password do not match.";
+    } elseif (strlen($newPassword) < 8) {
+        $message = "Password must be at least 8 characters long.";
     } else {
         // Determine the table based on user role
         $table = ($userRole === 'admin') ? 'admin' : 'staff';
@@ -39,64 +44,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $newPasswordHash = password_hash($newPassword, PASSWORD_DEFAULT);
             $updateStmt = $conn->prepare("UPDATE $table SET password = ? WHERE id = ? AND email = ?");
             $updateStmt->bind_param('sis', $newPasswordHash, $userId, $email);
-            $updateStmt->execute();
             
-            // Update session timestamp
-            $_SESSION['last_activity'] = time();
-
-            $message = "Password updated successfully.";
+            if ($updateStmt->execute()) {
+                // Update session timestamp
+                $_SESSION['last_activity'] = time();
+                $message = "Password updated successfully.";
+                
+                // Clear the form on success
+                echo '<script>document.getElementById("current_password").value = "";</script>';
+                echo '<script>document.getElementById("new_password").value = "";</script>';
+                echo '<script>document.getElementById("confirm_password").value = "";</script>';
+            } else {
+                $message = "Error updating password. Please try again.";
+            }
         } else {
             $message = "Current password is incorrect.";
         }
-
         $stmt->close();
     }
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Change Password - Application System</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .password-container {
-            max-width: 500px;
-            margin: 50px auto;
-            padding: 30px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
-        .form-control:focus {
-            border-color: #4e73df;
-            box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
-        }
-        .btn-primary {
-            background-color: #4e73df;
-            border: none;
-            padding: 10px 20px;
-        }
-        .btn-primary:hover {
-            background-color: #2e59d9;
-        }
-    </style>
-</head>
-<body>
-    <?php include 'header.php'; ?>
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="password-container">
-                    <h2 class="text-center mb-4"><i class="fas fa-key me-2"></i>Change Password</h2>
-                    
+<?php 
+$pageTitle = 'Change Password';
+include 'header.php'; 
+?>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-white">
+                    <h4 class="mb-0"><i class="fas fa-key me-2"></i>Change Password</h4>
+                </div>
+                <div class="card-body">
                     <?php if (!empty($message)): ?>
                         <div class="alert alert-<?php echo strpos($message, 'successfully') !== false ? 'success' : 'danger'; ?> alert-dismissible fade show" role="alert">
                             <?php echo htmlspecialchars($message); ?>
@@ -124,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <button class="btn btn-outline-secondary toggle-password" type="button" data-target="new_password">
                                     <i class="fas fa-eye"></i>
                                 </button>
-                            </div>
+                            </div> 
                             <div class="form-text">Password must be at least 8 characters long and include uppercase, lowercase, numbers, and special characters.</div>
                         </div>
                         
@@ -140,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                         
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg">
+                            <button type="submit" class="btn btn-primary">
                                 <i class="fas fa-save me-2"></i>Update Password
                             </button>
                             <a href="/application-system/<?php echo $userRole; ?>/dashboard.php" class="btn btn-outline-secondary">
@@ -152,54 +133,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </div>
     </div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Toggle password visibility
-        document.querySelectorAll('.toggle-password').forEach(button => {
-            button.addEventListener('click', function() {
-                const targetId = this.getAttribute('data-target');
-                const input = document.getElementById(targetId);
-                const icon = this.querySelector('i');
-                
-                if (input.type === 'password') {
-                    input.type = 'text';
-                    icon.classList.remove('fa-eye');
-                    icon.classList.add('fa-eye-slash');
-                } else {
-                    input.type = 'password';
-                    icon.classList.remove('fa-eye-slash');
-                    icon.classList.add('fa-eye');
-                }
-            });
+<script>
+    // Toggle password visibility
+    document.querySelectorAll('.toggle-password').forEach(button => {
+        button.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const input = document.getElementById(targetId);
+            const icon = this.querySelector('i');
+            
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                input.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
         });
+    });
 
-        // Form validation
-        (function () {
-            'use strict'
-            var forms = document.querySelectorAll('.needs-validation')
-            Array.prototype.slice.call(forms).forEach(function (form) {
-                form.addEventListener('submit', function (event) {
-                    const newPassword = document.getElementById('new_password').value;
-                    const confirmPassword = document.getElementById('confirm_password').value;
-                    
-                    if (newPassword !== confirmPassword) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                        alert('New password and confirm password do not match.');
-                        return false;
-                    }
-                    
-                    if (!form.checkValidity()) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    }
-                    
-                    form.classList.add('was-validated');
-                }, false);
-            });
-        })();
-    </script>
-</body>
-</html>
+    // Form validation
+    document.querySelector('form').addEventListener('submit', function(e) {
+        const newPassword = document.getElementById('new_password').value;
+        const confirmPassword = document.getElementById('confirm_password').value;
+        
+        if (newPassword !== confirmPassword) {
+            e.preventDefault();
+            alert('New password and confirm password do not match.');
+            return false;
+        }
+        
+        if (newPassword.length < 8) {
+            e.preventDefault();
+            alert('Password must be at least 8 characters long.');
+            return false;
+        }
+    });
+</script>
+
+<?php include 'footer.php'; ?>

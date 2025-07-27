@@ -1,3 +1,84 @@
+TOTAL TABLES
+
+1. service_form
+COLUMNS -----   id
+                name
+                email
+                mobile
+                bname
+                service
+                message
+                created_at
+
+2. contact_form
+COLUMNS -----   id
+                name
+                email
+                mobile
+                subject
+                message
+                created_at
+
+
+3. users
+COLUMNS -----   id
+                name
+                email
+                password
+                role
+                status
+                reset_token
+                reset_token_expires
+                featured_image
+                last_login
+                created_at
+                updated_at
+
+
+4. admin
+COLUMNS ----- id
+            name
+            email
+            password
+            role
+            status
+            reset_token
+            reset_token_expires
+            featured_image
+            last_login
+            created_at
+            updated_at
+
+
+
+5. applications
+COLUMNS -----   id
+                application_number
+                user_id
+                assigned_to
+                name
+                email
+                phone
+                address
+                service_type
+                status
+                reviewed_by
+                reviewed_at
+                created_at
+                updated_at
+                required_documents
+
+6. files
+COLUMNS -----   id
+                original_name
+                file_name
+                file_path
+                file_size
+                model_type
+                model_id
+                uploaded_at
+
+
 -- Create database
 CREATE DATABASE IF NOT EXISTS application_system;
 USE application_system;

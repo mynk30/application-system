@@ -35,9 +35,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['status'])) {
 
 // Get application details and associated files
 $stmt = $conn->prepare("
-    SELECT a.*, 
-           GROUP_CONCAT(f.original_name ORDER BY f.uploaded_at DESC SEPARATOR ', ') as uploaded_files
+    SELECT 
+        a.*, 
+        u.name , 
+        u.email , 
+        u.mobile ,
+        GROUP_CONCAT(f.original_name ORDER BY f.uploaded_at DESC SEPARATOR ', ') AS uploaded_files
     FROM applications a
+    LEFT JOIN users u ON a.user_id = u.id
     LEFT JOIN files f ON f.model_type = 'application' AND f.model_id = a.id
     WHERE a.id = ?
     GROUP BY a.id
@@ -57,8 +62,7 @@ if (!$application) {
     <div class="col-12">
         <div class="d-flex justify-content-between align-items-center">
             <div>
-                <h4 class="mb-0">Application ID #<?= htmlspecialchars($application['id']) ?></h4>
-                <p class="text-muted">View application details</p>
+                <h4 class="mb-0">Application Number <?= htmlspecialchars($application['application_number']) ?></h4>
             </div>
             <a href="applications.php" class="btn btn-outline-secondary">
                 <i class="fas fa-arrow-left me-1"></i> Back to Applications
@@ -82,10 +86,8 @@ if (!$application) {
                     <dd class="col-sm-8"><?= htmlspecialchars($application['email']) ?></dd>
 
                     <dt class="col-sm-4">Phone</dt>
-                    <dd class="col-sm-8"><?= htmlspecialchars($application['phone']) ?></dd>
+                    <dd class="col-sm-8"><?= htmlspecialchars($application['mobile']) ?></dd>
 
-                    <dt class="col-sm-4">Address</dt>
-                    <dd class="col-sm-8"><?= nl2br(htmlspecialchars($application['address'])) ?></dd>
                 </dl>
             </div>
         </div>

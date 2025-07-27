@@ -1,7 +1,7 @@
 ADMIN 
 admin profile update and preview - DONE
 staff profile update and preview - DONE
-header drop down
+header drop down - only show for admin dashboard
 -password update
 
 
@@ -17,8 +17,8 @@ PROFILE
 remove profile photo / upload profile photo
 
 
-=====================================
+        =====================================
 
-STUDY:
+        STUDY:
 JSON
 SESSION

@@ -14,18 +14,27 @@ $logger->info('Session contents: ' . print_r($_SESSION, true));
 
 // Redirect if already logged in
 if (isset($_SESSION['user_id'])) {
-    switch ($_SESSION['role']) {
+    // Check if user_role exists in session, otherwise use empty string
+    $userRole = $_SESSION['user_role'] ?? '';
+    
+    switch (strtolower($userRole)) {
         case 'admin':
             header("Location: /application-system/admin/dashboard.php");
-            break;
+            exit();
         case 'staff':
             header("Location: /application-system/staff/dashboard.php");
-            break;
+            exit();
         default:
-            $logger->error('Unknown user role: ' . $_SESSION['role']);
+            // If we get here, either user_role is not set or has an unexpected value
+            $logger->error('Unknown or missing user role in session', [
+                'user_id' => $_SESSION['user_id'],
+                'session_data' => $_SESSION
+            ]);
+            // Clear the session to force re-login
+            session_unset();
+            session_destroy();
             break;
     }
-    exit();
 }
 
 $error = '';

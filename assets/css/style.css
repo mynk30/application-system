@@ -351,6 +351,11 @@ div {
     position: relative;
 }
 
+/* Hide dropdown toggle arrow */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;

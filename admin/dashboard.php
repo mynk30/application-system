@@ -73,7 +73,7 @@ if ($stmt && $stmt->execute()) {
 $sql = "
     SELECT 
         a.*,
-        COALESCE(u.name, ad.name, a.name) AS submitted_by
+        u.name , u.email, u.mobile 
     FROM applications a
     LEFT JOIN users u ON a.user_id = u.id
     LEFT JOIN admin ad ON a.user_id = ad.id
@@ -211,7 +211,7 @@ $notifications = [];
                             <?php foreach ($recentApplications as $app): ?>
                             <tr>
                                 <td><?php echo $srNo++; ?></td>
-                                <td><?php echo htmlspecialchars($app['submitted_by'] ?? 'Unknown'); ?></td>
+                                <td><?php echo htmlspecialchars($app['name'] ?? 'Unknown'); ?></td>
                                 <td><?php echo htmlspecialchars($app['service_type'] ?? 'N/A'); ?></td>
                                 <td>
                                     <?php

@@ -293,13 +293,6 @@ ob_start();
                 </li>
             <?php endif; ?>
 
-
-            <!-- <li>
-                <a href="/application-system/admin/profile.php">
-                    <i class="fas fa-user"></i> My Profile
-                </a>
-            </li> -->
-
             <li>
                 <a href="/application-system/php/logout.php">
                     <i class="fas fa-sign-out-alt"></i> Logout
@@ -352,17 +345,16 @@ ob_start();
             <div class="user-dropdown">
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="https://ui-avatars.com/api/?name=<?php echo urlencode($_SESSION['user_name']); ?>" alt="User Avatar">
+                        <img src="<?php echo $profile_picture ? '../uploads/profiles/' . $profile_picture['file_name'] : 'https://via.placeholder.com/150'; ?>" alt="User Avatar">
                         <span><?php echo htmlspecialchars($_SESSION['user_name']); ?></span>
                         <i class="fas fa-chevron-down ms-2"></i>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="/application-system/<?php echo $_SESSION['user_role'] === 'admin' ? 'admin' : 'staff'; ?>/profile.php"><i class="fas fa-user me-2"></i> Profile</a></li>
-                        <li><a class="dropdown-item" href="/application-system/includes/change_password.php"><i class="fas fa-key me-2"></i> Change Password</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="/application-system/php/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                        <li><a class="dropdown-item" href="/application-system/<?php echo $_SESSION['user_role']; ?>/profile.php"><i class="fas fa-user me-2"></i> Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/application-system/<?php echo $_SESSION['user_role']; ?>/change_password.php"><i class="fas fa-key me-2"></i> Change Password</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="/application-system/php/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
                     </ul>
                 </div>
             </div>

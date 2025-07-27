@@ -117,12 +117,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
         $name = trim($_POST['name']);
         $email = trim($_POST['email']);
         $phone = trim($_POST['phone']);
-        $address = trim($_POST['address']);
         $service_type = trim($_POST['service_type']);
         $status = trim($_POST['status']);
         
         // Basic validation
-        if (empty($name) || empty($email) || empty($phone) || empty($address) || empty($service_type)) {
+        if (empty($name) || empty($email) || empty($phone) || empty($service_type)) {
             throw new Exception('All fields are required');
         }
         
@@ -135,21 +134,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
             name = ?, 
             email = ?, 
             phone = ?, 
-            address = ?, 
             service_type = ?, 
             status = ?,
             updated_at = CURRENT_TIMESTAMP
             WHERE id = ?");
             
-        $stmt->bind_param("ssssssi", 
+        // Debug: Check variable values
+        error_log("Binding parameters - Name: $name, Email: $email, Phone: $phone, Service: $service_type, Status: $status, ID: $application_id");
+        
+        $stmt->bind_param("sssssi", 
             $name, 
             $email, 
             $phone, 
-            $address, 
             $service_type, 
             $status,
             $application_id
         );
+        
+        // Debug: Check if bind was successful
+        if ($stmt === false) {
+            error_log("Bind failed: " . $conn->error);
+            throw new Exception('Failed to bind parameters: ' . $conn->error);
+        }
         
         if ($stmt->execute()) {
             // Handle file uploads
@@ -235,15 +241,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
                     <input type="email" name="email" class="form-control" value="<?= htmlspecialchars($application['email']) ?>" required>
                 </div>
                 
-                <div class="col-md-6 mb-3">
-                    <label class="form-label">Phone Number</label>
-                    <input type="text" name="phone" class="form-control" value="<?= htmlspecialchars($application['phone']) ?>" required>
-                </div>
-                
-                <div class="col-12 mb-3">
-                    <label class="form-label">Address</label>
-                    <textarea name="address" class="form-control" rows="3" required><?= htmlspecialchars($application['address']) ?></textarea>
-                </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" name="phone" class="form-control" value="<?= htmlspecialchars($application['phone']) ?>" required>
+                    </div>
                 
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Service Type</label>
