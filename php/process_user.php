@@ -1,45 +1,42 @@
 <?php
-header('Content-Type: application/json');
 require_once '../php/config.php';
 require_once '../php/auth.php';
 
-// Prevent any output before JSON
-ob_start();
-
 // Check if user is logged in and has admin role
 if (!isset($_SESSION['user_role']) || $_SESSION['user_role'] !== 'admin') {
-    echo json_encode(['success' => false, 'message' => 'Unauthorized access']);
+    $_SESSION['message'] = 'Unauthorized access';
+    header("Location: ../admin/users.php");
     exit;
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = $_POST['name'] ?? '';
-    $email = $_POST['email'] ?? '';
+    $name = trim($_POST['name'] ?? '');
+    $email = trim($_POST['email'] ?? '');
     $role = $_POST['role'] ?? '';
     $password = $_POST['password'] ?? '';
-    $mobile = $_POST['mobile'] ?? '';
-
-    // log all the variable and add a return
-    $logger->info("Name: " . $name);
-    $logger->info("Email: " . $email);
-    $logger->info("Role: " . $role);
-    $logger->info("Password: " . $password);
-    $logger->info("Mobile: " . $mobile);
-    
+    $mobile = trim($_POST['mobile'] ?? '');
+    $confirmPassword = $_POST['confirm_password'] ?? '';
     
     // Validate required fields
     if (empty($name) || empty($email) || empty($role) || empty($password) || empty($mobile)) {
-        echo json_encode(['success' => false, 'message' => 'All fields are required']);
+        $_SESSION['message'] = 'All fields are required';
+        header("Location: ../admin/users.php");
+        exit;
+    }
+    
+    // Validate password confirmation
+    if ($password !== $confirmPassword) {
+        $_SESSION['message'] = 'Passwords do not match';
+        header("Location: ../admin/users.php");
         exit;
     }
     
     // Validate email format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo json_encode(['success' => false, 'message' => 'Invalid email format']);
+        $_SESSION['message'] = 'Invalid email format';
+        header("Location: ../admin/users.php");
         exit;
     }
-    
-   
     
     // Hash password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -47,22 +44,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         // Begin transaction
         $conn->begin_transaction();
-        $logger->info("User created successfully");
+
+        // Check if email already exists in either table
+        $checkStmt = $conn->prepare("SELECT email FROM admin WHERE email = ? UNION SELECT email FROM users WHERE email = ?");
+        $checkStmt->bind_param("ss", $email, $email);
+        $checkStmt->execute();
+        
+        if ($checkStmt->get_result()->num_rows > 0) {
+            throw new Exception("Email already exists");
+        }
 
         if ($role === 'staff') {
             // Insert into admin table for staff
             $stmt = $conn->prepare("
-                INSERT INTO admin (name, email, password, role, status)
-                VALUES (?, ?, ?, 'staff', 'active')
+                INSERT INTO admin (name, email, password, role, status, mobile, created_at)
+                VALUES (?, ?, ?, 'staff', 'active', ?, NOW())
             ");
-            $stmt->bind_param("sss", $name, $email, $hashedPassword);
+            $stmt->bind_param("ssss", $name, $email, $hashedPassword, $mobile);
         } else if ($role === 'user') {
             // Insert into users table for regular users
             $stmt = $conn->prepare("
-                INSERT INTO users (name, email, password, status)
-                VALUES (?, ?, ?, 'active')
+                INSERT INTO users (name, email, password, status, mobile, created_at)
+                VALUES (?, ?, ?, 'active', ?, NOW())
             ");
-            $stmt->bind_param("sss", $name, $email, $hashedPassword);
+            $stmt->bind_param("ssss", $name, $email, $hashedPassword, $mobile);
+        } else {
+            throw new Exception("Invalid role specified");
         }
         
         if (!$stmt->execute()) {
@@ -72,29 +79,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Commit transaction
         $conn->commit();
         
-        echo json_encode([
-            'success' => true,
-            'message' => 'User created successfully',
-            'userId' => $conn->insert_id,
-            'role' => $role
-        ]);
-
+        $_SESSION['message'] = "User created successfully!";
         header("Location: ../admin/users.php");
         exit;
-        
+
     } catch (Exception $e) {
         // Rollback transaction on error
         $conn->rollback();
-        echo json_encode([
-            'success' => false,
-            'message' => 'Error creating user: ' . $e->getMessage()
-        ]);
+        $_SESSION['message'] = "Error creating user: " . $e->getMessage();
+        header("Location: ../admin/users.php");
+        exit;
     }
-    exit;
 } else {
-    echo json_encode(['success' => false, 'message' => 'Invalid request method']);
+    $_SESSION['message'] = "Invalid request method";
+    header("Location: ../admin/users.php");
     exit;
 }
-
-// Clear any output buffer
-ob_end_clean();
+?>

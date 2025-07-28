@@ -1,287 +1,165 @@
-[2025-07-28 21:18:30] [INFO] [::1] Application initialized
-[2025-07-29 00:48:30] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:30] [INFO] [::1] Name: manshi 
-[2025-07-29 00:48:30] [INFO] [::1] Email: manshi@gmail.com
-[2025-07-29 00:48:30] [INFO] [::1] Role: user
-[2025-07-29 00:48:30] [INFO] [::1] Password: 12345
-[2025-07-29 00:48:30] [INFO] [::1] Mobile: 
-[2025-07-28 21:18:30] [INFO] [::1] Application initialized
-[2025-07-29 00:48:30] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:30] [INFO] [::1] Name: manshi 
-[2025-07-29 00:48:30] [INFO] [::1] Email: manshi@gmail.com
-[2025-07-29 00:48:30] [INFO] [::1] Role: user
-[2025-07-29 00:48:30] [INFO] [::1] Password: 12345
-[2025-07-29 00:48:30] [INFO] [::1] Mobile: 
-[2025-07-28 21:18:31] [INFO] [::1] Application initialized
-[2025-07-29 00:48:31] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:31] [INFO] [::1] Name: manshi 
-[2025-07-29 00:48:31] [INFO] [::1] Email: manshi@gmail.com
-[2025-07-29 00:48:31] [INFO] [::1] Role: user
-[2025-07-29 00:48:31] [INFO] [::1] Password: 12345
-[2025-07-29 00:48:31] [INFO] [::1] Mobile: 
-[2025-07-28 21:18:31] [INFO] [::1] Application initialized
-[2025-07-29 00:48:31] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:31] [INFO] [::1] Name: manshi 
-[2025-07-29 00:48:31] [INFO] [::1] Email: manshi@gmail.com
-[2025-07-29 00:48:31] [INFO] [::1] Role: user
-[2025-07-29 00:48:31] [INFO] [::1] Password: 12345
-[2025-07-29 00:48:31] [INFO] [::1] Mobile: 
-[2025-07-28 21:18:31] [INFO] [::1] Application initialized
-[2025-07-29 00:48:31] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:31] [INFO] [::1] Name: manshi 
-[2025-07-29 00:48:31] [INFO] [::1] Email: manshi@gmail.com
-[2025-07-29 00:48:31] [INFO] [::1] Role: user
-[2025-07-29 00:48:31] [INFO] [::1] Password: 12345
-[2025-07-29 00:48:31] [INFO] [::1] Mobile: 
-[2025-07-28 21:18:32] [INFO] [::1] Application initialized
-[2025-07-29 00:48:32] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:32] [INFO] [::1] Name: manshi 
-[2025-07-29 00:48:32] [INFO] [::1] Email: manshi@gmail.com
-[2025-07-29 00:48:32] [INFO] [::1] Role: user
-[2025-07-29 00:48:32] [INFO] [::1] Password: 12345
-[2025-07-29 00:48:32] [INFO] [::1] Mobile: 
-[2025-07-28 21:18:32] [INFO] [::1] Application initialized
-[2025-07-29 00:48:32] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:32] [INFO] [::1] Name: manshi 
-[2025-07-29 00:48:32] [INFO] [::1] Email: manshi@gmail.com
-[2025-07-29 00:48:32] [INFO] [::1] Role: user
-[2025-07-29 00:48:32] [INFO] [::1] Password: 12345
-[2025-07-29 00:48:32] [INFO] [::1] Mobile: 
-[2025-07-28 21:18:37] [INFO] [::1] Database connection established successfully
-[2025-07-28 21:18:46] [INFO] [::1] Application initialized
-[2025-07-29 00:48:46] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:46] [INFO] [::1] Admin dashboard accessed
-[2025-07-28 21:18:46] [INFO] [::1] Application initialized
-[2025-07-29 00:48:46] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:48:46] [INFO] [::1] Admin dashboard accessed
-[2025-07-28 21:19:00] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:49:00] [INFO] [::1] Application initialized
-[2025-07-28 21:19:01] [INFO] [::1] Application initialized
-[2025-07-29 00:49:01] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:49:01] [INFO] [::1] Admin dashboard accessed
-[2025-07-28 21:19:02] [INFO] [::1] Database connection established successfully
-[2025-07-28 21:19:27] [INFO] [::1] Application initialized
-[2025-07-29 00:49:27] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:49:27] [INFO] [::1] Name: one
-[2025-07-29 00:49:27] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:49:27] [INFO] [::1] Role: user
-[2025-07-29 00:49:27] [INFO] [::1] Password: 123
-[2025-07-29 00:49:27] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:19:28] [INFO] [::1] Application initialized
-[2025-07-29 00:49:28] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:49:28] [INFO] [::1] Name: one
-[2025-07-29 00:49:28] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:49:28] [INFO] [::1] Role: user
-[2025-07-29 00:49:28] [INFO] [::1] Password: 123
-[2025-07-29 00:49:28] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:19:29] [INFO] [::1] Application initialized
-[2025-07-29 00:49:29] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:49:29] [INFO] [::1] Name: one
-[2025-07-29 00:49:29] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:49:29] [INFO] [::1] Role: user
-[2025-07-29 00:49:29] [INFO] [::1] Password: 123
-[2025-07-29 00:49:29] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:19:29] [INFO] [::1] Application initialized
-[2025-07-29 00:49:29] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:49:29] [INFO] [::1] Name: one
-[2025-07-29 00:49:29] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:49:29] [INFO] [::1] Role: user
-[2025-07-29 00:49:29] [INFO] [::1] Password: 123
-[2025-07-29 00:49:29] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:19:34] [INFO] [::1] Database connection established successfully
-[2025-07-28 21:23:06] [INFO] [::1] Database connection established successfully
-[2025-07-28 21:23:24] [INFO] [::1] Application initialized
-[2025-07-29 00:53:24] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:53:24] [INFO] [::1] Name: one
-[2025-07-29 00:53:24] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:53:24] [INFO] [::1] Role: user
-[2025-07-29 00:53:24] [INFO] [::1] Password: 123
-[2025-07-29 00:53:24] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:23:26] [INFO] [::1] Application initialized
-[2025-07-29 00:53:26] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:53:26] [INFO] [::1] Name: one
-[2025-07-29 00:53:26] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:53:26] [INFO] [::1] Role: user
-[2025-07-29 00:53:26] [INFO] [::1] Password: 123
-[2025-07-29 00:53:26] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:23:27] [INFO] [::1] Application initialized
-[2025-07-29 00:53:27] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:53:27] [INFO] [::1] Name: one
-[2025-07-29 00:53:27] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:53:27] [INFO] [::1] Role: user
-[2025-07-29 00:53:27] [INFO] [::1] Password: 123
-[2025-07-29 00:53:27] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:23:27] [INFO] [::1] Application initialized
-[2025-07-29 00:53:27] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:53:27] [INFO] [::1] Name: one
-[2025-07-29 00:53:27] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:53:27] [INFO] [::1] Role: user
-[2025-07-29 00:53:27] [INFO] [::1] Password: 123
-[2025-07-29 00:53:27] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:23:29] [INFO] [::1] Application initialized
-[2025-07-29 00:53:29] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:53:29] [INFO] [::1] Name: one
-[2025-07-29 00:53:29] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:53:29] [INFO] [::1] Role: user
-[2025-07-29 00:53:29] [INFO] [::1] Password: 123
-[2025-07-29 00:53:29] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:23:29] [INFO] [::1] Application initialized
-[2025-07-29 00:53:29] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:53:29] [INFO] [::1] Name: one
-[2025-07-29 00:53:29] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:53:29] [INFO] [::1] Role: user
-[2025-07-29 00:53:29] [INFO] [::1] Password: 123
-[2025-07-29 00:53:29] [INFO] [::1] Mobile: 07770958768
-[2025-07-28 21:23:55] [INFO] [::1] Application initialized
-[2025-07-29 00:53:55] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:53:55] [INFO] [::1] Name: one
-[2025-07-29 00:53:55] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:53:55] [INFO] [::1] Role: user
-[2025-07-29 00:53:55] [INFO] [::1] Password: 123
-[2025-07-29 00:53:55] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:53:55] [INFO] [::1] User created successfully
-[2025-07-28 21:23:57] [INFO] [::1] Database connection established successfully
-[2025-07-28 21:24:12] [INFO] [::1] Application initialized
-[2025-07-29 00:54:12] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:12] [INFO] [::1] Name: one
-[2025-07-29 00:54:12] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:12] [INFO] [::1] Role: user
-[2025-07-29 00:54:12] [INFO] [::1] Password: 123
-[2025-07-29 00:54:12] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:12] [INFO] [::1] User created successfully
-[2025-07-28 21:24:14] [INFO] [::1] Application initialized
-[2025-07-29 00:54:14] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:14] [INFO] [::1] Name: one
-[2025-07-29 00:54:14] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:14] [INFO] [::1] Role: user
-[2025-07-29 00:54:14] [INFO] [::1] Password: 123
-[2025-07-29 00:54:14] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:15] [INFO] [::1] User created successfully
-[2025-07-28 21:24:15] [INFO] [::1] Application initialized
-[2025-07-29 00:54:15] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:15] [INFO] [::1] Name: one
-[2025-07-29 00:54:15] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:15] [INFO] [::1] Role: user
-[2025-07-29 00:54:15] [INFO] [::1] Password: 123
-[2025-07-29 00:54:15] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:15] [INFO] [::1] User created successfully
-[2025-07-28 21:24:15] [INFO] [::1] Application initialized
-[2025-07-29 00:54:15] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:15] [INFO] [::1] Name: one
-[2025-07-29 00:54:15] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:15] [INFO] [::1] Role: user
-[2025-07-29 00:54:15] [INFO] [::1] Password: 123
-[2025-07-29 00:54:15] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:15] [INFO] [::1] User created successfully
-[2025-07-28 21:24:16] [INFO] [::1] Application initialized
-[2025-07-29 00:54:16] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:16] [INFO] [::1] Name: one
-[2025-07-29 00:54:16] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:16] [INFO] [::1] Role: user
-[2025-07-29 00:54:16] [INFO] [::1] Password: 123
-[2025-07-29 00:54:16] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:16] [INFO] [::1] User created successfully
-[2025-07-28 21:24:16] [INFO] [::1] Application initialized
-[2025-07-29 00:54:16] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:16] [INFO] [::1] Name: one
-[2025-07-29 00:54:16] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:16] [INFO] [::1] Role: user
-[2025-07-29 00:54:16] [INFO] [::1] Password: 123
-[2025-07-29 00:54:16] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:16] [INFO] [::1] User created successfully
-[2025-07-28 21:24:16] [INFO] [::1] Application initialized
-[2025-07-29 00:54:16] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:16] [INFO] [::1] Name: one
-[2025-07-29 00:54:16] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:16] [INFO] [::1] Role: user
-[2025-07-29 00:54:16] [INFO] [::1] Password: 123
-[2025-07-29 00:54:16] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:16] [INFO] [::1] User created successfully
-[2025-07-28 21:24:16] [INFO] [::1] Application initialized
-[2025-07-29 00:54:16] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:16] [INFO] [::1] Name: one
-[2025-07-29 00:54:16] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:16] [INFO] [::1] Role: user
-[2025-07-29 00:54:16] [INFO] [::1] Password: 123
-[2025-07-29 00:54:16] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:16] [INFO] [::1] User created successfully
-[2025-07-28 21:24:16] [INFO] [::1] Application initialized
-[2025-07-29 00:54:16] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:16] [INFO] [::1] Name: one
-[2025-07-29 00:54:16] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:16] [INFO] [::1] Role: user
-[2025-07-29 00:54:16] [INFO] [::1] Password: 123
-[2025-07-29 00:54:16] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:16] [INFO] [::1] User created successfully
-[2025-07-28 21:24:17] [INFO] [::1] Application initialized
-[2025-07-29 00:54:17] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:17] [INFO] [::1] Name: one
-[2025-07-29 00:54:17] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:17] [INFO] [::1] Role: user
-[2025-07-29 00:54:17] [INFO] [::1] Password: 123
-[2025-07-29 00:54:17] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:17] [INFO] [::1] User created successfully
-[2025-07-28 21:24:17] [INFO] [::1] Application initialized
-[2025-07-29 00:54:17] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:17] [INFO] [::1] Name: one
-[2025-07-29 00:54:17] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:17] [INFO] [::1] Role: user
-[2025-07-29 00:54:17] [INFO] [::1] Password: 123
-[2025-07-29 00:54:17] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:17] [INFO] [::1] User created successfully
-[2025-07-28 21:24:17] [INFO] [::1] Application initialized
-[2025-07-29 00:54:17] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:17] [INFO] [::1] Name: one
-[2025-07-29 00:54:17] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:17] [INFO] [::1] Role: user
-[2025-07-29 00:54:17] [INFO] [::1] Password: 123
-[2025-07-29 00:54:17] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:17] [INFO] [::1] User created successfully
-[2025-07-28 21:24:17] [INFO] [::1] Application initialized
-[2025-07-29 00:54:17] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:17] [INFO] [::1] Name: one
-[2025-07-29 00:54:17] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:17] [INFO] [::1] Role: user
-[2025-07-29 00:54:17] [INFO] [::1] Password: 123
-[2025-07-29 00:54:17] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:17] [INFO] [::1] User created successfully
-[2025-07-28 21:24:19] [INFO] [::1] Application initialized
-[2025-07-29 00:54:19] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:19] [INFO] [::1] Name: one
-[2025-07-29 00:54:19] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:19] [INFO] [::1] Role: user
-[2025-07-29 00:54:19] [INFO] [::1] Password: 123
-[2025-07-29 00:54:19] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:19] [INFO] [::1] User created successfully
-[2025-07-28 21:24:19] [INFO] [::1] Application initialized
-[2025-07-29 00:54:19] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:19] [INFO] [::1] Name: one
-[2025-07-29 00:54:19] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:19] [INFO] [::1] Role: user
-[2025-07-29 00:54:19] [INFO] [::1] Password: 123
-[2025-07-29 00:54:19] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:19] [INFO] [::1] User created successfully
-[2025-07-28 21:24:19] [INFO] [::1] Application initialized
-[2025-07-29 00:54:19] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:19] [INFO] [::1] Name: one
-[2025-07-29 00:54:19] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:19] [INFO] [::1] Role: user
-[2025-07-29 00:54:19] [INFO] [::1] Password: 123
-[2025-07-29 00:54:19] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:19] [INFO] [::1] User created successfully
-[2025-07-28 21:24:19] [INFO] [::1] Application initialized
-[2025-07-29 00:54:19] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:19] [INFO] [::1] Name: one
-[2025-07-29 00:54:19] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:19] [INFO] [::1] Role: user
-[2025-07-29 00:54:19] [INFO] [::1] Password: 123
-[2025-07-29 00:54:19] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:19] [INFO] [::1] User created successfully
-[2025-07-28 21:24:19] [INFO] [::1] Application initialized
-[2025-07-29 00:54:19] [INFO] [::1] Database connection established successfully
-[2025-07-29 00:54:19] [INFO] [::1] Name: one
-[2025-07-29 00:54:19] [INFO] [::1] Email: one@gmail.com
-[2025-07-29 00:54:19] [INFO] [::1] Role: user
-[2025-07-29 00:54:19] [INFO] [::1] Password: 123
-[2025-07-29 00:54:19] [INFO] [::1] Mobile: 07770958768
-[2025-07-29 00:54:19] [INFO] [::1] User created successfully
+[2025-07-28 22:42:51] [INFO] [::1] Application initialized
+[2025-07-29 02:12:51] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:12:51] [INFO] [::1] Processing new user - Name: three, Email: three@gmail.com, Role: user
+[2025-07-29 02:12:51] [INFO] [::1] Starting user creation transaction
+[2025-07-29 02:12:51] [INFO] [::1] User created successfully - ID: 43
+[2025-07-28 22:46:08] [INFO] [::1] Database connection established successfully
+[2025-07-28 22:46:09] [INFO] [::1] Database connection established successfully
+[2025-07-28 22:46:45] [INFO] [::1] Application initialized
+[2025-07-29 02:16:45] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:16:45] [INFO] [::1] Processing new user - Name: ashis, Email: ashis@gmaail.com, Role: user
+[2025-07-29 02:16:45] [INFO] [::1] Starting user creation transaction
+[2025-07-29 02:16:45] [INFO] [::1] User created successfully - ID: 44
+[2025-07-28 22:47:11] [INFO] [::1] Database connection established successfully
+[2025-07-28 22:47:12] [INFO] [::1] Database connection established successfully
+[2025-07-28 22:47:45] [INFO] [::1] Application initialized
+[2025-07-29 02:17:45] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:17:45] [INFO] [::1] Processing new user - Name: priti sharma, Email: priti@gmail.com, Role: user
+[2025-07-29 02:17:45] [INFO] [::1] Starting user creation transaction
+[2025-07-29 02:17:45] [INFO] [::1] User created successfully - ID: 45
+[2025-07-28 22:47:52] [INFO] [::1] Database connection established successfully
+[2025-07-28 22:48:09] [INFO] [::1] Database connection established successfully
+[2025-07-28 22:48:58] [INFO] [::1] Application initialized
+[2025-07-29 02:18:58] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:18:58] [INFO] [::1] Processing new user - Name: manshi , Email: manshi@gmail.com, Role: user
+[2025-07-29 02:18:58] [INFO] [::1] Starting user creation transaction
+[2025-07-29 02:18:58] [INFO] [::1] User created successfully - ID: 46
+[2025-07-28 22:48:58] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:09:30] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:09:33] [INFO] [::1] Application initialized
+[2025-07-29 02:39:33] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:39:33] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:09:35] [INFO] [::1] Application initialized
+[2025-07-29 02:39:35] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:39:35] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:09:43] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:10:15] [INFO] [::1] Application initialized
+[2025-07-29 02:40:15] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:10:15] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:10:43] [INFO] [::1] Application initialized
+[2025-07-29 02:40:43] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:40:43] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:10:46] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:40:46] [INFO] [::1] Application initialized
+[2025-07-28 23:10:49] [INFO] [::1] Application initialized
+[2025-07-29 02:40:49] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:10:54] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:40:54] [INFO] [::1] Application initialized
+[2025-07-28 23:13:17] [INFO] [::1] Application initialized
+[2025-07-29 02:43:17] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:43:17] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-29 02:43:17] [INFO] [::1] Fetched all inquiries successfully
+[2025-07-28 23:13:20] [INFO] [::1] Application initialized
+[2025-07-29 02:43:20] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:43:20] [INFO] [::1] Fetching all service inquiries: SELECT * FROM service_form ORDER BY created_at DESC
+[2025-07-29 02:43:20] [INFO] [::1] Fetched all service inquiries successfully
+[2025-07-28 23:13:21] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:13:23] [INFO] [::1] Application initialized
+[2025-07-29 02:43:23] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:43:23] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:13:29] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:13:31] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:16:49] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:18:32] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:48:32] [INFO] [::1] Application initialized
+[2025-07-28 23:18:37] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:18:44] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:18:47] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:18:49] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:19:06] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:19:10] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:19:12] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:20:01] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:20:05] [INFO] [::1] Application initialized
+[2025-07-29 02:50:05] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:50:05] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:20:08] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:50:08] [INFO] [::1] Application initialized
+[2025-07-28 23:20:11] [INFO] [::1] Application initialized
+[2025-07-29 02:50:11] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:50:11] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-29 02:50:11] [INFO] [::1] Fetched all inquiries successfully
+[2025-07-28 23:20:33] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:20:39] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:20:41] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:21:36] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:51:36] [INFO] [::1] Application initialized
+[2025-07-28 23:21:39] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:21:41] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:21:44] [INFO] [::1] Application initialized
+[2025-07-29 02:51:44] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:51:44] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-29 02:51:44] [INFO] [::1] Fetched all inquiries successfully
+[2025-07-28 23:21:52] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:51:52] [INFO] [::1] Application initialized
+[2025-07-28 23:21:53] [INFO] [::1] Application initialized
+[2025-07-29 02:51:53] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:51:53] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:21:56] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:21:59] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:22:12] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:52:12] [INFO] [::1] Application initialized
+[2025-07-28 23:22:15] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:23:59] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:27:32] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:27:39] [INFO] [::1] Application initialized
+[2025-07-29 02:57:39] [INFO] [::1] Database connection established successfully
+[2025-07-29 02:57:39] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:37:39] [INFO] [::1] Application initialized
+[2025-07-29 03:07:39] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:07:39] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:41:05] [INFO] [::1] Application initialized
+[2025-07-29 03:11:05] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:11:05] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:41:11] [INFO] [::1] Application initialized
+[2025-07-29 03:11:11] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:11:11] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:41:29] [INFO] [::1] Application initialized
+[2025-07-29 03:11:29] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:11:29] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:41:36] [INFO] [::1] Application initialized
+[2025-07-29 03:11:36] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:11:36] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:42:04] [INFO] [::1] Application initialized
+[2025-07-29 03:12:04] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:12:04] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:45:45] [INFO] [::1] Application initialized
+[2025-07-29 03:15:45] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:15:45] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:45:47] [INFO] [::1] Application initialized
+[2025-07-29 03:15:47] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:15:47] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:46:13] [INFO] [::1] Application initialized
+[2025-07-29 03:16:13] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:16:13] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:46:14] [INFO] [::1] Application initialized
+[2025-07-29 03:16:14] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:16:14] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:46:14] [INFO] [::1] Application initialized
+[2025-07-29 03:16:14] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:16:14] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:46:44] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:16:44] [INFO] [::1] Application initialized
+[2025-07-29 03:16:44] [INFO] [::1] Starting application processing
+[2025-07-29 03:16:44] [INFO] [::1] Application submitted by: anjali kushwaha
+[2025-07-29 03:16:44] [INFO] [::1] Name: anjali kushwaha
+[2025-07-29 03:16:44] [INFO] [::1] Email: anjali@example.com
+[2025-07-29 03:16:44] [INFO] [::1] Phone: 07770958768
+[2025-07-29 03:16:44] [INFO] [::1] Address: 
+[2025-07-29 03:16:44] [INFO] [::1] Service Type: GST Registration
+[2025-07-29 03:16:44] [ERROR] [::1] Application processing failed: Unknown column 'name' in 'field list'
+[2025-07-28 23:46:44] [INFO] [::1] Application initialized
+[2025-07-29 03:16:44] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:16:44] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:47:39] [INFO] [::1] Application initialized
+[2025-07-29 03:17:39] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:17:39] [INFO] [::1] Admin dashboard accessed
+[2025-07-28 23:48:06] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:18:06] [INFO] [::1] Application initialized
+[2025-07-28 23:48:10] [INFO] [::1] Application initialized
+[2025-07-29 03:18:10] [INFO] [::1] Database connection established successfully
+[2025-07-29 03:18:10] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-29 03:18:10] [INFO] [::1] Fetched all inquiries successfully
+[2025-07-28 23:48:13] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:48:42] [INFO] [::1] Database connection established successfully
+[2025-07-28 23:48:43] [INFO] [::1] Database connection established successfully

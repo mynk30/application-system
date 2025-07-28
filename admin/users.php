@@ -33,8 +33,6 @@ if ($roleFilter && $roleFilter !== 'all') {
         return $user['role'] === $roleFilter;
     });
 }
-
-
 ?>
 
 <div class="row mb-4">
@@ -52,11 +50,12 @@ if ($roleFilter && $roleFilter !== 'all') {
 </div>
 
 <div class="container-fluid">
-    <?php if (isset($_GET['status']) && $_GET['status'] === 'success'): ?>
+    <?php if (isset($_SESSION['message'])): ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            User created successfully
+            <?= $_SESSION['message'] ?>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        <?php unset($_SESSION['message']); ?>
     <?php endif; ?>
 </div>
 
@@ -235,20 +234,20 @@ if ($roleFilter && $roleFilter !== 'all') {
                 <h5 class="modal-title">Edit User</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form method="POST" action="../php/process_user.php">
+            <form method="POST" action="../php/process_edit_user.php">
                 <div class="modal-body">
-                    <input type="hidden" id="editUserId">
+                    <input type="hidden" name="user_id" id="editUserId">
                     <div class="mb-3">
                         <label class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="editUserName" placeholder="Enter full name" required>
+                        <input type="text" class="form-control" name="name" id="editUserName" placeholder="Enter full name" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="editUserEmail" placeholder="Enter email address" required>
+                        <input type="email" class="form-control" name="email" id="editUserEmail" placeholder="Enter email address" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Role</label>
-                        <select class="form-select" id="editUserRole" required>
+                        <select class="form-select" name="role" id="editUserRole" required>
                             <option value="staff">Staff</option>
                             <option value="user">User</option>
                         </select>
@@ -280,7 +279,10 @@ if ($roleFilter && $roleFilter !== 'all') {
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger">Delete User</button>
+                <form method="POST" action="../php/process_delete_user.php" style="display: inline;">
+                    <input type="hidden" name="user_id" id="deleteUserId">
+                    <button type="submit" class="btn btn-danger">Delete User</button>
+                </form>
             </div>
         </div>
     </div>
@@ -288,74 +290,14 @@ if ($roleFilter && $roleFilter !== 'all') {
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<script>
-    // Configure Toastr after it's loaded
-    $(document).ready(function() {
-        toastr.options = {
-            closeButton: true,
-            progressBar: true,
-            positionClass: 'toast-top-right',
-            timeOut: 3000,
-            extendedTimeOut: 1000,
-            showMethod: 'slideDown',
-            hideMethod: 'slideUp'
-        };
-    });
-</script>
 
 <script>
-    // Toast notification function using Toastr
-    function showToast(message, type = 'success') {
-        if (type === 'success') {
-            toastr.success(message);
-        } else {
-            toastr.error(message);
-        }
-    }
-
-    // Add User Form Submission
-    document.querySelector('#addUserModal form').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        try {
-            const response = await fetch('../php/process_user.php', {
-                method: 'POST',
-                body: formData
-            });
-            
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                showToast(`User created successfully`);
-                // Close modal
-                const modal = bootstrap.Modal.getInstance(document.getElementById('addUserModal'));
-                modal.hide();
-                // Reload page after a short delay to ensure toast is visible
-                setTimeout(() => {
-                    location.reload();
-                }, 2000); // 2 seconds delay
-            } else {
-                showToast(result.message || 'An error occurred', 'error');
-            }
-        } catch (error) {
-            showToast('Error creating user. Please try again.', 'error');
-        }
-    });
-
     // Edit User Modal Handler
-    document.getElementById('editUserModal').addEventListener('show.bs.modal', async function(event) {
+    $('#editUserModal').on('show.bs.modal', async function(event) {
         const button = event.relatedTarget;
         const userId = button.getAttribute('data-user-id');
         
         try {
-            // Fetch user data from server
             const response = await fetch(`../php/get_user.php?user_id=${encodeURIComponent(userId)}`);
             const userData = await response.json();
             
@@ -365,99 +307,19 @@ if ($roleFilter && $roleFilter !== 'all') {
                 document.getElementById('editUserName').value = user.name;
                 document.getElementById('editUserEmail').value = user.email;
                 document.getElementById('editUserRole').value = user.role || '';
-                document.getElementById('editUserStatus').value = user.status;
             } else {
-                showToast('Error loading user data', 'error');
+                alert('Error loading user data');
             }
         } catch (error) {
-            showToast('Error loading user data. Please try again.', 'error');
-        }
-    });
-
-    // Edit User Form Submission
-    document.querySelector('#editUserModal form').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(this);
-        const userId = formData.get('user_id');
-        
-        try {
-            // Show loading state
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.innerHTML;
-            submitButton.disabled = true;
-            submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Updating...';
-            
-            const response = await fetch('../php/process_edit_user.php', {
-                method: 'POST',
-                body: formData
-            });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                showToast(result.message, 'success');
-                // Navigate to users page after successful update
-                window.location.href = 'users.php';
-            } else {
-                showToast(result.message, 'error');
-            }
-        } catch (error) {
-            showToast('Error updating user. Please try again.', 'error');
-        } finally {
-            // Restore button state
-            submitButton.disabled = false;
-            submitButton.innerHTML = originalText;
+            alert('Error loading user data. Please try again.');
         }
     });
     
     // Delete User Modal Handler
-    document.getElementById('deleteUserModal').addEventListener('show.bs.modal', function(event) {
+    $('#deleteUserModal').on('show.bs.modal', function(event) {
         const button = event.relatedTarget;
         const userId = button.getAttribute('data-user-id');
-        document.querySelector('#deleteUserModal .btn-danger').dataset.userId = userId;
-    });
-    
-    // Handle delete confirmation
-    document.querySelector('#deleteUserModal .btn-danger').addEventListener('click', async function() {
-        const userId = this.dataset.userId;
-        
-        try {
-            // Show loading state
-            const modal = bootstrap.Modal.getInstance(document.getElementById('deleteUserModal'));
-            modal.hide();
-            
-            // Disable the delete button temporarily
-            const deleteButton = this;
-            deleteButton.disabled = true;
-            deleteButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Deleting...';
-            
-            const response = await fetch('../php/process_delete_user.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                body: 'user_id=' + encodeURIComponent(userId)
-            });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-                showToast(result.message, 'success');
-                // Reload page immediately after successful deletion
-                window.location.href = 'users.php';
-            } else {
-                showToast(result.message, 'error');
-                // Re-enable button and restore text if there's an error
-                deleteButton.disabled = false;
-                deleteButton.innerHTML = 'Delete';
-            }
-        } catch (error) {
-            showToast('Error deleting user. Please try again.', 'error');
-            // Re-enable button and restore text on error
-            deleteButton.disabled = false;
-            deleteButton.innerHTML = 'Delete';
-        }
+        document.getElementById('deleteUserId').value = userId;
     });
 </script>
 
@@ -488,17 +350,6 @@ if ($roleFilter && $roleFilter !== 'all') {
     .pagination .page-item.active .page-link {
         background-color: #0d6efd;
         border-color: #0d6efd;
-    }
-    
-    .toast {
-        background-color: #fff;
-        border: 1px solid #dee2e6;
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
-    }
-    
-    .toast-header {
-        background-color: #f8f9fa;
-        border-bottom: 1px solid #dee2e6;
     }
 </style>
 

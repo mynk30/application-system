@@ -105,10 +105,24 @@ ob_start();
         }
 
         .user-dropdown .dropdown-toggle {
-            color: #333;
-            text-decoration: none;
             display: flex;
             align-items: center;
+            text-decoration: none;
+            color: #333;
+            gap: 10px;
+        }
+        
+        .user-dropdown .badge {
+            font-size: 0.7rem;
+            padding: 0.35em 0.65em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .user-dropdown .badge.bg-success {
+            background-color: #198754 !important;
         }
 
         .user-dropdown img {
@@ -356,8 +370,8 @@ ob_start();
                 $stmt->close();
             }
             ?>
-            <div class="user-dropdown">
-                <h4><span class="badge bg-success"><?php echo $_SESSION['user_role']; ?></span></h4>
+            <div class="user-dropdown d-flex align-items-center">
+                <span class="badge bg-success me-2"><?php echo ucfirst($_SESSION['user_role']); ?></span>
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="<?php echo !empty($_SESSION['profile_picture']) ? '../uploads/profiles/' . htmlspecialchars($_SESSION['profile_picture']) : 'https://via.placeholder.com/150'; ?>" alt="User Avatar" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
