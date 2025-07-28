@@ -76,8 +76,13 @@ $assigned_to_me_stmt->close();
 // Get recent applications
 $recentApplications = [];
 $stmt = $conn->prepare("
-    SELECT * FROM applications
-    ORDER BY created_at DESC
+   SELECT 
+        a.*,
+        u.name , u.email, u.mobile 
+    FROM applications a
+    LEFT JOIN users u ON a.user_id = u.id
+    LEFT JOIN admin ad ON a.user_id = ad.id
+    ORDER BY a.created_at DESC
     LIMIT 10
 ");
 
@@ -223,7 +228,7 @@ $total_apps = $assigned_to_me; // For staff, total apps are just the ones assign
                             <tr>
                                 <td><?php echo $srNo++; ?></td>
                                 <td><?php echo htmlspecialchars($app['name'] ?? 'Unknown'); ?></td>
-                                <td><?php echo htmlspecialchars($app['service_type']); ?></td>
+                                <td><?php echo htmlspecialchars($app['service_type'] ?? 'N/A'); ?></td>
                                 <td>
                                     <?php
                                     $statusClass = 'bg-secondary';

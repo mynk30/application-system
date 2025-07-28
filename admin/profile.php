@@ -6,19 +6,15 @@ requireRole(['admin']);
 require_once '../php/db.php';
 
 $user_id = $_SESSION['user_id'];
+$current_page = basename($_SERVER['PHP_SELF']);
 
-// Initialize message and error from session if they exist
 $message = $_SESSION['message'] ?? '';
 $error = $_SESSION['error'] ?? '';
-
-// Clear the messages from session after retrieving them
-unset($_SESSION['message']);
-unset($_SESSION['error']);
+unset($_SESSION['message'],$_SESSION['error']);
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
     $name = $_POST['name'];
-    // Get email from session since it's not in the form anymore
     $email = $_SESSION['user_email'];
     $hasError = false;
 
@@ -108,6 +104,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
                             throw new Exception('Failed to save profile picture information.');
                         }
                         
+                        // Update session with new profile picture
+                        $_SESSION['profile_picture'] = $file_name;
+                        
                         // Delete the old file from server after successful database operations
                         if ($oldFile && file_exists($oldFile['file_path'])) {
                             unlink($oldFile['file_path']);
@@ -156,6 +155,19 @@ $stmt = $conn->prepare("SELECT * FROM admin WHERE id = ?");
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
+
+// Fetch profile picture if not in session
+if (!isset($_SESSION['profile_picture'])) {
+    $picStmt = $conn->prepare("SELECT file_name FROM files WHERE model_type = 'admin' AND model_id = ? ORDER BY id DESC LIMIT 1");
+    $picStmt->bind_param("i", $user_id);
+    $picStmt->execute();
+    $picResult = $picStmt->get_result();
+    if ($picResult && $picResult->num_rows > 0) {
+        $picture = $picResult->fetch_assoc();
+        $_SESSION['profile_picture'] = $picture['file_name'];
+    }
+    $picStmt->close();
+}
 $user = $result->fetch_assoc();
 
 // Fetch profile picture

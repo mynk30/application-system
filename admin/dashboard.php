@@ -32,15 +32,15 @@ $stmt = $conn->prepare("
 ");
 
 if ($stmt === false) {
-    $logger->error("Failed to prepare statistics query: " . $conn->error);
-    $browserLogger->log("Failed to prepare statistics query: " . $conn->error);
-    die("Database error: " . $conn->error);
+    $logger->error('Failed to prepare statistics query: ' . $conn->error);
+    $browserLogger->log('Failed to prepare statistics query: ' . $conn->error);
+    die('Database error: ' . $conn->error);
 }
 
 if (!$stmt->execute()) {
-    $logger->error("Failed to execute statistics query: " . $stmt->error);
-    $browserLogger->log("Failed to execute statistics query: " . $stmt->error);
-    die("Database error: " . $stmt->error);
+    $logger->error('Failed to execute statistics query: ' . $stmt->error);
+    $browserLogger->log('Failed to execute statistics query: ' . $stmt->error);
+    die('Database error: ' . $stmt->error);
 }
 
 $result = $stmt->get_result();
@@ -50,6 +50,13 @@ if ($row = $result->fetch_assoc()) {
     $stats['approved_applications'] = $row['approved'];
     $stats['missing_document_applications'] = $row['missing_docs'];
     $stats['rejected_applications'] = $row['rejected'];
+}
+
+// get user data in form
+$stmt = $conn->prepare("SELECT * FROM users WHERE role = 'user'");
+if ($stmt && $stmt->execute()) {
+    $result = $stmt->get_result();
+    $users = $result->fetch_all(MYSQLI_ASSOC);
 }
 
 // Get user and staff counts
@@ -70,7 +77,7 @@ if ($stmt && $stmt->execute()) {
 }
 
 // Get recent applications with their files
-$sql = "
+$sql = '
     SELECT 
         a.*,
         u.name , u.email, u.mobile 
@@ -79,13 +86,13 @@ $sql = "
     LEFT JOIN admin ad ON a.user_id = ad.id
     ORDER BY a.created_at DESC
     LIMIT 10
-";
+';
 
 $result = $conn->query($sql);
 if ($result === false) {
     $error = $conn->error;
-    $logger->error("Failed to fetch recent applications: " . $error);
-    $browserLogger->log("Failed to fetch recent applications: " . $error);
+    $logger->error('Failed to fetch recent applications: ' . $error);
+    $browserLogger->log('Failed to fetch recent applications: ' . $error);
     $recentApplications = [];
 } else {
     $recentApplications = $result->fetch_all(MYSQLI_ASSOC);
@@ -232,7 +239,7 @@ $notifications = [];
                                     }
                                     ?>
                                     <span class="badge <?php echo $statusClass; ?>">
-                                        <?php 
+                                        <?php
                                         $status = $app['status'] ?? 'pending';
                                         if ($status === 'missing_document') {
                                             echo 'Missing Document';
@@ -311,21 +318,58 @@ $notifications = [];
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+                <div class="mb-3">
+                        <label class="form-label">Select User</label>
+                        <input type="text" id="userSearch" class="form-control mb-2" placeholder="Search users..." onkeyup="filterUsers()">
+                        <select name="user_id" id="userSelect" class="form-select" onchange="updateUserDetails(this.value)">
+                            <option value="" disabled selected>-- Select a user --</option>
+                            <?php foreach ($users as $user): ?>
+                                <option value="<?php echo $user['id']; ?>" 
+                                        data-name="<?php echo htmlspecialchars($user['name']); ?>"
+                                        data-email="<?php echo htmlspecialchars($user['email']); ?>"
+                                        data-phone="<?php echo htmlspecialchars($user['mobile']); ?>">
+                                    <?php echo htmlspecialchars($user['name']); ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                        <script>
+                        function filterUsers() {
+                            const input = document.getElementById('userSearch');
+                            const filter = input.value.toLowerCase();
+                            const select = document.getElementById('userSelect');
+                            const options = select.getElementsByTagName('option');
+                            
+                            for (let i = 0; i < options.length; i++) {
+                                const text = options[i].text.toLowerCase();
+                                if (text.indexOf(filter) > -1) {
+                                    options[i].style.display = '';
+                                } else {
+                                    options[i].style.display = 'none';
+                                }
+                            }
+                        }
+                        
+                        function updateUserDetails(userId) {
+                            const option = document.querySelector(`#userSelect option[value="${userId}"]`);
+                            if (option) {
+                                document.querySelector('input[name="name"]').value = option.dataset.name || '';
+                                document.querySelector('input[name="email"]').value = option.dataset.email || '';
+                                document.querySelector('input[name="phone"]').value = option.dataset.phone || '';
+                            }
+                        }
+                        </script>
+                    </div>
                     <div class="mb-3">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" name="name" class="form-control" required>
+                        <label class="form-label"> Full Name</label>
+                        <input type="text" name="name" class="form-control" value="<?php echo $user['name']; ?>" readonly required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email Address</label>
-                        <input type="email" name="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" value="<?php echo $user['email']; ?>" readonly required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Phone Number</label>
-                        <input type="text" name="phone" class="form-control" required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Address</label>
-                        <textarea name="address" class="form-control" rows="3" required></textarea>
+                        <input type="text" name="phone" class="form-control" value="<?php echo $user['mobile']; ?>" readonly required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Application Type</label>

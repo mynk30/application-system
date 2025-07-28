@@ -24,10 +24,10 @@ function authenticateUser($email, $password) {
 
         if ($result->num_rows === 1) {
             $user = $result->fetch_assoc();
-            $logger->info("User found: " . $user['name']);
+            $logger->info("User found: " . json_encode($user));
 
             // Verify hashed password
-            if ($password === $user['password']) {
+            if (password_verify($password, $user['password'])) {
                 $logger->info("Password verified successfully");
                 // Check user status
                 if ($user['status'] === 'active') {

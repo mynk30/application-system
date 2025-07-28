@@ -17,9 +17,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'] ?? '';
     $role = $_POST['role'] ?? '';
     $password = $_POST['password'] ?? '';
+    $mobile = $_POST['mobile'] ?? '';
+
+    // log all the variable and add a return
+    $logger->info("Name: " . $name);
+    $logger->info("Email: " . $email);
+    $logger->info("Role: " . $role);
+    $logger->info("Password: " . $password);
+    $logger->info("Mobile: " . $mobile);
+    
     
     // Validate required fields
-    if (empty($name) || empty($email) || empty($role) || empty($password)) {
+    if (empty($name) || empty($email) || empty($role) || empty($password) || empty($mobile)) {
         echo json_encode(['success' => false, 'message' => 'All fields are required']);
         exit;
     }
@@ -30,14 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
     
-    // Check if email already exists
-    $stmt = $conn->prepare("SELECT id FROM admin WHERE email = ?");
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    if ($stmt->get_result()->num_rows > 0) {
-        echo json_encode(['success' => false, 'message' => 'Email already exists']);
-        exit;
-    }
+   
     
     // Hash password
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -46,6 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Begin transaction
         $conn->begin_transaction();
         $logger->info("User created successfully");
+
         if ($role === 'staff') {
             // Insert into admin table for staff
             $stmt = $conn->prepare("
@@ -53,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 VALUES (?, ?, ?, 'staff', 'active')
             ");
             $stmt->bind_param("sss", $name, $email, $hashedPassword);
-        } else {
+        } else if ($role === 'user') {
             // Insert into users table for regular users
             $stmt = $conn->prepare("
                 INSERT INTO users (name, email, password, status)
@@ -75,6 +78,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'userId' => $conn->insert_id,
             'role' => $role
         ]);
+
+        header("Location: ../admin/users.php");
+        exit;
         
     } catch (Exception $e) {
         // Rollback transaction on error

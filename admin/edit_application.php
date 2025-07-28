@@ -87,6 +87,16 @@ $stmt->execute();
 $application = $stmt->get_result()->fetch_assoc();
 $stmt->close();
 
+$user = [];
+if ($application && isset($application['user_id'])) {
+    $stmt = $conn->prepare("SELECT name, email, mobile FROM users WHERE id = ?");
+    $stmt->bind_param("i", $application['user_id']);
+    $stmt->execute();
+    $user = $stmt->get_result()->fetch_assoc();
+    $stmt->close();
+}
+
+
 // Fetch associated documents
 $stmt = $conn->prepare("SELECT * FROM files WHERE model_type = 'application' AND model_id = ? ORDER BY uploaded_at DESC");
 $stmt->bind_param("i", $application_id);
@@ -233,17 +243,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Full Name</label>
-                    <input type="text" name="name" class="form-control" value="<?= htmlspecialchars($application['name']) ?>" required>
+                                                                                            
+                     <input type="text" name="name" class="form-control" value="<?= htmlspecialchars($user['name']) ?>" required>
                 </div>
                 
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Email Address</label>
-                    <input type="email" name="email" class="form-control" value="<?= htmlspecialchars($application['email']) ?>" required>
+                   
+                     <input type="email" name="email" class="form-control" value="<?= htmlspecialchars($user['email']) ?>" readonly required>
                 </div>
                 
                     <div class="col-md-6 mb-3">
                         <label class="form-label">Phone Number</label>
-                        <input type="text" name="phone" class="form-control" value="<?= htmlspecialchars($application['phone']) ?>" required>
+                        
+                         <input type="text" name="phone" class="form-control" value="<?= htmlspecialchars($user['mobile']) ?>" required>
                     </div>
                 
                 <div class="col-md-6 mb-3">

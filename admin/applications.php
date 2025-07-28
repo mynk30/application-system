@@ -6,12 +6,29 @@ require_once '../php/config.php';
 global $logger;
 
 // Get all applications from applications table directly
+// $sql = "
+//     SELECT id, name, email, status, created_at 
+//     FROM applications 
+//     ORDER BY created_at DESC
+     
+// ";
+
 $sql = "
-    SELECT id, name, email, status, created_at 
+    SELECT 
+        applications.id, 
+        users.name, 
+        users.email, 
+        applications.status, 
+        applications.created_at 
     FROM applications 
-    ORDER BY created_at DESC
+    JOIN users ON applications.user_id = users.id 
+    ORDER BY applications.created_at DESC
 ";
+
+
 $result = $conn->query($sql);
+
+
 
 $sql2 = 'SELECT * FROM users';
 $result2 = $conn->query($sql2);
@@ -23,8 +40,8 @@ if ($result2 && $result2->num_rows > 0) {
     }
 }
 
-$logger->info('Applications fetched successfully====================');
-$logger->info('This is result: ' . json_encode($users));
+// $logger->info('Applications fetched successfully====================');
+// $logger->info('This is result: ' . json_encode($users));
 
 
 ?>

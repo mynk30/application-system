@@ -1,14 +1,23 @@
 <?php
 require_once '../includes/header.php';
+
+require_once '../php/config.php';
 requireRole(['staff']);
 
 // Get applications assigned to the current staff member
 $sql = "
-    SELECT id, name, email, service_type, status, created_at 
+    SELECT 
+        applications.id, 
+        users.name, 
+        users.email, 
+        applications.status, 
+        applications.created_at 
     FROM applications 
-    ORDER BY created_at DESC
+    JOIN users ON applications.user_id = users.id 
+    ORDER BY applications.created_at DESC
 ";
-$result = $conn->query($sql); 
+
+$result = $conn->query($sql);
 
 ?>
 
@@ -23,6 +32,12 @@ $result = $conn->query($sql);
     <div class="card-body">
         <?php if (isset($_GET['success'])): ?>
             <div class="alert alert-success"><?= htmlspecialchars($_GET['success']) ?></div>
+            <?php unset($_SESSION['success']); ?>
+        <?php endif; ?>
+
+        <?php if (isset($_GET['error'])): ?>
+            <div class="alert alert-danger"><?= htmlspecialchars($_GET['error']) ?></div>
+            <?php unset($_SESSION['error']); ?>
         <?php endif; ?>
         
         <div class="table-responsive">
@@ -44,11 +59,7 @@ $result = $conn->query($sql);
                             <tr>
                                 <td><?= $no++; ?></td>
                                 <td><?= htmlspecialchars($row['name']) ?></td>
-                                <td>
-                                    <span class="text-dark">
-                                        <?= htmlspecialchars($row['service_type']) ?? "Unknown" ?>
-                                    </span>
-                                </td>
+                                <td><?= htmlspecialchars($row['email']) ?></td>
                                 <td>
                                     <?php
                                     $statusClass = '';
@@ -99,8 +110,8 @@ $result = $conn->query($sql);
                                 <div class="mb-3">
                                     <i class="fas fa-inbox fa-3x text-muted"></i>
                                 </div>
-                                <h5>No applications assigned</h5>
-                                <p class="text-muted">You don't have any assigned applications at the moment.</p>
+                                <h5>No applications found</h5>
+                                <p class="text-muted">There are no applications to display at the moment.</p>
                             </td>
                         </tr>
                     <?php endif; ?>

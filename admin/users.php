@@ -185,7 +185,7 @@ if ($roleFilter && $roleFilter !== 'all') {
                 <h5 class="modal-title">Add New User</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form method="POST" action="process_user.php">
+            <form method="POST" action="../php/process_user.php">
                 <div class="modal-body">
                     <div class="mb-3">
                         <label class="form-label">Full Name</label>
@@ -194,6 +194,10 @@ if ($roleFilter && $roleFilter !== 'all') {
                     <div class="mb-3">
                         <label class="form-label">Email Address</label>
                         <input type="email" class="form-control" name="email" placeholder="Enter email address" required>
+                    </div> 
+                    <div class="mb-3">
+                        <label class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" name="mobile" placeholder="Enter mobile number" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Role</label>
@@ -210,7 +214,7 @@ if ($roleFilter && $roleFilter !== 'all') {
                         </div>
                         <div class="col-md-6 mb-3">
                             <label class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="Confirm password" required>
+                            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm password" required>
                         </div>
                     </div>
                 </div>
@@ -231,7 +235,7 @@ if ($roleFilter && $roleFilter !== 'all') {
                 <h5 class="modal-title">Edit User</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form method="POST" action="">
+            <form method="POST" action="../php/process_user.php">
                 <div class="modal-body">
                     <input type="hidden" id="editUserId">
                     <div class="mb-3">

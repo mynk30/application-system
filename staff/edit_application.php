@@ -81,10 +81,14 @@ if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
 $application_id = intval($_GET['id']);
 $user_id = $_SESSION['user_id'];
 
-// Verify the application exists and belongs to the current user or user is admin
-$sql = "SELECT * FROM applications WHERE id = ? AND (user_id = ? OR ? IN (SELECT id FROM admin WHERE role = 'admin'))";
+// Verify the application exists and is accessible by the current staff member
+$sql = "SELECT a.*, u.name, u.email, u.mobile 
+        FROM applications a
+        JOIN users u ON a.user_id = u.id
+        WHERE a.id = ?";
+        
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("iii", $application_id, $user_id, $user_id);
+$stmt->bind_param("i", $application_id);
 $stmt->execute();
 $application = $stmt->get_result()->fetch_assoc();
 $stmt->close();
@@ -119,12 +123,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
         $name = trim($_POST['name']);
         $email = trim($_POST['email']);
         $phone = trim($_POST['phone']);
-        $address = trim($_POST['address']);
         $service_type = trim($_POST['service_type']);
         $status = trim($_POST['status']);
         
         // Basic validation
-        if (empty($name) || empty($email) || empty($phone) || empty($address) || empty($service_type)) {
+        if (empty($name) || empty($email) || empty($phone) || empty($service_type)) {
             throw new Exception('All fields are required');
         }
         
@@ -137,7 +140,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
             name = ?, 
             email = ?, 
             phone = ?, 
-            address = ?, 
             service_type = ?, 
             status = ?,
             updated_at = CURRENT_TIMESTAMP
@@ -147,7 +149,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
             $name, 
             $email, 
             $phone, 
-            $address, 
             $service_type, 
             $status,
             $application_id
@@ -213,32 +214,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
 }
 ?>
 
+
 <div class="row mb-4">
     <div class="col-12">
-        <div class="d-flex justify-content-between align-items-center">
-            <div>
-                <h4 class="mb-0">Edit Application</h4>
-                <p class="text-muted mb-0">Update application details and documents</p>
-            </div>
-            <a href="applications.php" class="btn btn-outline-secondary">
-                <i class="fas fa-arrow-left me-1"></i> Back to Applications
-            </a>
-        </div>
+        <h4 class="mb-0">Edit Application</h4>
+        <p class="text-muted">Update application details</p>
     </div>
 </div>
 
 <div class="card">
     <div class="card-body">
-        <?php if (isset($_SESSION['success'])): ?>
-            <div class="alert alert-success"><?= htmlspecialchars($_SESSION['success']) ?></div>
-            <?php unset($_SESSION['success']); ?>
-        <?php endif; ?>
-        
-        <?php if (isset($_SESSION['error'])): ?>
-            <div class="alert alert-danger"><?= htmlspecialchars($_SESSION['error']) ?></div>
-            <?php unset($_SESSION['error']); ?>
-        <?php endif; ?>
-        
         <?php if (isset($error)): ?>
             <div class="alert alert-danger"><?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
@@ -247,116 +232,123 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
             <div class="row">
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Full Name</label>
-                    <input type="text" name="name" class="form-control" value="<?= htmlspecialchars($application['name']) ?>" required>
+                                                                                            
+                     <input type="text" name="name" class="form-control" value="<?= htmlspecialchars($user['name']) ?>" required>
                 </div>
+                
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" name="email" class="form-control" value="<?= htmlspecialchars($application['email']) ?>" required>
+                    <label class="form-label">Email Address</label>
+                   
+                     <input type="email" name="email" class="form-control" value="<?= htmlspecialchars($user['email']) ?>" readonly required>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <label class="form-label">Phone</label>
-                    <input type="tel" name="phone" class="form-control" value="<?= htmlspecialchars($application['phone']) ?>" required>
-                </div>
+                
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Phone Number</label>
+                        
+                         <input type="text" name="phone" class="form-control" value="<?= htmlspecialchars($user['mobile']) ?>" required>
+                    </div>
+                
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Service Type</label>
                     <select name="service_type" class="form-select" required>
-                        <option value="" disabled>Select a service</option>
+                        <option value="" disabled>Select Service Type</option>
+                        <option value="Passport" <?= $application['service_type'] === 'Passport' ? 'selected' : '' ?>>Passport</option>
+                        <option value="Visa" <?= $application['service_type'] === 'Visa' ? 'selected' : '' ?>>Visa</option>
                         <option value="GST Registration" <?= $application['service_type'] === 'GST Registration' ? 'selected' : '' ?>>GST Registration</option>
+                        <option value="Digital Signature" <?= $application['service_type'] === 'Digital Signature' ? 'selected' : '' ?>>Digital Signature</option>
                         <option value="MSME Registration" <?= $application['service_type'] === 'MSME Registration' ? 'selected' : '' ?>>MSME Registration</option>
+                        <option value="Income Tax Filing" <?= $application['service_type'] === 'Income Tax Filing' ? 'selected' : '' ?>>Income Tax Filing</option>
                         <option value="Trademark Registration" <?= $application['service_type'] === 'Trademark Registration' ? 'selected' : '' ?>>Trademark Registration</option>
-                        <option value="FSSAI License" <?= $application['service_type'] === 'FSSAI License' ? 'selected' : '' ?>>FSSAI License</option>
-                        <option value="Import Export Code" <?= $application['service_type'] === 'Import Export Code' ? 'selected' : '' ?>>Import Export Code</option>
                     </select>
                 </div>
-                <div class="col-12 mb-3">
-                    <label class="form-label">Address</label>
-                    <textarea name="address" class="form-control" rows="3" required><?= htmlspecialchars($application['address']) ?></textarea>
-                </div>
+                
                 <div class="col-md-6 mb-3">
                     <label class="form-label">Status</label>
                     <select name="status" class="form-select" required>
                         <option value="pending" <?= $application['status'] === 'pending' ? 'selected' : '' ?>>Pending</option>
                         <option value="approved" <?= $application['status'] === 'approved' ? 'selected' : '' ?>>Approved</option>
-                        <option value="rejected" <?= $application['status'] === 'rejected' ? 'selected' : '' ?>>Rejected</option>
                         <option value="missing_document" <?= $application['status'] === 'missing_document' ? 'selected' : '' ?>>Missing Document</option>
+                        <option value="rejected" <?= $application['status'] === 'rejected' ? 'selected' : '' ?>>Rejected</option>
                     </select>
                 </div>
                 
+                <!-- Documents Section -->
                 <div class="col-12 mb-4">
                     <div class="card">
                         <div class="card-header">
                             <h5 class="mb-0">Documents</h5>
                         </div>
                         <div class="card-body">
-                            <div class="mb-3">
-                                <label class="form-label">Upload Documents</label>
-                                <input type="file" name="documents[]" class="form-control" multiple>
-                                <div class="form-text">Allowed file types: PDF, JPG, PNG, DOC, DOCX, XLS, XLSX. Max file size: 5MB</div>
-                            </div>
-                            
-                            <?php if (!empty($documents)): ?>
-                                <div class="table-responsive">
-                                    <table class="table table-sm">
-                                        <thead>
-                                            <tr>
-                                                <th>File Name</th>
-                                                <th>Size</th>
-                                                <th>Uploaded</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php foreach ($documents as $doc): ?>
+                            <!-- Existing Documents -->
+                            <div class="mb-4">
+                                <h6>Existing Documents</h6>
+                                <?php if (count($documents) > 0): ?>
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead>
                                                 <tr>
-                                                    <td>
-                                                        <i class="far fa-file me-2"></i>
-                                                        <?= htmlspecialchars($doc['original_name']) ?>
-                                                    </td>
-                                                    <td><?= formatFileSize($doc['file_size']) ?></td>
-                                                    <td><?= date('M d, Y h:i A', strtotime($doc['uploaded_at'])) ?></td>
-                                                    <td>
-                                                        <div class="btn-group btn-group-sm">
-                                                            <a href="../download.php?file=<?= urlencode($doc['file_path']) ?>" 
-                                                               class="btn btn-outline-primary" 
+                                                    <th>Document Name</th>
+                                                    <th>Uploaded At</th>
+                                                    <th>Size</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php foreach ($documents as $doc): ?>
+                                                    <tr>
+                                                        <td><?= htmlspecialchars($doc['original_name']) ?></td>
+                                                        <td><?= date('M d, Y H:i', strtotime($doc['uploaded_at'])) ?></td>
+                                                        <td><?= number_format($doc['file_size'] / 1024, 2) ?> KB</td>
+                                                        <td>
+                                                            <a href="../download_file.php?id=<?= $doc['id'] ?>" 
+                                                               class="btn btn-sm btn-outline-primary" 
                                                                title="Download">
                                                                 <i class="fas fa-download"></i>
                                                             </a>
-                                                            <button type="button" 
-                                                                    class="btn btn-outline-danger delete-document" 
-                                                                    data-id="<?= $doc['id'] ?>"
-                                                                    data-name="<?= htmlspecialchars($doc['original_name']) ?>"
+                                                            <button type="submit" 
+                                                                    name="delete_document" 
+                                                                    value="<?= $doc['id'] ?>" 
+                                                                    class="btn btn-sm btn-outline-danger"
+                                                                    onclick="return confirm('Are you sure you want to delete this document?')"
                                                                     title="Delete">
                                                                 <i class="fas fa-trash"></i>
                                                             </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            <?php endforeach; ?>
-                                        </tbody>
-                                    </table>
+                                                        </td>
+                                                    </tr>
+                                                <?php endforeach; ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                <?php else: ?>
+                                    <p class="text-muted">No documents uploaded yet.</p>
+                                <?php endif; ?>
+                            </div>
+                            
+                            <!-- Upload New Documents -->
+                            <div class="border-top pt-3">
+                                <h6>Upload New Documents</h6>
+                                <div class="mb-3">
+                                    <label class="form-label">Select Files (PDF, JPG, PNG, DOC, DOCX, XLS, XLSX)</label>
+                                    <input type="file" name="documents[]" class="form-control" multiple>
+                                    <div class="form-text">Max file size: 10MB per file</div>
                                 </div>
-                            <?php else: ?>
-                                <div class="text-center py-4">
-                                    <i class="fas fa-folder-open fa-3x text-muted mb-3"></i>
-                                    <p class="text-muted mb-0">No documents uploaded yet</p>
-                                </div>
-                            <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-12">
-                    <div class="d-flex justify-content-end">
-                        <button type="submit" name="update_application" class="btn btn-primary">
-                            <i class="fas fa-save me-1"></i> Save Changes
-                        </button>
-                    </div>
+                <div class="col-12 mt-3">
+                    <button type="submit" name="update_application" class="btn btn-primary">
+                        <i class="fas fa-save me-1"></i> Update Application
+                    </button>
+                    <a href="applications.php" class="btn btn-secondary">
+                        <i class="fas fa-times me-1"></i> Cancel
+                    </a>
                 </div>
             </div>
         </form>
     </div>
 </div>
-
 <!-- Delete Document Confirmation Modal -->
 <div class="modal fade" id="deleteDocumentModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">

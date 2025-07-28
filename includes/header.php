@@ -342,17 +342,32 @@ ob_start();
                 </h5>
             </div>
 
+            <?php
+            // Get profile picture from session or database if not set
+            if (!isset($_SESSION['profile_picture'])) {
+                $stmt = $conn->prepare("SELECT file_name FROM files WHERE model_type = 'admin' AND model_id = ? ORDER BY id DESC LIMIT 1");
+                $stmt->bind_param("i", $_SESSION['user_id']);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                if ($result && $result->num_rows > 0) {
+                    $profile = $result->fetch_assoc();
+                    $_SESSION['profile_picture'] = $profile['file_name'];
+                }
+                $stmt->close();
+            }
+            ?>
             <div class="user-dropdown">
+                <h4><span class="badge bg-success"><?php echo $_SESSION['user_role']; ?></span></h4>
                 <div class="dropdown">
                     <a class="dropdown-toggle" href="#" role="button" id="userDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="<?php echo $profile_picture ? '../uploads/profiles/' . $profile_picture['file_name'] : 'https://via.placeholder.com/150'; ?>" alt="User Avatar">
+                        <img src="<?php echo !empty($_SESSION['profile_picture']) ? '../uploads/profiles/' . htmlspecialchars($_SESSION['profile_picture']) : 'https://via.placeholder.com/150'; ?>" alt="User Avatar" class="rounded-circle" style="width: 40px; height: 40px; object-fit: cover;">
                         <span><?php echo htmlspecialchars($_SESSION['user_name']); ?></span>
                         <i class="fas fa-chevron-down ms-2"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                         <li><a class="dropdown-item" href="/application-system/<?php echo $_SESSION['user_role']; ?>/profile.php"><i class="fas fa-user me-2"></i> Profile</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="/application-system/<?php echo $_SESSION['user_role']; ?>/change_password.php"><i class="fas fa-key me-2"></i> Change Password</a></li>
+                        <li><a class="dropdown-item" href="/application-system/includes/change_password.php"><i class="fas fa-key me-2"></i> Change Password</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item text-danger" href="/application-system/php/logout.php"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
                     </ul>
