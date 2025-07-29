@@ -201,6 +201,7 @@ $notifications = [];
                         <thead class="table-light">
                             <tr>
                                 <th>Sr. No.</th>
+                                <th>Application No.</th>
                                 <th>Submitted By</th>
                                 <th>Service Type</th>
                                 <th>Status</th>
@@ -218,6 +219,7 @@ $notifications = [];
                             <?php foreach ($recentApplications as $app): ?>
                             <tr>
                                 <td><?php echo $srNo++; ?></td>
+                                <td><?php echo htmlspecialchars($app['application_number'] ?? 'Unknown'); ?></td>
                                 <td><?php echo htmlspecialchars($app['name'] ?? 'Unknown'); ?></td>
                                 <td><?php echo htmlspecialchars($app['service_type'] ?? 'N/A'); ?></td>
                                 <td>

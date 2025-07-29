@@ -2,7 +2,7 @@
 // Database configuration
 $db_host = 'localhost';
 $db_user = 'root';
-$db_pass = '12345678';
+$db_pass = '';
 $db_name = 'application_system';
 
 // Initialize logger

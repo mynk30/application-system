@@ -132,7 +132,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $browserLogger->log('Application and files successfully saved');
 
         // Redirect with success message
-        header("Location: /application-system/admin/dashboard.php?success=1&application_id=" . $applicationId);
+        if($_SESSION['user_role'] == 'admin') {
+            header("Location: /application-system/admin/dashboard.php?success=1&application_id=" . $applicationId);
+        } else {
+            header("Location: /application-system/staff/dashboard.php?success=1&application_id=" . $applicationId);
+        }
         exit();
     } catch (Exception $e) {
         // Rollback transaction on error
@@ -145,7 +149,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $browserLogger->error('Application processing failed: ' . $e->getMessage());
 
         // Redirect with error message
-        header("Location: /application-system/admin/dashboard.php?error=1");
+        if($_SESSION['user_role'] == 'admin') {
+            header("Location: /application-system/admin/dashboard.php?error=1");
+        } else {
+            header("Location: /application-system/staff/dashboard.php?error=1");
+        }
         exit();
     }
 }

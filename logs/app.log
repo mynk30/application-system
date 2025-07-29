@@ -163,3 +163,3405 @@
 [2025-07-28 23:48:13] [INFO] [::1] Database connection established successfully
 [2025-07-28 23:48:42] [INFO] [::1] Database connection established successfully
 [2025-07-28 23:48:43] [INFO] [::1] Database connection established successfully
+[2025-07-29 05:07:59] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-29 05:07:59] [ERROR] [::1] Connection failed: Access denied for user 'root'@'localhost' (using password: YES)
+[2025-07-29 05:08:01] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-29 05:08:13] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-29 05:08:17] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-29 05:08:17] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:38:17] [INFO] [::1] User found: {"id":7,"name":"QuickviewControl1734098068731","email":"ja123ne@gmail.com","password":"$2y$10$GsHC9Bv0BEL5ybefpznXKuMAqXu1DFqBma7KW0R32X9JGlSk6Fp\/C","role":"staff","status":"active","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-18 02:50:30","updated_at":"2025-07-18 02:50:30"}
+[2025-07-29 08:38:17] [INFO] [::1] Password verified successfully
+[2025-07-29 05:08:17] [INFO] [::1] Application initialized
+[2025-07-29 08:38:17] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:38:17] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:38:17] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:38:17] [INFO] [::1] Staff ID from session: 7
+[2025-07-29 08:38:17] [INFO] [::1] Session data: Array
+(
+    [user_id] => 7
+    [user_name] => QuickviewControl1734098068731
+    [user_email] => ja123ne@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:38:17] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:38:17] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:38:17] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:08:50] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-29 05:08:59] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-07-29 05:08:59] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:38:59] [INFO] [::1] User found: {"id":10,"name":"mayank","email":"mayank@gmail.com","password":"$2y$10$GsHC9Bv0BEL5ybefpznXKuMAqXu1DFqBma7KW0R32X9JGlSk6Fp\/C","role":"staff","status":"active","reset_token":null,"reset_token_expires":null,"last_login":null,"created_at":"2025-07-18 02:50:30","updated_at":"2025-07-18 02:50:30"}
+[2025-07-29 08:38:59] [INFO] [::1] Password verified successfully
+[2025-07-29 05:08:59] [INFO] [::1] Application initialized
+[2025-07-29 08:38:59] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:38:59] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:38:59] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:38:59] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:38:59] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:38:59] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:38:59] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:38:59] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:09:05] [INFO] [::1] Database connection established successfully
+[2025-07-29 05:09:15] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:39:15] [INFO] [::1] Application initialized
+[2025-07-29 05:09:18] [INFO] [::1] Database connection established successfully
+[2025-07-29 05:09:23] [INFO] [::1] Application initialized
+[2025-07-29 08:39:23] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:39:23] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-07-29 08:39:23] [ERROR] [::1] Query failed: Table 'application_system.contact_form' doesn't exist
+[2025-07-29 05:09:25] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:39:25] [INFO] [::1] Application initialized
+[2025-07-29 05:09:28] [INFO] [::1] Application initialized
+[2025-07-29 08:39:28] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:39:28] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:39:28] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:39:28] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:39:28] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:39:28] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:39:28] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:39:28] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:09:43] [INFO] [::1] Database connection established successfully
+[2025-07-29 05:10:18] [INFO] [::1] Application initialized
+[2025-07-29 08:40:18] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:40:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:40:18] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:40:18] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:40:18] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:40:18] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:40:18] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:40:18] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:11:15] [INFO] [::1] Application initialized
+[2025-07-29 08:41:15] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:41:15] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:41:15] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:41:15] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:41:15] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:41:15] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:41:15] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:41:15] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:11:35] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:41:35] [INFO] [::1] Application initialized
+[2025-07-29 08:41:35] [INFO] [::1] Starting application processing
+[2025-07-29 08:41:35] [INFO] [::1] Application submitted by: testuser
+[2025-07-29 08:41:35] [INFO] [::1] Name: testuser
+[2025-07-29 08:41:35] [INFO] [::1] Email: test@gmail.com
+[2025-07-29 08:41:35] [INFO] [::1] Phone: 1231231231
+[2025-07-29 08:41:35] [INFO] [::1] Address: 
+[2025-07-29 08:41:35] [INFO] [::1] Service Type: Digital Signature
+[2025-07-29 08:41:35] [ERROR] [::1] Database error: Failed to prepare application statement
+[2025-07-29 08:41:35] [ERROR] [::1] Application processing failed: Database error: Statement preparation failed
+[2025-07-29 05:11:35] [INFO] [::1] Application initialized
+[2025-07-29 08:41:35] [INFO] [::1] Database connection established successfully
+[2025-07-29 05:12:24] [INFO] [::1] Application initialized
+[2025-07-29 08:42:24] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:42:24] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:42:24] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:42:24] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:42:24] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:42:24] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:42:24] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:42:24] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:12:29] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:42:29] [INFO] [::1] Application initialized
+[2025-07-29 08:42:29] [INFO] [::1] Starting application processing
+[2025-07-29 08:42:29] [INFO] [::1] Application submitted by: testuser
+[2025-07-29 08:42:29] [INFO] [::1] Name: testuser
+[2025-07-29 08:42:29] [INFO] [::1] Email: test@gmail.com
+[2025-07-29 08:42:29] [INFO] [::1] Phone: 1231231231
+[2025-07-29 08:42:29] [INFO] [::1] Address: 
+[2025-07-29 08:42:29] [INFO] [::1] Service Type: Digital Signature
+[2025-07-29 08:42:29] [ERROR] [::1] Database error: Failed to prepare application statement
+[2025-07-29 08:42:29] [ERROR] [::1] Application processing failed: Database error: Statement preparation failed
+[2025-07-29 05:12:29] [INFO] [::1] Application initialized
+[2025-07-29 08:42:29] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:42:29] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:42:29] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:42:29] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:42:29] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:42:29] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:42:29] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:42:29] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:38] [INFO] [::1] Application initialized
+[2025-07-29 08:44:38] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:38] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:38] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:38] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:38] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:38] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:38] [INFO] [::1] Application initialized
+[2025-07-29 08:44:38] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:38] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:38] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:38] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:38] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:38] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:38] [INFO] [::1] Application initialized
+[2025-07-29 08:44:38] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:38] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:38] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:38] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:38] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:38] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:39] [INFO] [::1] Application initialized
+[2025-07-29 08:44:39] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:39] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:39] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:39] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:39] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:39] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:39] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:39] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:39] [INFO] [::1] Application initialized
+[2025-07-29 08:44:39] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:39] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:39] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:39] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:39] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:39] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:39] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:39] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:42] [INFO] [::1] Application initialized
+[2025-07-29 08:44:42] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:42] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:42] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:42] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:42] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:42] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:42] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:42] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:42] [INFO] [::1] Application initialized
+[2025-07-29 08:44:42] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:42] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:42] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:42] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:42] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:42] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:42] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:42] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:42] [INFO] [::1] Application initialized
+[2025-07-29 08:44:42] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:42] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:42] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:42] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:42] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:42] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:42] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:42] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:43] [INFO] [::1] Application initialized
+[2025-07-29 08:44:43] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:43] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:43] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:43] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:43] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:43] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:43] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:43] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:14:43] [INFO] [::1] Application initialized
+[2025-07-29 08:44:43] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:44:43] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:43] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:44:43] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:44:43] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:44:43] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:44:43] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:44:43] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:15:55] [INFO] [::1] Application initialized
+[2025-07-29 08:45:55] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:45:55] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:55] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:55] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:45:55] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:45:55] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:45:55] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:45:55] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:15:56] [INFO] [::1] Application initialized
+[2025-07-29 08:45:56] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:45:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:56] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:45:56] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:45:56] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:45:56] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:45:56] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:15:56] [INFO] [::1] Application initialized
+[2025-07-29 08:45:56] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:45:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:56] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:45:56] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:45:56] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:45:56] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:45:56] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:15:56] [INFO] [::1] Application initialized
+[2025-07-29 08:45:56] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:45:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:56] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:45:56] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:45:56] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:45:56] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:45:56] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:45:56] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:16:37] [INFO] [::1] Application initialized
+[2025-07-29 08:46:37] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:46:37] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:46:37] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:46:37] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:46:37] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:46:37] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:46:37] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:46:37] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:16:37] [INFO] [::1] Application initialized
+[2025-07-29 08:46:37] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:46:37] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:46:37] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:46:37] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:46:37] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:46:37] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:46:37] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:46:37] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+
+[2025-07-29 05:16:38] [INFO] [::1] Application initialized
+[2025-07-29 08:46:38] [INFO] [::1] Database connection established successfully
+[2025-07-29 08:46:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:46:38] [INFO] [::1] Staff dashboard accessed
+[2025-07-29 08:46:38] [INFO] [::1] Staff ID from session: 10
+[2025-07-29 08:46:38] [INFO] [::1] Session data: Array
+(
+    [user_id] => 10
+    [user_name] => mayank
+    [user_email] => mayank@gmail.com
+    [user_role] => staff
+)
+
+[2025-07-29 08:46:38] [INFO] [::1] Number of applications found: 1
+[2025-07-29 08:46:38] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 2
+    [approved] => 1
+    [missing_docs] => 1
+    [rejected] => 3
+)
+
+[2025-07-29 08:46:38] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 9
+            [application_number] => 000007
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:08:43
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 10
+            [application_number] => 000008
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:24
+            [updated_at] => 2025-07-27 17:09:02
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 8
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 08:54:11
+            [updated_at] => 2025-07-18 08:54:11
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 7
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Trademark Registration
+            [status] => missing_document
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:50:15
+            [updated_at] => 2025-07-18 03:50:34
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 6
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:48:37
+            [updated_at] => 2025-07-18 03:48:37
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 5
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:47:26
+            [updated_at] => 2025-07-18 03:50:42
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+    [6] => Array
+        (
+            [id] => 4
+            [application_number] => 
+            [user_id] => 8
+            [service_type] => Income Tax Filing
+            [status] => rejected
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-18 03:44:57
+            [updated_at] => 2025-07-18 03:50:54
+            [name] => 
+            [email] => 
+            [mobile] => 
+        )
+
+)
+

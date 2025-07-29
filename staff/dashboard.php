@@ -28,6 +28,13 @@ $stats = [
     'assigned_to_me' => 0
 ];
 
+// get user data in form
+$stmt = $conn->prepare("SELECT * FROM users WHERE role = 'user'");
+if ($stmt && $stmt->execute()) {
+    $result = $stmt->get_result();
+    $users = $result->fetch_all(MYSQLI_ASSOC);
+}
+
 // Get staff ID from session
 $staff_id = $_SESSION['user_id'] ?? 0;
 
@@ -109,6 +116,8 @@ $missing_docs_apps = $stats['missing_document_applications'];
 $rejected_apps = $stats['rejected_applications'];
 $total_apps = $assigned_to_me; // For staff, total apps are just the ones assigned to them
 ?>
+
+
 
 <?php if (isset($_GET['success'])): ?>
     <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
@@ -210,6 +219,7 @@ $total_apps = $assigned_to_me; // For staff, total apps are just the ones assign
                         <thead class="table-light">
                             <tr>
                                 <th>Sr. No.</th>
+                                <th>Application No.</th>
                                 <th>Submitted By</th>
                                 <th>Service Type</th>
                                 <th>Status</th>
@@ -227,6 +237,7 @@ $total_apps = $assigned_to_me; // For staff, total apps are just the ones assign
                             <?php foreach ($recentApplications as $app): ?>
                             <tr>
                                 <td><?php echo $srNo++; ?></td>
+                                <td><?php echo htmlspecialchars($app['application_number'] ?? 'Unknown'); ?></td>
                                 <td><?php echo htmlspecialchars($app['name'] ?? 'Unknown'); ?></td>
                                 <td><?php echo htmlspecialchars($app['service_type'] ?? 'N/A'); ?></td>
                                 <td>
@@ -301,26 +312,63 @@ $total_apps = $assigned_to_me; // For staff, total apps are just the ones assign
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+                <div class="mb-3">
+                        <label class="form-label">Select User</label>
+                        <input type="text" id="userSearch" class="form-control mb-2" placeholder="Search users..." onkeyup="filterUsers()">
+                        <select name="user_id" id="userSelect" class="form-select" onchange="updateUserDetails(this.value)">
+                            <option value="" disabled selected>-- Select a user --</option>
+                            <?php foreach ($users as $user): ?>
+                                <option value="<?php echo $user['id']; ?>" 
+                                        data-name="<?php echo htmlspecialchars($user['name']); ?>"
+                                        data-email="<?php echo htmlspecialchars($user['email']); ?>"
+                                        data-phone="<?php echo htmlspecialchars($user['mobile']); ?>">
+                                    <?php echo htmlspecialchars($user['name']); ?>
+                                </option>
+                            <?php endforeach; ?>
+                        </select>
+                        <script>
+                        function filterUsers() {
+                            const input = document.getElementById('userSearch');
+                            const filter = input.value.toLowerCase();
+                            const select = document.getElementById('userSelect');
+                            const options = select.getElementsByTagName('option');
+                            
+                            for (let i = 0; i < options.length; i++) {
+                                const text = options[i].text.toLowerCase();
+                                if (text.indexOf(filter) > -1) {
+                                    options[i].style.display = '';
+                                } else {
+                                    options[i].style.display = 'none';
+                                }
+                            }
+                        }
+                        
+                        function updateUserDetails(userId) {
+                            const option = document.querySelector(`#userSelect option[value="${userId}"]`);
+                            if (option) {
+                                document.querySelector('input[name="name"]').value = option.dataset.name || '';
+                                document.querySelector('input[name="email"]').value = option.dataset.email || '';
+                                document.querySelector('input[name="phone"]').value = option.dataset.phone || '';
+                            }
+                        }
+                        </script>
+                    </div>
                     <div class="mb-3">
-                        <label class="form-label">Full Name</label>
-                        <input type="text" name="name" class="form-control" required>
+                        <label class="form-label"> Full Name</label>
+                        <input type="text" name="name" class="form-control" value="<?php echo $user['name']; ?>" readonly required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email Address</label>
-                        <input type="email" name="email" class="form-control" required>
+                        <input type="email" name="email" class="form-control" value="<?php echo $user['email']; ?>" readonly required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Phone Number</label>
-                        <input type="text" name="phone" class="form-control" required>
+                        <input type="text" name="phone" class="form-control" value="<?php echo $user['mobile']; ?>" readonly required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Address</label>
-                        <textarea name="address" class="form-control" rows="3" required></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Service Type</label>
-                        <select name="service_type" class="form-select" required>
-                            <option disabled selected>-- Select Service Type --</option>
+                        <label class="form-label">Application Type</label>
+                        <select name="application_type" class="form-select" required>
+                            <option disabled selected>-- Select Application Type --</option>
                             <option value="GST Registration">GST Registration</option>
                             <option value="Digital Signature">Digital Signature</option>
                             <option value="MSME Registration">MSME Registration</option>
