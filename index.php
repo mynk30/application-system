@@ -1,4 +1,16 @@
+
 <?php
+
+session_name("admin_session");
+session_set_cookie_params([
+    'lifetime' => 0,                    // Session cookie (deleted on browser close)
+    'path' => "/application-system/",   // Restrict to subdirectory
+    'httponly' => true,                 // Not accessible via JavaScript
+    'secure' => false,                  // Set to true in HTTPS
+    'samesite' => 'Lax'                 // Prevent CSRF in most cases
+]);
+
+// Start the session
 session_start();
 
 require_once 'php/Logger.php';
@@ -9,8 +21,6 @@ error_log('Session contents: ' . print_r($_SESSION, true));
 $logger->info('Session contents: ' . print_r($_SESSION, true));
 
 
-// For development: Display session contents on screen (comment out in production)
-// echo '<pre>' . print_r($_SESSION, true) . '</pre>';
 
 // Redirect if already logged in
 if (isset($_SESSION['user_id'])) {
@@ -146,3 +156,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
