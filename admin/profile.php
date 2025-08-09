@@ -1,5 +1,6 @@
 <?php
-session_start();
+
+include '../includes/header.php';
 require_once '../php/auth.php';
 requireRole(['admin']);
 
@@ -187,7 +188,6 @@ $profile_picture = $result->fetch_assoc();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <?php include '../includes/header.php'; ?>
 
     <div class="container mt-4">
         <h2>Admin Profile</h2>

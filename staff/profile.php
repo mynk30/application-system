@@ -1,9 +1,8 @@
 <?php
-session_start();
-require_once '../php/auth.php';
+require_once '../includes/header.php';
+require_once '../php/config.php';
+global $logger, $browserLogger;
 requireRole(['staff']);
-
-require_once '../php/db.php';
 
 $user_id = $_SESSION['user_id'];
 
@@ -164,18 +163,7 @@ $result = $stmt->get_result();
 $profile_picture = $result->fetch_assoc();
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Profile</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-</head>
-<body>
-    <?php include '../includes/header.php'; ?>
-
+    
     <div class="container mt-4">
         <h2>Staff Profile</h2>
 
@@ -313,5 +301,6 @@ $profile_picture = $result->fetch_assoc();
             border-color: #dc3545;
         }
     </style>
-</body>
-</html>
+<?php 
+require_once '../includes/footer.php';  
+?>

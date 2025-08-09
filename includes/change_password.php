@@ -1,9 +1,6 @@
 <?php
-// Start session if not already started
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-
+   
+   include __DIR__ . '../includes/header.php'; 
 // Include required files
 require_once __DIR__ . '/../php/db.php';
 require_once __DIR__ . '/../php/Logger.php';
@@ -108,8 +105,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
 // Set page title
 $pageTitle = 'Change Password';
 
-// Include header without requiring auth.php again to prevent redirection
-include __DIR__ . '/header.php'; 
 ?>
 
 <div class="container py-4">
@@ -308,4 +303,4 @@ include __DIR__ . '/header.php';
     }
 </script>
 
-<?php include 'footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

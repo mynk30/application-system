@@ -21,7 +21,7 @@ $result = $conn->query($sql);
 
 ?>
 
-<div class="row mb-4">
+<div class="row mt-4">
     <div class="col-12">
         <h4 class="mb-0">My Assigned Applications</h4>
         <p class="text-muted">View and manage applications assigned to you</p>

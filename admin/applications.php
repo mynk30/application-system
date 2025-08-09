@@ -40,13 +40,9 @@ if ($result2 && $result2->num_rows > 0) {
     }
 }
 
-// $logger->info('Applications fetched successfully====================');
-// $logger->info('This is result: ' . json_encode($users));
-
-
 ?>
 
-<div class="row mb-4">
+<div class="row mt-4">
     <div class="col-12">
         <h4 class="mb-0">All Applications</h4>
         <p class="text-muted">View and manage submitted service requests</p>

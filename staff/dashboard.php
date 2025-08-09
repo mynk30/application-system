@@ -1,5 +1,5 @@
 <?php
-session_start();
+include '../includes/header.php';
 require_once '../php/config.php';
 global $logger, $browserLogger, $conn;
 
@@ -11,7 +11,6 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-require_once '../includes/header.php';
 requireRole(['staff']);
 
 // Log dashboard access
@@ -133,9 +132,8 @@ $total_apps = $assigned_to_me; // For staff, total apps are just the ones assign
     </div>
 <?php endif; ?>
 
-<div class="row mb-4">
+<div class="row mt-4">
     <div class="col-12">
-        <h4 class="mb-0">Dashboard Overview</h4>
         <p class="text-muted">Welcome back, <?php echo htmlspecialchars($_SESSION['user_name'] ?? 'Staff'); ?>!</p>
     </div>
 </div>

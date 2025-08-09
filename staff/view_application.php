@@ -1,5 +1,7 @@
 <?php
-require_once '../includes/header.php';
+include '../includes/header.php';
+require_once '../php/config.php';
+global $logger, $browserLogger;
 requireRole(['admin', 'staff']);
 
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {

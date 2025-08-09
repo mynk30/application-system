@@ -117,7 +117,7 @@ $notifications = [];
     </div>
 <?php endif; ?>
 
-<div class="row mb-4">
+<div class="row mt-4">
     <div class="col-12">
         <h4 class="mb-0">Dashboard Overview</h4>
         <p class="text-muted">Welcome back, <?php echo htmlspecialchars($_SESSION['user_name']); ?>!</p>
