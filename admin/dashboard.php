@@ -3,7 +3,7 @@ require_once '../php/config.php';
 global $logger, $browserLogger;
 
 require_once '../includes/header.php';
-requireRole(['admin']);
+// requireRole(['admin']);
 
 // Log dashboard access
 $logger->info('Admin dashboard accessed');

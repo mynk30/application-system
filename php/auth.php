@@ -48,9 +48,6 @@ function authenticateUser($email, $password) {
                         case 'staff':
                             header("Location: /application-system/staff/dashboard.php");
                             break;
-                        case 'user':
-                            header("Location: /application-system/user/dashboard.php");
-                            break;
                     }
                     exit();
                 } else {

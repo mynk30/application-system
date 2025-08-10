@@ -1,5 +1,15 @@
+
 <?php
-// session_start();
+session_name("admin_session");
+session_set_cookie_params([
+    'lifetime' => 0, // Session cookie lasts until browser is closed
+    'path' => '/application-system/',
+    'domain' => 'localhost',
+    'secure' => false, // Set to true if using HTTPS
+    'httponly' => true,
+    'samesite' => 'Lax'
+]);
+session_start();
 require_once __DIR__ . '/../php/auth.php';
 requireLogin();
 ob_start();
