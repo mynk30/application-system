@@ -187,7 +187,7 @@ if (!$application) {
                         <input type="text" class="form-control" id="missing_documents" name="missing_documents" placeholder="Example: ID Proof, Address Proof, Signature">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Update Status</button>
+                    <button type="submit" class="btn btn-outline-primary">Update Status</button>
                 </form>
             </div>
         </div>

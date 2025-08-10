@@ -1,7 +1,6 @@
 <?php
-   
-   include __DIR__ . '../includes/header.php'; 
-// Include required files
+// Include required files - PATH CORRECTION
+include __DIR__ . '/../includes/header.php'; 
 require_once __DIR__ . '/../php/db.php';
 require_once __DIR__ . '/../php/Logger.php';
 
@@ -40,33 +39,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
         $message = "New password and confirm password do not match.";
     } elseif (strlen($newPassword) < 8) {
         $message = "Password must be at least 8 characters long.";
-    }
-    //  elseif (!preg_match('/[A-Z]/', $newPassword) || !preg_match('/[a-z]/', $newPassword) || 
-    //           !preg_match('/[0-9]/', $newPassword) || !preg_match('/[^A-Za-z0-9]/', $newPassword)) {
-    //     $message = "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.";
-    // } 
-    
-    else {
-        // Determine the table based on user role
-        
-        
+    } else {
         try {
-            // Get current password hash
-            $stmt = $conn->prepare("SELECT password FROM admin WHERE id = ?");
+            // Get current password hash - CORRECTED TABLE LOGIC
+            $table = '';
+            if ($userRole === 'admin') {
+                $table = 'admin';
+            } elseif ($userRole === 'staff') {
+                $table = 'staff';
+            } else {
+                $table = 'users'; // for regular users
+            }
+            
+            $stmt = $conn->prepare("SELECT password FROM $table WHERE id = ?");
             $stmt->bind_param('i', $userId);
             $stmt->execute();
             $result = $stmt->get_result();
             
             if ($result->num_rows > 0) {
                 $user = $result->fetch_assoc();
-
-                $logger->info("User found:======== " . json_encode($user));
+                $logger->info("User found: " . json_encode($user));
                 
                 if (password_verify($currentPassword, $user['password'])) {
-
                     $logger->info("Password verified successfully");
                     $newPasswordHash = password_hash($newPassword, PASSWORD_DEFAULT);
-                    $updateStmt = $conn->prepare("UPDATE admin SET password = ? WHERE id = ?");
+                    $updateStmt = $conn->prepare("UPDATE $table SET password = ? WHERE id = ?");
                     $updateStmt->bind_param('si', $newPasswordHash, $userId);
                     
                     if ($updateStmt->execute()) {
@@ -78,7 +75,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
                         $success = true;
                         
                         // Clear the form on success
-                        echo '<script>document.getElementById("changePasswordForm").reset();</script>';
+                        echo '<script>
+                            setTimeout(function() {
+                                document.getElementById("changePasswordForm").reset();
+                            }, 100);
+                        </script>';
                     } else {
                         $message = "Error updating password. Please try again.";
                         $logger->error("Failed to update password for user ID: $userId - " . $conn->error);
@@ -90,7 +91,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
                 }
             } else {
                 $message = "User not found.";
-                $logger->info("User not found while changing password - ID: $userId, Email: $email");
+                $logger->info("User not found while changing password - ID: $userId");
             }
             $stmt->close();
         } catch (Exception $e) {
@@ -99,12 +100,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
         }
     }
 }
-?>
-
-<?php 
-// Set page title
-$pageTitle = 'Change Password';
-
 ?>
 
 <div class="container py-4">
@@ -144,15 +139,15 @@ $pageTitle = 'Change Password';
                             <label for="new_password" class="form-label fw-medium">New Password <span class="text-danger">*</span></label>
                             <div class="input-group">
                                 <span class="input-group-text bg-light"><i class="fas fa-key text-primary"></i></span>
-                                <input type="password" class="form-control form-control-lg" id="new_password" name="new_password" required 
-                                       pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?=\S+$).{8,}">
+                                <input type="password" class="form-control form-control-lg" id="new_password" name="new_password" required minlength="8">
                                 <button class="btn btn-outline-secondary toggle-password" type="button" data-target="new_password">
                                     <i class="fas fa-eye"></i>
                                 </button>
                                 <div class="invalid-feedback">
-                                    Password must be at least 8 characters long and include uppercase, lowercase, numbers, and special characters.
+                                    Password must be at least 8 characters long.
                                 </div>
                             </div>
+                            <small class="text-muted">Password must be at least 8 characters long</small>
                         </div>
                         
                         <div class="mb-4">
@@ -170,10 +165,10 @@ $pageTitle = 'Change Password';
                         </div>
                         
                         <div class="d-grid gap-2 mt-4">
-                            <button type="submit" name="change_password" class="btn btn-primary btn-lg">
+                            <button type="submit" name="change_password" class="btn btn-outline-primary btn-lg">
                                 <i class="fas fa-save me-2"></i>Update Password
                             </button>
-                            <a href="<?php echo isset($_SERVER['HTTP_REFERER']) ? htmlspecialchars($_SERVER['HTTP_REFERER']) : 'dashboard.php'; ?>" class="btn btn-outline-secondary btn-lg">
+                            <a href="<?php echo '/application-system/' . $_SESSION['user_role'] . '/dashboard.php'; ?>" class="btn btn-outline-secondary btn-lg">
                                 <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
                             </a>
                         </div>
@@ -204,49 +199,25 @@ $pageTitle = 'Change Password';
         });
     });
 
-    // Password strength validation
-    // const newPassword = document.getElementById('new_password');
-    // const confirmPassword = document.getElementById('confirm_password');
-    // const requirements = {
-    //     length: /.{8,}/,
-    //     uppercase: /[A-Z]/, 
-    //     lowercase: /[a-z]/,
-    //     number: /[0-9]/,
-    //     special: /[^A-Za-z0-9]/
-    // };
+    // Password matching validation
+    const newPassword = document.getElementById('new_password');
+    const confirmPassword = document.getElementById('confirm_password');
 
-    function updatePasswordRequirements() {
-        const value = newPassword.value;
-        
-        Object.keys(requirements).forEach(key => {
-            const requirement = document.querySelector(`[data-requirement="${key}"]`);
-            const checkIcon = requirement.querySelector('.fa-check-circle');
-            const timesIcon = requirement.querySelector('.fa-times-circle');
-            
-            if (requirements[key].test(value)) {
-                checkIcon.classList.remove('d-none');
-                timesIcon.classList.add('d-none');
-            } else {
-                checkIcon.classList.add('d-none');
-                timesIcon.classList.remove('d-none');
-            }
-        });
-    }
-
-    // Check if passwords match
     function checkPasswordsMatch() {
         if (newPassword.value !== '' && confirmPassword.value !== '') {
             if (newPassword.value !== confirmPassword.value) {
                 confirmPassword.setCustomValidity('Passwords do not match');
+                confirmPassword.classList.add('is-invalid');
             } else {
                 confirmPassword.setCustomValidity('');
+                confirmPassword.classList.remove('is-invalid');
+                confirmPassword.classList.add('is-valid');
             }
         }
     }
 
     // Event listeners
     if (newPassword) {
-        newPassword.addEventListener('input', updatePasswordRequirements);
         newPassword.addEventListener('input', checkPasswordsMatch);
     }
     
@@ -258,10 +229,8 @@ $pageTitle = 'Change Password';
     (function () {
         'use strict';
         
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         const forms = document.querySelectorAll('.needs-validation');
         
-        // Loop over them and prevent submission
         Array.from(forms).forEach(form => {
             form.addEventListener('submit', function (event) {
                 // Check if passwords match before form submission
@@ -276,31 +245,8 @@ $pageTitle = 'Change Password';
                 
                 form.classList.add('was-validated');
             }, false);
-            
-            // Reset custom validation on input
-            form.querySelectorAll('input').forEach(input => {
-                input.addEventListener('input', function() {
-                    if (this.willValidate) {
-                        this.setCustomValidity('');
-                    }
-                    this.reportValidity();
-                });
-            });
         });
     })();
-    
-    // Show password requirements on focus
-    if (newPassword) {
-        newPassword.addEventListener('focus', function() {
-            document.querySelector('.password-requirements').classList.remove('d-none');
-        });
-        
-        newPassword.addEventListener('blur', function() {
-            if (this.value === '') {
-                document.querySelector('.password-requirements').classList.add('d-none');
-            }
-        });
-    }
 </script>
 
-<?php include '../includes/footer.php'; ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>

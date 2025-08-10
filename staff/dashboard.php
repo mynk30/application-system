@@ -381,7 +381,7 @@ $total_apps = $assigned_to_me; // For staff, total apps are just the ones assign
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                    <button type="submit" class="btn btn-outline-primary">Submit Application</button>
                 </div>
             </form>
         </div>

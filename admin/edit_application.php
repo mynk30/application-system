@@ -349,7 +349,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
                 </div>
                 
                 <div class="col-12 mt-3">
-                    <button type="submit" name="update_application" class="btn btn-primary">
+                    <button type="submit" name="update_application" class="btn btn-outline-primary">
                         <i class="fas fa-save me-1"></i> Update Application
                     </button>
                     <a href="applications.php" class="btn btn-secondary">

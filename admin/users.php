@@ -42,7 +42,7 @@ if ($roleFilter && $roleFilter !== 'all') {
                 <h4 class="mb-0">User Management</h4>
                 <p class="text-muted">Manage system users and their permissions</p>
             </div>
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">
+            <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#addUserModal">
                 <i class="fas fa-plus me-1"></i> Add User
             </button>
         </div>
@@ -219,7 +219,7 @@ if ($roleFilter && $roleFilter !== 'all') {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Add User</button>
+                    <button type="submit" class="btn btn-outline-primary">Add User</button>
                 </div>
             </form>
         </div>
@@ -255,7 +255,7 @@ if ($roleFilter && $roleFilter !== 'all') {
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Update User</button>
+                    <button type="submit" class="btn btn-outline-primary">Update User</button>
                 </div>
             </form>
         </div>
@@ -288,8 +288,6 @@ if ($roleFilter && $roleFilter !== 'all') {
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
     // Edit User Modal Handler

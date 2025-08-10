@@ -1,3 +1,12 @@
 Admin me header menubar 
 dashboard me new application  remove button
 add user form is not work
+
+profile me add delete button jo profile ko remove kar degi admin ke same staff me bhi karna hai 
+or defult profile set karna hai dono me
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0d6efd;
+}

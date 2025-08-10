@@ -55,8 +55,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
             // Start transaction
             $conn->begin_transaction();
             
-            // Update user profile in staff table
-            $stmt = $conn->prepare("UPDATE admin SET name = ? WHERE id = ?");
+            // Update user profile in admin table (since staff data is also stored in admin table)
+            $stmt = $conn->prepare("UPDATE admin SET name = ? WHERE id = ? AND role = 'staff'");
             $stmt->bind_param("si", $name, $user_id);
             $logger->info("Updating staff profile for user ID: $user_id. Name: " . $name);
             $updateSuccess = $stmt->execute();
@@ -107,6 +107,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
                             throw new Exception('Failed to save profile picture information.');
                         }
                         
+                        // Update session with new profile picture
+                        $_SESSION['profile_picture'] = $file_name;
+                        
                         // Delete the old file from server after successful database operations
                         if ($oldFile && file_exists($oldFile['file_path'])) {
                             unlink($oldFile['file_path']);
@@ -149,11 +152,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
 }
 
 // Fetch user data
-$stmt = $conn->prepare("SELECT * FROM admin WHERE id = ?");
+$stmt = $conn->prepare("SELECT * FROM admin WHERE id = ? AND role = 'staff'");
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
 $user = $result->fetch_assoc();
+
+// If user not found in admin table with staff role, check if they exist with different role
+if (!$user) {
+    $stmt = $conn->prepare("SELECT * FROM admin WHERE id = ?");
+    $stmt->bind_param("i", $user_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $user = $result->fetch_assoc();
+}
+
+// Fetch profile picture if not in session
+if (!isset($_SESSION['profile_picture'])) {
+    $picStmt = $conn->prepare("SELECT file_name FROM files WHERE model_type = 'staff' AND model_id = ? ORDER BY id DESC LIMIT 1");
+    $picStmt->bind_param("i", $user_id);
+    $picStmt->execute();
+    $picResult = $picStmt->get_result();
+    if ($picResult && $picResult->num_rows > 0) {
+        $picture = $picResult->fetch_assoc();
+        $_SESSION['profile_picture'] = $picture['file_name'];
+    }
+    $picStmt->close();
+}
 
 // Fetch profile picture
 $stmt = $conn->prepare("SELECT * FROM files WHERE model_type = 'staff' AND model_id = ? ORDER BY uploaded_at DESC LIMIT 1");
@@ -180,9 +205,10 @@ $profile_picture = $result->fetch_assoc();
                     <div class="row">
                         <div class="col-md-4 text-center mb-4">
                             <div class="mb-3">
-                                <img id="preview" src="<?php echo $profile_picture ? '../uploads/profiles/' . $profile_picture['file_name'] : 'https://via.placeholder.com/150'; ?>" 
+                                <img id="preview" src="<?php echo $profile_picture ? '../uploads/profiles/' . $profile_picture['file_name'] : '../assets/img/default-avatar.png'; ?>" 
                                      alt="Profile Picture" class="img-fluid rounded-circle mb-3" 
-                                     style="width: 200px; height: 200px; object-fit: cover; border: 3px solid #dee2e6;">
+                                     style="width: 200px; height: 200px; object-fit: cover; border: 3px solid #dee2e6;"
+                                     onerror="this.src='../assets/img/default-avatar.png';">
                                 <div class="position-relative d-inline-block">
                                     <label for="profile_picture" class="btn btn-outline-primary btn-sm">
                                         <i class="bi bi-camera"></i> Change Photo
@@ -225,6 +251,7 @@ $profile_picture = $result->fetch_assoc();
                 </form>
             </div>
         </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
@@ -304,3 +331,5 @@ $profile_picture = $result->fetch_assoc();
 <?php 
 require_once '../includes/footer.php';  
 ?>
+
+ye code sahi hai 

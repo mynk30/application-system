@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="alert alert-info">
                     <?php echo $message; ?>
                     <div class="mt-3">
-                        <a href="index.php" class="btn btn-primary">Back to Login</a>
+                        <a href="index.php" class="btn btn-outline-primary">Back to Login</a>
                     </div>
                 </div>
             <?php else: ?>
@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="form-text">Enter the email address associated with your account.</div>
                     </div>
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary btn-reset">Send Reset Link</button>
+                        <button type="submit" class="btn btn-outline-primary btn-reset">Send Reset Link</button>
                     </div>
                 </form>
                 
