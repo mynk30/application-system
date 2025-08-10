@@ -1,8 +1,8 @@
 <?php
+require_once '../includes/header.php';
 require_once '../php/config.php';
 global $logger, $browserLogger;
 
-require_once '../includes/header.php';
 // requireRole(['admin']);
 
 // Log dashboard access

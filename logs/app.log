@@ -4418,3 +4418,779 @@
 [2025-08-09 20:27:04] [INFO] [::1] Application initialized
 [2025-08-09 23:57:04] [INFO] [::1] Database connection established successfully
 [2025-08-09 23:57:04] [INFO] [::1] Admin dashboard accessed
+[2025-08-09 20:32:45] [INFO] [::1] Database connection established successfully
+[2025-08-10 00:02:45] [INFO] [::1] Application initialized
+[2025-08-09 20:33:11] [INFO] [::1] Application initialized
+[2025-08-10 00:03:11] [INFO] [::1] Database connection established successfully
+[2025-08-09 20:35:42] [INFO] [::1] Database connection established successfully
+[2025-08-10 00:05:42] [INFO] [::1] Application initialized
+[2025-08-09 20:35:44] [INFO] [::1] Database connection established successfully
+[2025-08-10 00:05:44] [INFO] [::1] Application initialized
+[2025-08-09 20:35:48] [INFO] [::1] Application initialized
+[2025-08-10 00:05:48] [INFO] [::1] Database connection established successfully
+[2025-08-09 20:36:10] [INFO] [::1] Database connection established successfully
+[2025-08-10 00:06:10] [INFO] [::1] Application initialized
+[2025-08-09 20:36:41] [INFO] [::1] Database connection established successfully
+[2025-08-10 00:06:41] [INFO] [::1] Application initialized
+[2025-08-09 20:36:55] [INFO] [::1] Database connection established successfully
+[2025-08-10 00:06:55] [INFO] [::1] Application initialized
+[2025-08-09 20:36:58] [INFO] [::1] Application initialized
+[2025-08-10 00:06:58] [INFO] [::1] Database connection established successfully
+[2025-08-09 20:38:11] [INFO] [::1] Database connection established successfully
+[2025-08-09 20:38:35] [INFO] [::1] Application initialized
+[2025-08-10 00:08:35] [INFO] [::1] Database connection established successfully
+[2025-08-09 20:38:35] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:43:53] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:44:00] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:44:01] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:14:01] [INFO] [::1] User found: {"id":1,"name":"Anjali Kushwah ","email":"anjalikushwaha@gmail.com","password":"$2y$10$VT2lfHdUoZrjimGRLwHil.ryoIB.qlzfZznVKyaBuy64kiK4SMpLi","role":"admin","status":"active","reset_token":null,"reset_token_expires":null,"last_login":"2025-08-08 15:32:29","created_at":"2025-07-18 09:22:15","updated_at":"2025-08-08 15:32:29"}
+[2025-08-10 11:14:01] [INFO] [::1] Password verified successfully
+[2025-08-10 07:44:01] [INFO] [::1] Application initialized
+[2025-08-10 11:14:01] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:14:01] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:44:15] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:14:15] [INFO] [::1] Application initialized
+[2025-08-10 07:44:18] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:14:18] [INFO] [::1] Application initialized
+[2025-08-10 11:14:18] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-08-10 11:14:18] [INFO] [::1] Fetched all inquiries successfully
+[2025-08-10 07:44:22] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:14:22] [INFO] [::1] Application initialized
+[2025-08-10 11:14:22] [INFO] [::1] Fetching all service inquiries: SELECT * FROM service_form ORDER BY created_at DESC
+[2025-08-10 11:14:22] [INFO] [::1] Fetched all service inquiries successfully
+[2025-08-10 07:44:24] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:44:27] [INFO] [::1] Application initialized
+[2025-08-10 11:14:27] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:14:27] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:44:55] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:14:55] [INFO] [::1] Application initialized
+[2025-08-10 11:14:55] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:46:08] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:46:08] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:46:21] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:46:21] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:16:21] [INFO] [::1] User found: {"id":1,"name":"Anjali Kushwah ","email":"anjalikushwaha@gmail.com","password":"$2y$10$VT2lfHdUoZrjimGRLwHil.ryoIB.qlzfZznVKyaBuy64kiK4SMpLi","role":"admin","status":"active","reset_token":null,"reset_token_expires":null,"last_login":"2025-08-08 15:32:29","created_at":"2025-07-18 09:22:15","updated_at":"2025-08-08 15:32:29"}
+[2025-08-10 07:46:32] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:46:32] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:16:32] [INFO] [::1] User found: {"id":1,"name":"Anjali Kushwah ","email":"anjalikushwaha@gmail.com","password":"$2y$10$VT2lfHdUoZrjimGRLwHil.ryoIB.qlzfZznVKyaBuy64kiK4SMpLi","role":"admin","status":"active","reset_token":null,"reset_token_expires":null,"last_login":"2025-08-08 15:32:29","created_at":"2025-07-18 09:22:15","updated_at":"2025-08-08 15:32:29"}
+[2025-08-10 07:46:39] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:46:39] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:16:39] [INFO] [::1] User found: {"id":1,"name":"Anjali Kushwah ","email":"anjalikushwaha@gmail.com","password":"$2y$10$VT2lfHdUoZrjimGRLwHil.ryoIB.qlzfZznVKyaBuy64kiK4SMpLi","role":"admin","status":"active","reset_token":null,"reset_token_expires":null,"last_login":"2025-08-08 15:32:29","created_at":"2025-07-18 09:22:15","updated_at":"2025-08-08 15:32:29"}
+[2025-08-10 11:16:39] [INFO] [::1] Password verified successfully
+[2025-08-10 07:46:39] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:16:39] [INFO] [::1] Application initialized
+[2025-08-10 11:16:39] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:51:24] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:24] [INFO] [::1] Application initialized
+[2025-08-10 11:21:24] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:51:25] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:25] [INFO] [::1] Application initialized
+[2025-08-10 11:21:25] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:51:29] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:51:29] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:51:37] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:51:37] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:37] [INFO] [::1] User found: {"id":1,"name":"Anjali Kushwah ","email":"anjalikushwaha@gmail.com","password":"$2y$10$VT2lfHdUoZrjimGRLwHil.ryoIB.qlzfZznVKyaBuy64kiK4SMpLi","role":"admin","status":"active","reset_token":null,"reset_token_expires":null,"last_login":"2025-08-08 15:32:29","created_at":"2025-07-18 09:22:15","updated_at":"2025-08-08 15:32:29"}
+[2025-08-10 11:21:37] [INFO] [::1] Password verified successfully
+[2025-08-10 07:51:37] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:37] [INFO] [::1] Application initialized
+[2025-08-10 11:21:37] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:51:40] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:40] [INFO] [::1] Application initialized
+[2025-08-10 07:51:43] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:43] [INFO] [::1] Application initialized
+[2025-08-10 11:21:43] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-08-10 11:21:43] [INFO] [::1] Fetched all inquiries successfully
+[2025-08-10 07:51:45] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:51:47] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:47] [INFO] [::1] Application initialized
+[2025-08-10 11:21:47] [INFO] [::1] Fetching all service inquiries: SELECT * FROM service_form ORDER BY created_at DESC
+[2025-08-10 11:21:47] [INFO] [::1] Fetched all service inquiries successfully
+[2025-08-10 07:51:49] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:51:54] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:21:54] [INFO] [::1] Application initialized
+[2025-08-10 07:51:59] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:52:09] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:09] [INFO] [::1] Application initialized
+[2025-08-10 07:52:10] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:10] [INFO] [::1] Application initialized
+[2025-08-10 11:22:10] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:52:13] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:52:18] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:18] [INFO] [::1] Application initialized
+[2025-08-10 07:52:19] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:19] [INFO] [::1] Application initialized
+[2025-08-10 11:22:19] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:52:25] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:52:28] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:28] [INFO] [::1] Application initialized
+[2025-08-10 07:52:32] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:32] [INFO] [::1] Application initialized
+[2025-08-10 07:52:39] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:39] [INFO] [::1] Application initialized
+[2025-08-10 07:52:46] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:22:46] [INFO] [::1] Application initialized
+[2025-08-10 11:22:46] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:52:47] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:53:01] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:53:01] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:53:03] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:23:03] [INFO] [::1] Application initialized
+[2025-08-10 11:23:03] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 07:53:08] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:53:11] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:23:11] [INFO] [::1] Application initialized
+[2025-08-10 07:53:13] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:23:13] [INFO] [::1] Application initialized
+[2025-08-10 07:57:18] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:57:31] [INFO] [::1] Session contents: Array
+(
+)
+
+[2025-08-10 07:57:31] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:27:31] [INFO] [::1] User found: {"id":2,"name":"Anjali Kushwaha ","email":"anjali@gmail.com","password":"$2y$10$bP5bN3fopD2JQnNqKD5UveUWnOrYE9EaFKzQHC25nH6vOSjpoYM8.","role":"staff","status":"active","reset_token":null,"reset_token_expires":null,"last_login":"2025-08-08 15:13:15","created_at":"2025-07-18 14:14:25","updated_at":"2025-08-08 15:13:15"}
+[2025-08-10 11:27:31] [INFO] [::1] Password verified successfully
+[2025-08-10 07:57:31] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:27:31] [INFO] [::1] Application initialized
+[2025-08-10 11:27:31] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:27:31] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:27:31] [INFO] [::1] Staff ID from session: 2
+[2025-08-10 11:27:31] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-08-10 11:27:31] [INFO] [::1] Number of applications found: 1
+[2025-08-10 11:27:31] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 3
+    [approved] => 3
+    [missing_docs] => 0
+    [rejected] => 1
+)
+
+[2025-08-10 11:27:31] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [application_number] => 000007
+            [user_id] => 50
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-10 11:23:01
+            [created_at] => 2025-08-03 16:44:26
+            [updated_at] => 2025-08-10 11:23:01
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [1] => Array
+        (
+            [id] => 43
+            [application_number] => 000006
+            [user_id] => 50
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:12:04
+            [created_at] => 2025-08-03 15:38:05
+            [updated_at] => 2025-08-08 15:12:04
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [2] => Array
+        (
+            [id] => 42
+            [application_number] => 000005
+            [user_id] => 49
+            [service_type] => GST Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:39
+            [created_at] => 2025-07-29 18:04:43
+            [updated_at] => 2025-08-08 15:11:39
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => KELLO
+            [email] => HOT@GMAIL.COM
+            [mobile] => 7521254785
+        )
+
+    [3] => Array
+        (
+            [id] => 41
+            [application_number] => 000004
+            [user_id] => 45
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:55
+            [created_at] => 2025-07-29 12:12:26
+            [updated_at] => 2025-08-08 15:11:55
+            [required_documents] => 
+            [name] => priti sharma
+            [email] => priti@gmail.com
+            [mobile] => 2345678876
+        )
+
+    [4] => Array
+        (
+            [id] => 40
+            [application_number] => 000003
+            [user_id] => 48
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-29 11:14:54
+            [updated_at] => 2025-07-29 11:14:54
+            [required_documents] => 
+            [name] => abhishek yadav
+            [email] => abhishek@example.com
+            [mobile] => 2345678556
+        )
+
+    [5] => Array
+        (
+            [id] => 39
+            [application_number] => 000002
+            [user_id] => 39
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-07-28 22:28:50
+            [created_at] => 2025-07-28 00:14:43
+            [updated_at] => 2025-07-28 22:28:50
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [6] => Array
+        (
+            [id] => 38
+            [application_number] => 000001
+            [user_id] => 39
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-27 23:24:16
+            [updated_at] => 2025-07-27 23:24:16
+            [required_documents] => 
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+)
+
+[2025-08-10 07:57:42] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:27:42] [INFO] [::1] Application initialized
+[2025-08-10 11:27:42] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:27:42] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:27:42] [INFO] [::1] Staff ID from session: 2
+[2025-08-10 11:27:42] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-08-10 11:27:42] [INFO] [::1] Number of applications found: 1
+[2025-08-10 11:27:42] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 3
+    [approved] => 3
+    [missing_docs] => 0
+    [rejected] => 1
+)
+
+[2025-08-10 11:27:42] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [application_number] => 000007
+            [user_id] => 50
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-10 11:23:01
+            [created_at] => 2025-08-03 16:44:26
+            [updated_at] => 2025-08-10 11:23:01
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [1] => Array
+        (
+            [id] => 43
+            [application_number] => 000006
+            [user_id] => 50
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:12:04
+            [created_at] => 2025-08-03 15:38:05
+            [updated_at] => 2025-08-08 15:12:04
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [2] => Array
+        (
+            [id] => 42
+            [application_number] => 000005
+            [user_id] => 49
+            [service_type] => GST Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:39
+            [created_at] => 2025-07-29 18:04:43
+            [updated_at] => 2025-08-08 15:11:39
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => KELLO
+            [email] => HOT@GMAIL.COM
+            [mobile] => 7521254785
+        )
+
+    [3] => Array
+        (
+            [id] => 41
+            [application_number] => 000004
+            [user_id] => 45
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:55
+            [created_at] => 2025-07-29 12:12:26
+            [updated_at] => 2025-08-08 15:11:55
+            [required_documents] => 
+            [name] => priti sharma
+            [email] => priti@gmail.com
+            [mobile] => 2345678876
+        )
+
+    [4] => Array
+        (
+            [id] => 40
+            [application_number] => 000003
+            [user_id] => 48
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-29 11:14:54
+            [updated_at] => 2025-07-29 11:14:54
+            [required_documents] => 
+            [name] => abhishek yadav
+            [email] => abhishek@example.com
+            [mobile] => 2345678556
+        )
+
+    [5] => Array
+        (
+            [id] => 39
+            [application_number] => 000002
+            [user_id] => 39
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-07-28 22:28:50
+            [created_at] => 2025-07-28 00:14:43
+            [updated_at] => 2025-07-28 22:28:50
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [6] => Array
+        (
+            [id] => 38
+            [application_number] => 000001
+            [user_id] => 39
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-27 23:24:16
+            [updated_at] => 2025-07-27 23:24:16
+            [required_documents] => 
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+)
+
+[2025-08-10 07:57:45] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:27:45] [INFO] [::1] Application initialized
+[2025-08-10 07:57:48] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:27:48] [INFO] [::1] Application initialized
+[2025-08-10 11:27:48] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-08-10 11:27:48] [INFO] [::1] Fetched all inquiries successfully
+[2025-08-10 07:57:55] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:27:55] [INFO] [::1] Application initialized
+[2025-08-10 07:58:00] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:58:00] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-08-10 07:58:00] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:28:00] [INFO] [::1] Application initialized
+[2025-08-10 11:28:00] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:28:00] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:28:00] [INFO] [::1] Staff ID from session: 2
+[2025-08-10 11:28:00] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-08-10 11:28:00] [INFO] [::1] Number of applications found: 1
+[2025-08-10 11:28:00] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 3
+    [approved] => 3
+    [missing_docs] => 0
+    [rejected] => 1
+)
+
+[2025-08-10 11:28:00] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [application_number] => 000007
+            [user_id] => 50
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-10 11:23:01
+            [created_at] => 2025-08-03 16:44:26
+            [updated_at] => 2025-08-10 11:23:01
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [1] => Array
+        (
+            [id] => 43
+            [application_number] => 000006
+            [user_id] => 50
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:12:04
+            [created_at] => 2025-08-03 15:38:05
+            [updated_at] => 2025-08-08 15:12:04
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [2] => Array
+        (
+            [id] => 42
+            [application_number] => 000005
+            [user_id] => 49
+            [service_type] => GST Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:39
+            [created_at] => 2025-07-29 18:04:43
+            [updated_at] => 2025-08-08 15:11:39
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => KELLO
+            [email] => HOT@GMAIL.COM
+            [mobile] => 7521254785
+        )
+
+    [3] => Array
+        (
+            [id] => 41
+            [application_number] => 000004
+            [user_id] => 45
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:55
+            [created_at] => 2025-07-29 12:12:26
+            [updated_at] => 2025-08-08 15:11:55
+            [required_documents] => 
+            [name] => priti sharma
+            [email] => priti@gmail.com
+            [mobile] => 2345678876
+        )
+
+    [4] => Array
+        (
+            [id] => 40
+            [application_number] => 000003
+            [user_id] => 48
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-29 11:14:54
+            [updated_at] => 2025-07-29 11:14:54
+            [required_documents] => 
+            [name] => abhishek yadav
+            [email] => abhishek@example.com
+            [mobile] => 2345678556
+        )
+
+    [5] => Array
+        (
+            [id] => 39
+            [application_number] => 000002
+            [user_id] => 39
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-07-28 22:28:50
+            [created_at] => 2025-07-28 00:14:43
+            [updated_at] => 2025-07-28 22:28:50
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [6] => Array
+        (
+            [id] => 38
+            [application_number] => 000001
+            [user_id] => 39
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-27 23:24:16
+            [updated_at] => 2025-07-27 23:24:16
+            [required_documents] => 
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+)
+
+[2025-08-10 07:58:10] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:28:10] [INFO] [::1] Application initialized
+[2025-08-10 07:58:14] [INFO] [::1] Database connection established successfully
+[2025-08-10 07:58:14] [INFO] [::1] Session contents: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-08-10 07:58:14] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:28:14] [INFO] [::1] Application initialized
+[2025-08-10 11:28:14] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:28:14] [INFO] [::1] Staff dashboard accessed
+[2025-08-10 11:28:14] [INFO] [::1] Staff ID from session: 2
+[2025-08-10 11:28:14] [INFO] [::1] Session data: Array
+(
+    [user_id] => 2
+    [user_name] => Anjali Kushwaha 
+    [user_email] => anjali@gmail.com
+    [user_role] => staff
+)
+
+[2025-08-10 11:28:14] [INFO] [::1] Number of applications found: 1
+[2025-08-10 11:28:14] [INFO] [::1] Application stats: Array
+(
+    [total] => 7
+    [pending] => 3
+    [approved] => 3
+    [missing_docs] => 0
+    [rejected] => 1
+)
+
+[2025-08-10 11:28:14] [INFO] [::1] Recent applications: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [application_number] => 000007
+            [user_id] => 50
+            [service_type] => Digital Signature
+            [status] => rejected
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-10 11:23:01
+            [created_at] => 2025-08-03 16:44:26
+            [updated_at] => 2025-08-10 11:23:01
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [1] => Array
+        (
+            [id] => 43
+            [application_number] => 000006
+            [user_id] => 50
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:12:04
+            [created_at] => 2025-08-03 15:38:05
+            [updated_at] => 2025-08-08 15:12:04
+            [required_documents] => 
+            [name] => himanshi  rawat
+            [email] => himanmshi@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [2] => Array
+        (
+            [id] => 42
+            [application_number] => 000005
+            [user_id] => 49
+            [service_type] => GST Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:39
+            [created_at] => 2025-07-29 18:04:43
+            [updated_at] => 2025-08-08 15:11:39
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => KELLO
+            [email] => HOT@GMAIL.COM
+            [mobile] => 7521254785
+        )
+
+    [3] => Array
+        (
+            [id] => 41
+            [application_number] => 000004
+            [user_id] => 45
+            [service_type] => MSME Registration
+            [status] => approved
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-08-08 15:11:55
+            [created_at] => 2025-07-29 12:12:26
+            [updated_at] => 2025-08-08 15:11:55
+            [required_documents] => 
+            [name] => priti sharma
+            [email] => priti@gmail.com
+            [mobile] => 2345678876
+        )
+
+    [4] => Array
+        (
+            [id] => 40
+            [application_number] => 000003
+            [user_id] => 48
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-29 11:14:54
+            [updated_at] => 2025-07-29 11:14:54
+            [required_documents] => 
+            [name] => abhishek yadav
+            [email] => abhishek@example.com
+            [mobile] => 2345678556
+        )
+
+    [5] => Array
+        (
+            [id] => 39
+            [application_number] => 000002
+            [user_id] => 39
+            [service_type] => GST Registration
+            [status] => pending
+            [reviewed_by] => Anjali Kushwah 
+            [reviewed_at] => 2025-07-28 22:28:50
+            [created_at] => 2025-07-28 00:14:43
+            [updated_at] => 2025-07-28 22:28:50
+            [required_documents] => ["aadhar", "pencard"]
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+    [6] => Array
+        (
+            [id] => 38
+            [application_number] => 000001
+            [user_id] => 39
+            [service_type] => Digital Signature
+            [status] => pending
+            [reviewed_by] => 
+            [reviewed_at] => 
+            [created_at] => 2025-07-27 23:24:16
+            [updated_at] => 2025-07-27 23:24:16
+            [required_documents] => 
+            [name] => riya gupta
+            [email] => riya@gmail.com
+            [mobile] => 07770958768
+        )
+
+)
+
+[2025-08-10 08:02:16] [INFO] [::1] Database connection established successfully
+[2025-08-10 08:02:18] [INFO] [::1] Database connection established successfully
+[2025-08-10 11:32:18] [INFO] [::1] Application initialized
+[2025-08-10 11:32:18] [INFO] [::1] Admin dashboard accessed
+[2025-08-10 08:04:51] [INFO] [::1] Database connection established successfully

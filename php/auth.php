@@ -1,5 +1,11 @@
 <?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_name("admin_session");
+    session_start();
+}
+
 require_once __DIR__ . '/db.php';
+
 
 function authenticateUser($email, $password) {
     global $conn;
