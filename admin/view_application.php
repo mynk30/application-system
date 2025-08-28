@@ -56,6 +56,16 @@ if (!$application) {
     header('Location: applications.php');
     exit;
 }
+
+// Get certificates for this application
+$certStmt = $conn->prepare("
+    SELECT * FROM files 
+    WHERE model_type = 'certificate' AND model_id = ?
+    ORDER BY uploaded_at DESC
+");
+$certStmt->bind_param("i", $appId);
+$certStmt->execute();
+$certificates = $certStmt->get_result();
 ?>
 
 <div class="row mt-4 mb-4">
@@ -115,10 +125,7 @@ if (!$application) {
                                 $statusClass = 'badge bg-success';
                                 break;
                             case 'rejected':
-                                $statusClass = 'badge bg-danger';
-                                break;
-                            case 'missing_document':
-                                $statusClass = 'badge bg-warning text-dark';
+                                $statusClass = 'badge bg-danger';                       
                                 break;
                             default:
                                 $statusClass = 'badge bg-secondary';
@@ -126,6 +133,25 @@ if (!$application) {
                         ?>
                         <span class="<?= $statusClass ?>">
                             <?= ucfirst(str_replace('_', ' ', $application['status'])) ?>
+                        </span>
+                    </dd>
+                    <dt class="col-sm-4">Payment Status</dt>
+                    <dd class="col-sm-8">
+                        <?php
+                        $paymentStatusClass = '';
+                        switch ($application['payment_status']) {
+                            case 'paid':
+                                $paymentStatusClass = 'badge bg-success';
+                                break;
+                            case 'unpaid':
+                                $paymentStatusClass = 'badge bg-danger';
+                                break;
+                            default:
+                                $paymentStatusClass = 'badge bg-secondary';
+                        }
+                        ?>
+                        <span class="<?= $paymentStatusClass ?>">
+                            <?= ucfirst(str_replace('_', ' ', $application['payment_status'])) ?>
                         </span>
                     </dd>
                 </dl>
@@ -151,7 +177,7 @@ if (!$application) {
                                 <a href="download_file.php?id=<?= $appId ?>&file=<?= urlencode($docName) ?>" class="btn btn-sm btn-outline-primary">
                                     <i class="fas fa-download"></i> Download
                                 </a>
-                            </li>
+                            </li> 
                         <?php endforeach; ?>
                     </ul>
                 <?php else: ?>
@@ -176,38 +202,75 @@ if (!$application) {
                         <select name="status" id="status" class="form-select" required>
                             <option value="pending" <?= $application['status'] == 'pending' ? 'selected' : '' ?>>Pending</option>
                             <option value="approved" <?= $application['status'] == 'approved' ? 'selected' : '' ?>>Approved</option>
-                            <option value="rejected" <?= $application['status'] == 'rejected' ? 'selected' : '' ?>>Rejected</option>
-                            <option value="missing_document" <?= $application['status'] == 'missing_document' ? 'selected' : '' ?>>Missing Documents</option>
+                            <option value="rejected" <?= $application['status'] == 'rejected' ? 'selected' : '' ?>>Rejected</option> 
                         </select>
                     </div>
-                    
-                    <!-- Add this below your Select in the Update Status Form -->
-                    <div class="mb-3 d-none" id="missing-documents-group">
-                        <label for="missing_documents" class="form-label">Missing Documents (comma separated)</label>
-                        <input type="text" class="form-control" id="missing_documents" name="missing_documents" placeholder="Example: ID Proof, Address Proof, Signature">
-                    </div>
-
-                    <button type="submit" class="btn btn-outline-primary">Update Status</button>
+                    <button type="submit" class="btn btn-outline-primary">Update Status</button>                  
                 </form>
             </div>
         </div>
     </div>
 </div>
 
-<script>
-document.getElementById('status').addEventListener('change', function() {
-    const missingDocsGroup = document.getElementById('missing-documents-group');
-    if (this.value === 'missing_document') {
-        missingDocsGroup.classList.remove('d-none');
-    } else {
-        missingDocsGroup.classList.add('d-none');
-        document.getElementById('missing_documents').value = '';
-    }
-});
+<!-- Uploaded Certificates Section -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Uploaded Certificates</h5>
+            </div>
+            <div class="card-body">
+                <?php if ($certificates->num_rows > 0): ?>
+                    <ul class="list-group">
+                        <?php while ($cert = $certificates->fetch_assoc()): ?>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                <div>
+                                    <?= htmlspecialchars($cert['original_name']) ?>
+                                    <small class="text-muted d-block">
+                                        Uploaded on: <?= date('M d, Y H:i', strtotime($cert['uploaded_at'])) ?>
+                                    </small>
+                                </div>
+                                <div>
+                                    <a href="../<?= htmlspecialchars($cert['file_path']) ?>" target="_blank" class="btn btn-sm btn-outline-primary">
+                                        <i class="fas fa-eye"></i> View
+                                    </a>
+                                    <a href="../<?= htmlspecialchars($cert['file_path']) ?>" download class="btn btn-sm btn-outline-secondary">
+                                        <i class="fas fa-download"></i> Download
+                                    </a>
+                                </div>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
+                <?php else: ?>
+                    <p class="text-muted">No certificate uploaded yet.</p>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</div>
 
-// Show on page load if 'missing_document' is pre-selected
-if (document.getElementById('status').value === 'missing_document') {
-    document.getElementById('missing-documents-group').classList.remove('d-none');
-}
-</script>
+<!-- Upload Certificate Form -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Upload Certificate</h5>
+            </div>
+            <div class="card-body">
+                <form action="upload_certificate.php" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="application_id" value="<?= $appId ?>">
+                    
+                    <div class="mb-3">
+                        <label for="document" class="form-label">Choose PDF Document</label>
+                        <input type="file" name="document" id="document" class="form-control" accept="application/pdf" required>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-outline-primary">Upload Certificate</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <?php require_once '../includes/footer.php'; ?>
