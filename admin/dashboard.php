@@ -1,8 +1,8 @@
 <?php
+require_once '../includes/header.php';
 require_once '../php/config.php';
 global $logger, $browserLogger;
 
-require_once '../includes/header.php';
 // requireRole(['admin']);
 
 // Log dashboard access
@@ -117,7 +117,7 @@ $notifications = [];
     </div>
 <?php endif; ?>
 
-<div class="row mb-4">
+<div class="row mt-4">
     <div class="col-12">
         <h4 class="mb-0">Dashboard Overview</h4>
         <p class="text-muted">Welcome back, <?php echo htmlspecialchars($_SESSION['user_name']); ?>!</p>
@@ -295,9 +295,6 @@ $notifications = [];
                 <div class="mt-4 pt-3 border-top">
                     <h6 class="mb-3">Quick Actions</h6>
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#newApplicationModal">
-                            <i class="fas fa-plus me-1"></i> New Application
-                        </button>
                         <a href="users.php" class="btn btn-outline-secondary btn-sm">
                             <i class="fas fa-user-plus me-1"></i> Add User
                         </a>
@@ -311,7 +308,7 @@ $notifications = [];
 
 
 <!-- New Application Modal -->
-<div class="modal fade" id="newApplicationModal" tabindex="-1" aria-labelledby="newApplicationModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="newApplicationModal" tabindex="-1" aria-labelledby="newApplicationModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <form action="../php/process_application.php" method="POST" enctype="multipart/form-data">
@@ -396,6 +393,6 @@ $notifications = [];
             </form>
         </div>
     </div>
-</div>
+</div> -->
 
 <?php require_once '../includes/footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php
+include '../includes/header.php';
 require_once '../php/config.php';
-require_once '../includes/header.php';
 global $logger, $browserLogger, $conn;
 
 requireRole(['staff']);
@@ -33,7 +33,7 @@ $logger->info('Fetched all inquiries successfully');
 ?>
 
 <div class="container-fluid">
-    <div class="row mb-4">
+    <div class="row mt-4">
         <div class="col-12">
             <div class="d-flex justify-content-between align-items-center">
                 <h4 class="mb-0">Contact Inquiries</h4>
@@ -108,24 +108,6 @@ $logger->info('Fetched all inquiries successfully');
                     <i class="fas fa-info-circle me-2"></i> No contact inquiries found.
                 </div>
             <?php endif; ?>
-        </div>
-    </div>
-</div>
-
-<?php require_once '../includes/footer.php'; ?>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7" class="text-center text-muted py-4">
-                            <div class="mb-3">
-                                <i class="fas fa-inbox fa-3x"></i>
-                            </div>
-                            <h5>No contact enquiries found</h5>
-                            <p class="mb-0">Contact form submissions will appear here</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
     </div>
 </div>

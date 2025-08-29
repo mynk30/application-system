@@ -1,6 +1,6 @@
 <?php
-require_once '../php/config.php';
 require_once '../includes/header.php';
+require_once '../php/config.php';
 requireRole(['admin']);
 
 // Ensure uploads directory exists and has proper permissions
@@ -226,7 +226,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_application'])
 }
 ?>
 
-<div class="row mb-4">
+<div class="row mt-4">
     <div class="col-12">
         <h4 class="mb-0">Edit Application</h4>
         <p class="text-muted">Update application details</p>

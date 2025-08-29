@@ -1,7 +1,5 @@
 <?php
-require_once '../php/auth.php';
-requireRole(['staff']);
-require_once '../php/db.php';
+include '../includes/header.php';
 require_once '../php/config.php';
 global $logger, $browserLogger;
 

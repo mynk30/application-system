@@ -1,5 +1,5 @@
 <?php
-require_once '../php/auth.php';
+include '../includes/header.php';
 require_once '../php/config.php';
 requireRole(['staff']);
 
@@ -52,4 +52,5 @@ try {
 }
 
 $conn->close();
+require_once '../includes/footer.php';
 ?>

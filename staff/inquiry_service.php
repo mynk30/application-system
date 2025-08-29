@@ -1,6 +1,6 @@
 <?php
+include '../includes/header.php';
 require_once '../php/config.php';
-require_once '../includes/header.php';
 global $logger, $browserLogger, $conn;
 
 requireRole(['staff']);
@@ -33,7 +33,7 @@ $logger->info('Fetched all service inquiries successfully');
 ?>
 
 <div class="container-fluid">
-    <div class="row mb-4">
+    <div class="row mt-4">
         <div class="col-12">
             <div class="d-flex justify-content-between align-items-center">
                 <h4 class="mb-0">Service Inquiries</h4>
