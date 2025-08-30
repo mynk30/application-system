@@ -8859,3 +8859,106 @@
 [2025-08-28 11:50:23] [INFO] [::1] Database connection established successfully
 [2025-08-28 11:50:30] [INFO] [::1] Database connection established successfully
 [2025-08-28 11:50:30] [INFO] [::1] Database connection established successfully
+[2025-08-28 12:12:52] [INFO] [::1] Database connection established successfully
+[2025-08-28 15:42:52] [INFO] [::1] Application initialized
+[2025-08-28 15:42:52] [INFO] [::1] Admin dashboard accessed
+[2025-08-28 12:43:38] [INFO] [::1] Database connection established successfully
+[2025-08-28 12:47:55] [INFO] [::1] Database connection established successfully
+[2025-08-28 16:17:55] [INFO] [::1] Application initialized
+[2025-08-28 16:17:55] [INFO] [::1] Admin dashboard accessed
+[2025-08-28 12:47:59] [INFO] [::1] Database connection established successfully
+[2025-08-28 12:49:35] [INFO] [::1] Database connection established successfully
+[2025-08-28 16:19:35] [INFO] [::1] Application initialized
+[2025-08-28 16:19:35] [INFO] [::1] Admin dashboard accessed
+[2025-08-28 12:49:38] [INFO] [::1] Database connection established successfully
+[2025-08-28 16:19:38] [INFO] [::1] Application initialized
+[2025-08-28 16:19:38] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-08-28 16:19:38] [INFO] [::1] Fetched all inquiries successfully
+[2025-08-28 12:50:00] [INFO] [::1] Database connection established successfully
+[2025-08-28 16:20:00] [INFO] [::1] Application initialized
+[2025-08-28 16:20:00] [INFO] [::1] Admin dashboard accessed
+[2025-08-28 12:50:05] [INFO] [::1] Database connection established successfully
+[2025-08-28 12:50:44] [INFO] [::1] Database connection established successfully
+[2025-08-28 16:20:44] [INFO] [::1] Application initialized
+[2025-08-28 12:50:49] [INFO] [::1] Database connection established successfully
+[2025-08-28 16:20:49] [INFO] [::1] Application initialized
+[2025-08-28 16:20:49] [INFO] [::1] Admin dashboard accessed
+[2025-08-28 12:51:02] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:06:23] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:51:13] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:52:29] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:52:31] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:52:33] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:52:46] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:53:40] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:53:42] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:53:59] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:54:21] [INFO] [::1] Database connection established successfully
+[2025-08-28 17:24:21] [INFO] [::1] Application initialized
+[2025-08-28 17:24:21] [INFO] [::1] Admin dashboard accessed
+[2025-08-28 13:54:22] [INFO] [::1] Database connection established successfully
+[2025-08-28 17:24:22] [INFO] [::1] Application initialized
+[2025-08-28 13:54:23] [INFO] [::1] Database connection established successfully
+[2025-08-28 17:24:23] [INFO] [::1] Application initialized
+[2025-08-28 17:24:23] [INFO] [::1] Admin dashboard accessed
+[2025-08-28 13:54:25] [INFO] [::1] Database connection established successfully
+[2025-08-28 17:24:25] [INFO] [::1] Application initialized
+[2025-08-28 13:54:28] [INFO] [::1] Database connection established successfully
+[2025-08-28 17:24:28] [INFO] [::1] Application initialized
+[2025-08-28 17:24:28] [INFO] [::1] Fetching all inquiries: SELECT * FROM contact_form ORDER BY created_at DESC
+[2025-08-28 17:24:28] [INFO] [::1] Fetched all inquiries successfully
+[2025-08-28 13:54:33] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:54:55] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:54:56] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:54:56] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:55:33] [INFO] [::1] Database connection established successfully
+[2025-08-28 13:55:42] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:03:52] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:03:53] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:03:58] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:04:12] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:04:34] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:04:35] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:04:36] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:04:37] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:05:51] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:05:53] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:06:04] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:06:05] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:06:07] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:06:08] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:07:49] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:07:52] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:17] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:24] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:31] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:34] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:36] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:47] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:48] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:49] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:52] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:08:58] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:14:24] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:15:26] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:15:28] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:18:30] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:18:33] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:18:35] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:19:28] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:26:11] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:26:52] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:26:54] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:37:00] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:37:21] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:37:23] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:39:01] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:39:47] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:44:46] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:44:54] [INFO] [::1] Database connection established successfully
+[2025-08-28 14:44:56] [INFO] [::1] Database connection established successfully
+[2025-08-29 12:05:51] [INFO] [::1] Database connection established successfully
+[2025-08-29 12:05:51] [INFO] [::1] Session contents: Array
+(
+)
+
