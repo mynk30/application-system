@@ -59,12 +59,12 @@ ob_start();
                     <ul class="collapse list-unstyled ms-3" id="enquirySubmenu">
                         <li>
                             <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/inquiry_contact.php">
-                                <i class="fas fa-phone"></i> Contact Item
+                                <i class="fas fa-phone"></i> Contact
                             </a>
                         </li>
                         <li>
                             <a href="/application-system/<?php echo $_SESSION['user_role']; ?>/inquiry_service.php">
-                                <i class="fas fa-tools"></i> Service Item
+                                <i class="fas fa-tools"></i> Service 
                             </a>
                         </li>
                     </ul>
@@ -75,6 +75,20 @@ ob_start();
                 <li class="<?php echo strpos($_SERVER['PHP_SELF'], 'users') !== false ? 'active' : ''; ?>">
                     <a href="/application-system/admin/users.php">
                         <i class="fas fa-users"></i> Users
+                    </a>
+                </li>
+            <?php endif; ?>
+            <?php if ($_SESSION['user_role'] === 'admin'): ?>
+                <!-- <li class="<?php echo strpos($_SERVER['PHP_SELF'], 'users') !== false ? 'active' : ''; ?>">
+                    <a href="/application-system/admin/add_article.php">
+                        <i class="fas fa-plus"></i>  Article
+                    </a>
+                </li> -->
+            <?php endif; ?>
+            <?php if ($_SESSION['user_role'] === 'admin'): ?>
+                <li class="<?php echo strpos($_SERVER['PHP_SELF'], 'users') !== false ? 'active' : ''; ?>">
+                    <a href="/application-system/admin/manage_articles.php">
+                        <i class="fas fa-plus"></i>  Manage Article
                     </a>
                 </li>
             <?php endif; ?>
