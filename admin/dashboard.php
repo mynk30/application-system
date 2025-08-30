@@ -295,6 +295,7 @@ $notifications = [];
                 <div class="mt-4 pt-3 border-top">
                     <h6 class="mb-3">Quick Actions</h6>
                     <div class="d-grid gap-2">
+                       
                         <a href="users.php" class="btn btn-outline-secondary btn-sm">
                             <i class="fas fa-user-plus me-1"></i> Add User
                         </a>
@@ -306,93 +307,5 @@ $notifications = [];
 </div>
 
 
-
-<!-- New Application Modal -->
-<!-- <div class="modal fade" id="newApplicationModal" tabindex="-1" aria-labelledby="newApplicationModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <form action="../php/process_application.php" method="POST" enctype="multipart/form-data">
-                <div class="modal-header">
-                    <h5 class="modal-title">New Application</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                <div class="mb-3">
-                        <label class="form-label">Select User</label>
-                        <input type="text" id="userSearch" class="form-control mb-2" placeholder="Search users..." onkeyup="filterUsers()">
-                        <select name="user_id" id="userSelect" class="form-select" onchange="updateUserDetails(this.value)">
-                            <option value="" disabled selected>-- Select a user --</option>
-                            <?php foreach ($users as $user): ?>
-                                <option value="<?php echo $user['id']; ?>" 
-                                        data-name="<?php echo htmlspecialchars($user['name']); ?>"
-                                        data-email="<?php echo htmlspecialchars($user['email']); ?>"
-                                        data-phone="<?php echo htmlspecialchars($user['mobile']); ?>">
-                                    <?php echo htmlspecialchars($user['name']); ?>
-                                </option>
-                            <?php endforeach; ?>
-                        </select>
-                        <script>
-                        function filterUsers() {
-                            const input = document.getElementById('userSearch');
-                            const filter = input.value.toLowerCase();
-                            const select = document.getElementById('userSelect');
-                            const options = select.getElementsByTagName('option');
-                            
-                            for (let i = 0; i < options.length; i++) {
-                                const text = options[i].text.toLowerCase();
-                                if (text.indexOf(filter) > -1) {
-                                    options[i].style.display = '';
-                                } else {
-                                    options[i].style.display = 'none';
-                                }
-                            }
-                        }
-                        
-                        function updateUserDetails(userId) {
-                            const option = document.querySelector(`#userSelect option[value="${userId}"]`);
-                            if (option) {
-                                document.querySelector('input[name="name"]').value = option.dataset.name || '';
-                                document.querySelector('input[name="email"]').value = option.dataset.email || '';
-                                document.querySelector('input[name="phone"]').value = option.dataset.phone || '';
-                            }
-                        }
-                        </script>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label"> Full Name</label>
-                        <input type="text" name="name" class="form-control" value="<?php echo $user['name']; ?>" readonly required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Email Address</label>
-                        <input type="email" name="email" class="form-control" value="<?php echo $user['email']; ?>" readonly required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Phone Number</label>
-                        <input type="text" name="phone" class="form-control" value="<?php echo $user['mobile']; ?>" readonly required>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Application Type</label>
-                        <select name="application_type" class="form-select" required>
-                            <option disabled selected>-- Select Application Type --</option>
-                            <option value="GST Registration">GST Registration</option>
-                            <option value="Digital Signature">Digital Signature</option>
-                            <option value="MSME Registration">MSME Registration</option>
-                            <option value="Income Tax Filing">Income Tax Filing</option>
-                            <option value="Trademark Registration">Trademark Registration</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Upload Documents (PDF, JPG, PNG)</label>
-                        <input type="file" name="document[]" class="form-control" multiple required>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">Submit Application</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div> -->
 
 <?php require_once '../includes/footer.php'; ?>

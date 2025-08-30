@@ -239,7 +239,7 @@ $profile_picture = $result->fetch_assoc();
                                     </div>
                                     
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
-                                        <button type="submit" name="update_profile" class="btn btn-primary">
+                                        <button type="submit" name="update_profile" class="btn btn-outline-primary">
                                             <i class="bi bi-save"></i> Save Changes
                                         </button>
                                     </div>

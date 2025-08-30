@@ -24,7 +24,11 @@ function authenticateUser($email, $password) {
         $stmt->bind_param("s", $email);
         $stmt->execute();
         $result = $stmt->get_result();
+        // log the email and password
+        $logger->info("Email: " . $email);
+        $logger->info("Password: " . $password);
 
+        $logger->info("Query result: " . json_encode($result));
         if ($result->num_rows === 1) {
             $user = $result->fetch_assoc();
             $logger->info("User found: " . json_encode($user));

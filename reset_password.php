@@ -113,7 +113,7 @@ if (empty($token)) {
                 <div class="alert alert-success">
                     <?php echo $message; ?>
                     <div class="mt-3">
-                        <a href="index.php" class="btn btn-primary">Back to Login</a>
+                        <a href="index.php" class="btn btn-outline-primary">Back to Login</a>
                     </div>
                 </div>
             <?php endif; ?>
@@ -135,7 +135,7 @@ if (empty($token)) {
                     </div>
                     
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary btn-reset">Reset Password</button>
+                        <button type="submit" class="btn btn-outline-primary btn-reset">Reset Password</button>
                     </div>
                 </form>
                 

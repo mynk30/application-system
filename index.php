@@ -145,7 +145,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <input type="password" class="form-control" id="password" name="password" required>
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary btn-login">Sign In</button>
+                    <button type="submit" class="btn btn-outline-primary btn-login">Sign In</button>
                 </div>
             </form>
           

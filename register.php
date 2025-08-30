@@ -127,7 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="invalid-feedback">Please confirm your password.</div>
                 </div>
                 
-                <button type="submit" class="btn btn-primary btn-register">Register Admin</button>
+                <button type="submit" class="btn btn-outline-primary btn-register">Register Admin</button>
             </form>
         </div>
     </div>

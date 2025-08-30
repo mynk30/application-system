@@ -18,7 +18,6 @@ $sql = "
 ";
 
 $result = $conn->query($sql);
-
 ?>
 
 <div class="row mt-4">
@@ -70,9 +69,7 @@ $result = $conn->query($sql);
                                         case 'rejected':
                                             $statusClass = 'badge-rejected';
                                             break;
-                                        case 'missing_docs':
-                                            $statusClass = 'badge-missing';
-                                            break;
+                                        
                                         default:
                                             $statusClass = 'badge-pending';
                                     }
